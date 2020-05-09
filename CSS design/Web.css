@@ -1,0 +1,44 @@
+body {
+    margin: 0 50px;
+    padding: 0px;
+    background-color: cadetblue;
+}
+
+#opening-header-section {
+    width: fixed;
+    height: 225px;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-simple-soft-blue-pink-colorbluepinkwhite-image_63160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo-web {
+    float: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 8px;
+    color: red;
+}
+
+#more-information {
+    clear: both;
+    float: right;
+}
+
+#more-information a {
+    float: left;
+    display: block;
+    margin: 10px;
+    padding: 10px 26px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: linear-gradient(lightseagreen, royalblue, blue);
+    border-radius: 8px;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+#more-information>a:hover {
+    background: linear-gradient(red, pink);
+}
