@@ -65,14 +65,17 @@ main{
             margin: 1rem 1rem;
             border-radius: 1rem;
             width: 90%;
-            vertical-align: middle;
-            justify-content: center;
-            align-items: center;
 
             /*Transition*/
             transition: transform 0.1s;
             &:hover{
                 transform: translateY(-10px);
+            }
+            p{
+                vertical-align: middle;
+                justify-content: center;
+                align-items: center;
+
             }
 
             .full-width{
