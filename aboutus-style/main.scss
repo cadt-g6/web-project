@@ -14,6 +14,9 @@ body{
 h1{
     margin: 1.2rem 2.5rem;
 }
+p{
+    vertical-align: middle;
+}
 
 main{
     display: grid;
@@ -70,10 +73,6 @@ main{
             transition: transform 0.1s;
             &:hover{
                 transform: translateY(-10px);
-            }
-            p{
-                vertical-align: middle;
-                padding-top: 0.5vw;
             }
 
             .full-width{

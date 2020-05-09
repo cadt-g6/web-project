@@ -14,6 +14,10 @@ h1 {
   margin: 1.2rem 2.5rem;
 }
 
+p {
+  vertical-align: middle;
+}
+
 main {
   display: -ms-grid;
   display: grid;
@@ -90,11 +94,6 @@ main .card .info {
 main .card .info:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-}
-
-main .card .info p {
-  vertical-align: middle;
-  padding-top: 0.5vw;
 }
 
 main .card .info .full-width {
