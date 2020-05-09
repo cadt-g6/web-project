@@ -66,6 +66,9 @@ main{
             border-radius: 1rem;
             width: 90%;
             vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             /*Transition*/
             transition: transform 0.1s;
