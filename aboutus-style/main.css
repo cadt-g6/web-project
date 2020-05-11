@@ -20,7 +20,6 @@ main {
   -ms-grid-columns: (minmax(17rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   border-radius: 0.5rem;
-  background-color: white;
   width: 95%;
   margin: 0 auto 2rem;
   text-align: center;

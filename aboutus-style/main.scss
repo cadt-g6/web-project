@@ -20,7 +20,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     //grid-gap: 1rem;
     border-radius: 0.5rem;
-    background-color: white;
+    //background-color: white;
     width: 95%;
     margin: 0 auto 2rem;
     
@@ -28,7 +28,7 @@ main{
 
     -webkit-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2); 
     box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
-    
+
     .card{
         /*Card style*/
         width: 90%;

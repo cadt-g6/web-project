@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-weight: lighter;
+    font-family: "helvetica neue", sans-serif;
+}
+.nav {
+    background: rgba(0, 0, 0, 0.212);
+    /*opacity: .5;*/
+    text-align: right;
+    height: 70px;
+    line-height: 70px; 
+    margin-bottom: 30px;
+}
+.menu{
+    margin: 0 40px 0 0;
+}
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    line-height: 70px;
+
+}
+.menu .in-page{
+    color: turquoise;
+
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: absolute;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        color: gray;
+        background-color: white;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
