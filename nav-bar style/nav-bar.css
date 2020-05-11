@@ -8,7 +8,7 @@ html {
     font-family: "helvetica neue", sans-serif;
 }
 .nav {
-    background: rgba(0, 0, 0, 0.212);
+    background: #2b7497;
     /*opacity: .5;*/
     text-align: right;
     height: 70px;

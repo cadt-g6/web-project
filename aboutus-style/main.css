@@ -4,8 +4,6 @@ body, html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#314755), to(#26a0da));
-  background: linear-gradient(90deg, #314755 0%, #26a0da 100%);
   color: white;
   font-weight: 100;
 }
