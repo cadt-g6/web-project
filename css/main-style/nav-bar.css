@@ -1,66 +1,186 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+.icon01{
+    z-index: 8;
+    color: #2042B2;
 }
-html {
-    font-weight: lighter;
-    font-family: "helvetica neue", sans-serif;
+.icon02{
+    z-index: 8;
+    opacity: 0;
+    visibility: hidden;
 }
-.nav {
-    background: #2b7497;
-    /*opacity: .5;*/
-    text-align: right;
-    height: 70px;
-    line-height: 70px; 
-    margin-bottom: 30px;
-}
-.menu{
-    margin: 0 40px 0 0;
-}
-.menu a{
-    clear: right;
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    line-height: 70px;
 
-}
-.menu .in-page{
-    color: turquoise;
+#left{
+    position: absolute;
+    margin-top: -6.6rem;
+    margin-left: 0;
+    width: 34.375rem;
 
+    z-index: -10;
 }
-label{
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
+#right{
+    position: absolute;
+    margin-top: -10.6rem;
+    margin-left: 50rem;
+}
+
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.logo .logoimg{
+    height: 90px;
+    float: left;
+    width: auto;
+    margin-left: 10px;
+}
+
+nav ul{
     float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
 }
-#toggle{
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul .dropdown ul li{
+    width: auto;
+}
+ 
+nav ul li a{
+    color: #2042B2;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+nav ul ul li a:hover{
+    color: #FF0000;
+    box-shadow: none;
+}
+nav ul ul{
+    background-color: rgba(173, 173, 173, 0.219);
+    position: absolute;
+    top: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 4, 255, 0.037);
+}
+nav ul ul li a{
+    line-height: 50px;
+    display: inline;
+}
+
+.show, input, .icon, .icon1{
     display: none;
 }
 
-@media only screen and (max-width: 550px) {
-    label {
+@media all and (max-width: 1200px){
+    nav ul{
+        margin-right: 0px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.295);
+    }
+    nav ul li, nav ul ul li{
         display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 4, 255, 0.037);
+    }
+    nav div.logo{
+        width: 100%;
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    /* nav ul ul a{
+        padding-left: 40px;
+    } */
+    .show{
+        display: block;
+        color: #2042B2;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 0 20px;
+        line-height: 70px;
         cursor: pointer;
     }
-    .menu{
-        text-align: center;
-        width: 100%;
-        display: none;
-        position: absolute;
+    .show:hover{
+        color: red;
+        top: 70px;
+        opacity: 1;
+        visibility: visible;
     }
-    .menu a{
+
+    .icon{
         display: block;
-        border-bottom: 1px solid #eaeaeb;
-        margin: 0;
-        color: gray;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a :hover{
+        box-shadow: none;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul {
+        display: block;
+    }
+
+    [id^=btn]:checked + nav{
         background-color: white;
     }
-    #toggle:checked + .menu{
-        display: block;
+}
+@media all and (max-width: 530px){
+    .icon02{
+        z-index: 8;
+        opacity: .2;
+        visibility: visible;
     }
 }
+@media all and (max-width: 523px){
+    .icon02{
+        z-index: 8;
+        opacity: .5;
+        visibility: visible;
+    }
+}
+@media all and (max-width: 518px){
+    .icon02{
+        z-index: 8;
+        opacity: 10;
+        visibility: visible;
+    }
+}
+
