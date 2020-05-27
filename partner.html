@@ -4,24 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/main-style/main.css">
-    <link rel="stylesheet" href="css/styles/partner.css">
     <link rel="stylesheet" href="css/main-style/nav-bar.css">
+    <link rel="stylesheet" href="css/styles/partner.css">
+    <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Navigation-->
-    <div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle">
+    <img src="image-files/SVG/navleft.svg" id="left">
+    <img src="image-files/SVG/navright.svg" id="right">
+    <nav> 
+        <div class="logo">
+            <img class="logoimg" src="image-files/NIPTICT-logo.png" alt="NIPTICT-logo.png">
+        </div> 
         <div class="menu">
-            <a class="in-page" href="index.html">Home</a>
-            <a href="#">Mision</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="#">Learn More</a>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars icon00"></span>
+            </label>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars icon01"></span>
+            </label>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars icon02"></span>
+            </label>
         </div>
-    </div>
 
-    <!--Main-->    
+        <input type="checkbox" id="btn">
+        <ul>
+            <!-- About Us -->
+            <li class="dropdown">
+                <label for="btn-0" class="show">About Us</label>
+                <a href="#">About Us <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
+                <input type="checkbox" id="btn-0">
+                <ul>
+                    <li><a href="#">President's Message</a></li>
+                    <li><a href="#">Vision | Misson</a></li>
+                    <li><a href="#">Why study at NIPTICT?</a></li>
+                </ul>
+            </li>
+
+            <!-- Academic -->
+            <li class="dropdown">
+                <label for="btn-1" class="show">Academic</label>
+                <a href="#">Academic <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Bachelar of E-Commerce</a></li>
+                    <li><a href="#">Bachelar of Telecom</a></li>
+                    <li><a href="#">Bachelar of Computer Science</a></li>
+                </ul>
+            </li>
+
+            <!-- Admission -->
+            <li class="dropdown">
+                <label for="btn-2" class="show">Admission</label>
+                <a href="#">Admission <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="#">Admission Requirment</a></li>
+                    <li><a href="#">Tuition and Fee</a></li>
+                </ul>
+            </li>
+
+            <!-- Center -->
+            <li class="dropdown">
+                <label for="btn-3" class="show">Center</label>
+                <a href="#">Center <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="#">Innovation Center</a></li>
+                    <li><a href="#">Professional Training Center</a></li>
+                    <li><a href="#">Tech Center</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     
+
+    <!--Main-->
+    <!-- Write your code here -->
 </body>
 </html>
