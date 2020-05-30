@@ -3,25 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navigation</title>
+    <!-- local style -->
     <link rel="stylesheet" href="../css/main-style/main.css">
-    <link rel="stylesheet" href="../css/styles/inno-centr.css">
     <link rel="stylesheet" href="../css/main-style/nav-bar.css">
+    <link rel="stylesheet" href="../css/styles/inno-centr.css">
+    <!-- online -->
+    <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <!--Navigation-->
-    <div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a class="in-page" href="index.html">Home</a>
-            <a href="#">Mision</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="#">Learn More</a>
-        </div>
+    <div class="topnav" id="myTopnav">
+        <img src="../image-files/SVG/left.svg" alt="left" id="left-img">
+        <img src="../image-files/SVG/Subtraction 1.svg" alt="right" id="right-img">
+        <img class="niptict-logo" src="../image-files/NIPTICT-logo.png" alt="">
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">About Us
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">President's Message</a>
+                    <a href="#">Vision | Misson</a>
+                    <a href="#">Why study at NIPTICT?</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Academic
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Bachelar of E-Commerce</a>
+                    <a href="#">Bachelar of Telecom</a>
+                    <a href="#">Bachelar of Computer Science</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Admission
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Admission Requirment</a>
+                    <a href="#">Tuition and Fee</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Center
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Innovation Center</a>
+                    <a href="#">Professional Training Center</a>
+                    <a href="#">Tech Center</a>
+                </div>
+            </div>
+            <a href="#partner">Partner</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-
-    <!--Main-->
-    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- Write code here -->
 </body>
 </html>
