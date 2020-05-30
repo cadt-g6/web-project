@@ -1,185 +1,184 @@
-.icon01{
-    z-index: 8;
-    color: #2042B2;
-}
-.icon02{
-    z-index: 8;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#left{
+/* Flat draw illustation */
+#left-img{
+    width: 30rem;
+    height: auto;
+    top: -6rem;
+    left: -4rem;
     position: absolute;
-    margin-top: -6.6rem;
-    margin-left: 0;
-    width: 34.375rem;
-    z-index: -10;
-}
-#right{
+    z-index: -1;
+  }
+  #right-img{
     position: absolute;
-    margin-top: -10.6rem;
-    margin-left: 50rem;
-}
-
-nav::after{
-    content: '';
-    clear: both;
-    display: table;
-}
-
-.logo .logoimg{
-    height: 90px;
+    width: 40vw;
+    height: auto;
+    top: -6rem;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  /* Niptict logo style */
+  .niptict-logo{
     float: left;
-    width: auto;
-    margin-left: 10px;
-}
-
-nav ul{
+    height: 90px;
+  }
+  
+  /* Add a black background color to the top navigation */
+  nav{
     float: right;
-    list-style: none;
-    margin-right: 40px;
-    position: relative;
-}
-nav ul li{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-nav ul .dropdown ul li{
-    width: auto;
-}
- 
-nav ul li a{
-    color: #2042B2;
+  }
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 35px 16px;
     text-decoration: none;
-    line-height: 70px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 8px 15px;
-}
-
-nav ul li a:hover{
-    color: red;
-}
-nav ul ul li a:hover{
-    color: #FF0000;
-    box-shadow: none;
-}
-nav ul ul{
-    background-color: rgba(173, 173, 173, 0.219);
-    position: absolute;
-    top: 40px;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-}
-nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-nav ul ul li{
-    position: relative;
-    margin: 0;
-    width: 150px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid rgba(0, 4, 255, 0.037);
-}
-nav ul ul li a{
-    line-height: 50px;
-    display: inline;
-}
-
-.show, input, .icon, .icon1{
+    font-family: Segoe UI;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2142b3;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
     display: none;
-}
-
-@media all and (max-width: 1200px){
-    nav ul{
-        margin-right: 0px;
-        float: left;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.295);
+    padding: 28.5px 16px;
+    font-size: 30px;
+    color: #2142b3;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: #2142b3;
+    padding: 35px 16px;
+    background-color: inherit;
+    margin: 0;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: 500;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: #2142b3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn{
+    background-color: #555;
+    color: white;
+  }
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 1150px) {
+    nav{
+      float: none;
     }
-    nav ul li, nav ul ul li{
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid rgba(0, 4, 255, 0.037);
+    .niptict-logo{
+      position: relative;
+      display: block;
     }
-    nav div.logo{
-        width: 100%;
+    /* .topnav a:not(:first-child), .dropdown .dropbtn { */
+    .topnav a, .dropdown .dropbtn {
+      display: none;
     }
-    nav ul ul{
-        top: 70px;
-        position: static;
-        border-top: none;
-        float: none;
-        opacity: 1;
-        visibility: visible;
+    .topnav a.icon {
+      float: right;
+      display: block;
     }
-    /* nav ul ul a{
-        padding-left: 40px;
-    } */
-    .show{
-        display: block;
-        color: #2042B2;
-        font-size: 18px;
-        font-weight: 600;
-        padding: 0 20px;
-        line-height: 70px;
-        cursor: pointer;
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1150px) {
+    .topnav.responsive .icon{
+      background-color: #2142b3;
+      color: white;
     }
-    .show:hover{
-        color: red;
-        top: 70px;
-        opacity: 1;
-        visibility: visible;
+  
+    .topnav.responsive #left-img{
+      animation: mymove .5s both;
     }
-
-    .icon{
-        display: block;
-        color: white;
-        position: absolute;
-        right: 40px;
-        line-height: 70px;
-        font-size: 25px;
-        cursor: pointer;
+    .topnav.responsive #right-img{
+      animation: mymove .5s both;
     }
-    nav ul li a :hover{
-        box-shadow: none;
-    }
-    .show + a, ul{
+    @keyframes mymove {
+      0% {
+        transform: scale(1);
+        position: fixed;
+      }
+      100% {
+        transform: scale(0.1);
+        opacity: 0;
         display: none;
+        z-index: -5;
+      }
     }
-    [id^=btn]:checked + ul {
-        display: block;
+    .topnav.responsive .niptict-logo{
+      display: none;
     }
-
-    [id^=btn]:checked + nav{
-        background-color: white;
+    .topnav.responsive {
+      position: relative;
     }
-}
-@media all and (max-width: 530px){
-    .icon02{
-        z-index: 8;
-        opacity: .2;
-        visibility: visible;
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-}
-@media all and (max-width: 523px){
-    .icon02{
-        z-index: 8;
-        opacity: .5;
-        visibility: visible;
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
     }
-}
-@media all and (max-width: 518px){
-    .icon02{
-        z-index: 8;
-        opacity: 10;
-        visibility: visible;
+    .topnav.responsive .dropdown {
+      float: none;
     }
-}
-
+    .topnav.responsive .dropdown-content {
+      position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
