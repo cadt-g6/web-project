@@ -1,52 +1,190 @@
 body{
-	background-size: 110%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-size: 100%
 }
+				
+div.dropdown button.dropbtn{
+	color: white;
+}
+div.topnav nav a{
+	color: white;
+}
+div.dropdown div.dropdown-content a{
+	color: blue;
+}
+div.text a button.button{
+		background-color: white;
+		width: 150px;
+		height: 40px;
+		margin: 20px 0px 10px 0px;
+		font-size: 15px;
+		border-radius: 25px;
+	}
+	div.text a button.button:hover{
+		background-color: red;
+	}
+	.text{
 
-.dropdown a {
-	color: white;
-}
-nav ul li a{
-	color: white;
-}
-.button{
-	background-color: white;
-	width: 150px;
-	height: 40px;
-	margin: 20px 0px 10px 0px;
-	font-size: 15px;
-	border-radius: 25px;
-}
-.button:hover{
-	background-color: red;
-}
-.text{
+		color: white;
+		float: left;
+		margin: 160px 0px 0px 230px;
+		display: block;
+	}
+	.map{
+		float: left;
+		width: 100;
+		margin: 0px 50px 0px 0px;
+		display: block;
+		height: 100;
+	}
+	.Location-information{
+		border: solid 0px;
+		background-color: #0E4F6B;
+		float: left;
+		width: 450px;
+		height: 500px;
+		position: relative;
+		margin: 0px 0px 10px 220px;
+		color: white;
+		padding: 25px;
+		box-sizing: border-box;
+	}
+	.send{
+		border: solid 1px#3b4747;
+		background-color: white;
+		float: left;
+	}
+	.contact-form{
+		padding: 30px;
+		width: 450px;
+		height: 498px;
+		margin: auto;
+		padding: 0 10px;
+		overflow: hidden;
+	
+	}
+	.contact-form-text{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 16px 0;
+		border: solid 1px;
+		padding: 20px 40px;
+		outline: none;
+		color: black;
+		border-radius: 10px;
+		
+	}
+	::placeholder{
+		color:#6f7b8f;
+	}
+	textarea.contact-form-text{
+		resize: none;
+		height: 120px;
+	}
+	.contact-form-btn{
+		float: right;
+		border: 100%;
+		background:#0E4F6B;
+		color:white ;
+		padding: 12px 50px;
+		border-radius: 10px;
+		cursor: pointer;
+		
+	}
+	.contact-form-btn:hover{
+		background: red;
+	}
 
-	color: white;
-	float: left;
-	width:30%;
-	margin: 160px 0px 0px 250px;
-	display: block;
-}
-.map{
-   float: left;
-   width: 30%;
-   margin: 90px 0px 0px 50px;
-   display: block;
-}
-.link{
-	border: solid 0px;
-	background-color: #0E4F6B;
-	float: left;
-	width: 350px;
-	height: 400px;
-	position: relative;
-	top :75px;
-	color: white;
-	padding: 15px;
-	box-sizing: border-box;
-}
-.send{
-	float: right;
-	 margin: 90px 700px 0px 50px;
-}
+	div.link1 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link2 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link3 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link1 a:hover{
+		color: red;
+	}
+	div.link2 a:hover{
+		color: red;
+	}
+	div.link3 a:hover{
+		color: red;
+	}
+	.link1{
+		margin: 40px 0px 10px 300px;
+		float: left;
+		color: #0E4F6B;
+	}
+	.link2{
+		margin: 40px 0px 10px 150px;
+		float: left;
+		color: #0E4F6B;
+	}
+	.link3{
+		margin: 40px 0px 10px 150px;
+		float: left;
+		color: #0E4F6B;
+	}
+	div.link-1 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link-2 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link-3 a{
+		text-decoration: none;
+		color: #0E4F6B;
+	}
+	div.link-1 a:hover{
+		color: red;
+	}
+	div.link-2 a:hover{
+		color: red;
+	}
+	div.link-3 a:hover{
+		color: red;
+	}
+	.link-1{
+		margin: 20px 0px 0px 300px;
+		float: left;
+		color: #0E4F6B;
+	}
+	.link-2{
+		margin: 20px 0px 00px 150px;
+		float: left;
+		color: #0E4F6B;
+	}
+	.link-3{
+		margin: 20px 0px 00px 170px;
+		float: left;
+		color: #0E4F6B;
+	}
+	div a button.button2{
+		background-color:#0E4F6B;
+		width: 200px;
+		height: 40px;
+		font-size: 15px;
+		border-radius: 25px;
+		color: white;
+	}
+
+	div a button.button2:hover{
+		background-color: red;
+	}
+	div.foot{
+	   background-color:#0E4F6B;
+	   color: white;
+	   text-align: center;
+	}
+	
+
+
