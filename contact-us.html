@@ -3,88 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"> -->
+    <title>Responsive Navigation</title>
+    <!-- local style -->
     <link rel="stylesheet" href="css/main-style/main.css">
     <link rel="stylesheet" href="css/main-style/nav-bar.css">
     <link rel="stylesheet" href="css/styles/contact-us.css">
+    <!-- online -->
     <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body>
-    <!--Navigation-->
-    <img src="image-files/SVG/navleft.svg" id="left">
-    <img src="image-files/SVG/navright.svg" id="right">
-    <nav> 
-        <div class="logo">
-            <img class="logoimg" src="image-files/NIPTICT-logo.png" alt="NIPTICT-logo.png">
-        </div> 
-        <div class="menu">
-            <label for="btn" class="icon">
-                <span class="fa fa-bars icon00"></span>
-            </label>
-            <label for="btn" class="icon">
-                <span class="fa fa-bars icon01"></span>
-            </label>
-            <label for="btn" class="icon">
-                <span class="fa fa-bars icon02"></span>
-            </label>
-        </div>
-
-        <input type="checkbox" id="btn">
-        <ul>
-            <!-- About Us -->
-            <li class="dropdown">
-                <label for="btn-0" class="show">About Us</label>
-                <a href="#">About Us <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
-                <input type="checkbox" id="btn-0">
-                <ul>
-                    <li><a href="#">President's Message</a></li>
-                    <li><a href="#">Vision | Misson</a></li>
-                    <li><a href="#">Why study at NIPTICT?</a></li>
-                </ul>
-            </li>
-
-            <!-- Academic -->
-            <li class="dropdown">
-                <label for="btn-1" class="show">Academic</label>
-                <a href="#">Academic <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li><a href="#">Bachelar of E-Commerce</a></li>
-                    <li><a href="#">Bachelar of Telecom</a></li>
-                    <li><a href="#">Bachelar of Computer Science</a></li>
-                </ul>
-            </li>
-
-            <!-- Admission -->
-            <li class="dropdown">
-                <label for="btn-2" class="show">Admission</label>
-                <a href="#">Admission <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
-                <input type="checkbox" id="btn-2">
-                <ul>
-                    <li><a href="#">Admission Requirment</a></li>
-                    <li><a href="#">Tuition and Fee</a></li>
-                </ul>
-            </li>
-
-            <!-- Center -->
-            <li class="dropdown">
-                <label for="btn-3" class="show">Center</label>
-                <a href="#">Center <i class="fa fa-chevron-circle-down fa-xs" aria-hidden="true"></i></a>
-                <input type="checkbox" id="btn-3">
-                <ul>
-                    <li><a href="#">Innovation Center</a></li>
-                    <li><a href="#">Professional Training Center</a></li>
-                    <li><a href="#">Tech Center</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Partner</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<body style="background-image: url(image-files/background.jpg);">
+    <div class="topnav" id="myTopnav">
+        <img src="image-files/SVG/left.svg" alt="left" id="left-img">
+        <img src="image-files/SVG/Subtraction 1.svg" alt="right" id="right-img">
+        <img class="niptict-logo" src="image-files/NIPTICT-logo.png" alt="">
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">About Us
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="pre-message.html">President's Message</a>
+                    <a href="vision.html">Vision | Misson</a>
+                    <a href="#">Why study at NIPTICT?</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Academic
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="academic/ba-of-ecom.html">Bachelar of E-Commerce</a>
+                    <a href="academic/ba-of-tn.html">Bachelar of Telecom</a>
+                    <a href="academic/ba-of-cs.html">Bachelar of Computer Science</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Admission
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="admission/admiss-req.html">Admission Requirment</a>
+                    <a href="admission/tuition-fee.html">Tuition and Fee</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Center
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="centers/inno-centr.html">Innovation Center</a>
+                    <a href="centers/pro-train-centr.html">Professional Training Center</a>
+                    <a href="centers/tech-centr.html">Tech Center</a>
+                </div>
+            </div>
+            <a href="partner.html">Partner</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     
 
     <!--Main-->
     <!-- Write your code here -->
+     <div>
+         <div>
+            <div class="text">
+                    <h2>Kepp In Touch</h2><br>
+                    Our headquarters are in the Ministry of Post and<br>
+                    Telecommunications of Cambodia (MPTC)<br>
+                    Drop us a message and We'll get back to you<br>
+                    <a href="https://www.google.com/maps/place/National+Institute+of+Posts,+Telecoms+%26+ICT/@11.6523623,104.9099062,16.7z/data=!4m5!3m4!1s0x3109516bdea989b3:0x372d2c5e0e14b706!8m2!3d11.6527558!4d104.9118469"><button class="button">Our Location</button></a>
+            </div>
+            <div class="map">
+                  <a href="https://www.google.com/maps/place/National+Institute+of+Posts,+Telecoms+%26+ICT/@11.6523623,104.9099062,16.7z/data=!4m5!3m4!1s0x3109516bdea989b3:0x372d2c5e0e14b706!8m2!3d11.6527558!4d104.9118469"><img src="image-files/map.png" width="700" height="500"></a>
+            </div>
+         </div>
+         <div>
+         <div class="Location-information">
+            <br>
+             <h3>Contact Us</h3>
+             <br><br>
+             <i class="fas fa-map-marker-alt fa-1x"></i>&nbsp;&nbsp;2nd Bridge Prek Leap, National Road<br>
+             &emsp;&nbsp;Number 6, Phnom Penh 13252<br>
+             <br><br>
+             <i class="fas fa-envelope fa-1x"></i>&nbsp;&nbsp;info@niptict.edu.kh<br>
+             <br><br>
+             <i class="fas fa-phone-volume fa-1x "></i>&nbsp;&nbsp;(+855)010 350 000<br>
+             <br><br>
+             <i class="fab fa-facebook-f fa-1x"></i>&nbsp;&nbsp;National Institute of Posts, Telecoms & ICT
+             <br><br><br><br>
+             &emsp;&emsp;&emsp;&emsp;&emsp;<i class="fab fa-instagram fa-3x"></i>&emsp;&emsp;<i class="fab fa-linkedin fa-3x"></i>&emsp;&emsp;<i class="fab fa-twitter-square fa-3x"></i>
+         </div>
+         <div class="send">
+             <form class="contact-form" method="post">
+                 <br><br>
+                <h3 style="color:#0E4F6B;">Send us a Message</h3>
+                <input type="text" class="contact-form-text" placeholder="Your Name (required)" >
+                <input type="Email" class="contact-form-text" placeholder="Your Email (required)">
+                <input type="text" class="contact-form-text" placeholder="subject">
+                <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+         </div>
+         <div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+             &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+     </div >
+        <div>
+         <div class="link1">
+             <h4>Degree Program</h4>
+             <a href="#">Computer Science</a>
+             <br>
+             <a href="#">E-Commerce</a>
+             <br>
+             <a href="#">Telecom and Network</a>
+         </div>
+         <div class="link2">
+             <h4>Student Archiements</h4>
+             <a href="#">NIPTICT Quality</a>
+             <br>
+             <a href="#">Student Experience</a>
+         </div>
+         <div class="link3">
+             <h4>Become A Student</h4>
+             <a href="#">Application Requirements</a>
+             <br>
+             <a href="#">Exam Paper Examples</a>
+         </div>
+        </div>
+        <div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</div>
+        <div>
+            <div class="link-1">
+                <h4>Tuition and Fees</h4>
+                <a href="#">Tuition and Fees</a>
+                <br>
+                <a href="#">Our Scholarship</a>
+                <br>
+                <a href="#">Smart Edu Scholarship</a>
+            </div>
+            <div class="link-2">
+                <h4>About Us</h4>
+                <a href="#">About Our Leaders</a>
+                <br>
+                <a href="#">Teacher Experience</a>
+                <br>
+                <a href="#">Partners</a>
+            </div>
+            <div class="link-3">
+                <a href="#"> <button class="button2"> Online Register</button></a>
+                <br>
+                <a href="#">Prepare for New Class</a>
+                <br>
+                <a href="#">Our Location</a>
+                <br>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="foot">
+            <br>
+            Copyright <i class="far fa-copyright fa-1x"></i> 2020 NIPTICT
+            <br>
+            <br>
+         </div>
+    </div>
+   
 </body>
 </html>
