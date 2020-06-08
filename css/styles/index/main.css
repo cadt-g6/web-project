@@ -1,15 +1,25 @@
-.mainHome {
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  overflow-y: scroll;
 }
 
-.mainHome .presentation {
+.hero-image {
+  width: 100%;
+  background: url(/image-files/Hexagon-dotted-connect-line-background.png) no-repeat 50% 50%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  z-index: -10;
+}
+
+.presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
   min-height: 80vh;
   -webkit-box-align: center;
@@ -17,23 +27,23 @@
           align-items: center;
 }
 
-.mainHome .presentation .introduction {
+.presentation .introduction {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 50%;
 }
 
-.mainHome .presentation .introduction .quote {
+.presentation .introduction .quote {
   margin: 0 auto;
-  width: 80%;
 }
 
-.mainHome .presentation .introduction .quote p {
-  color: #2042B2;
-  font-size: 35px;
+.presentation .introduction .quote p {
+  color: #2042b2;
+  font-size: 2rem;
   font-weight: 500;
   text-align: center;
   -webkit-box-flex: 1;
@@ -41,80 +51,98 @@
           flex: 1;
 }
 
-.mainHome .presentation .introduction .quote span {
-  color: #DC2128;
+.presentation .introduction .quote span {
+  color: #dc2128;
 }
 
-.mainHome .presentation .introduction .quote .enroll {
-  background-color: #DC2128;
-  position: relative;
+.presentation .introduction .button {
+  position: absolute;
+  left: 18%;
+  top: 65%;
+}
+
+.presentation .introduction .button .enroll {
+  background-color: #dc2128;
   color: white;
-  padding: 5px 20px;
-  font-weight: 400;
+  padding: 15px 50px;
+  font-weight: 4000;
   border-radius: 50px;
   text-decoration: none;
 }
 
-.mainHome .presentation .cover {
+.presentation .cover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 50%;
 }
 
-.mainHome .presentation .cover img {
+.presentation .cover img {
+  top: 15vh;
   bottom: 0;
-  top: 6px;
-  margin: auto;
-}
-
-.mainHome .presentation .background-fixed {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -2;
-  opacity: 0.2;
+  margin: auto;
+  z-index: -1;
+  height: 95%;
 }
 
-.transparent {
-  pointer-events: all;
-  filter: Alpha(opacity=0);
-  height: 50em;
-  width: 1px;
-  z-index: -4;
-  background-color: #DC2128;
-  opacity: 0;
+.whitespace {
+  width: 100%;
+  height: 10vh;
+  color: red;
+  z-index: 0;
 }
 
 .on-fixed {
-  z-index: 2;
-  position: relative;
-  height: 1000px;
-  background-color: #fbfbfb;
+  border: solid #c7c7c7 0.1px;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  margin: 50px auto;
+  padding: 80px 0;
+  position: absolute;
+  z-index: 1000000;
 }
 
 @media screen and (max-width: 1024px) {
+  .presentation .introduction {
+    width: 100%;
+  }
+  .presentation .introduction .quote {
+    width: 100%;
+    z-index: -1;
+  }
+  .presentation .introduction .quote p {
+    color: #2042b2;
+    margin-top: 80px;
+  }
+  .presentation .introduction .button {
+    left: 20%;
+    top: 70%;
+  }
+  .presentation .cover img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .presentation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .presentation .introduction .quote p {
-    color: #2042B2;
-    font-size: 20px;
-    margin-top: 80px;
+  .presentation .introduction .quote {
+    top: -3%;
+    right: 13%;
+    position: absolute;
   }
-  .cover img {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 750px) {
   .presentation .introduction .quote p {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .presentation .introduction .button {
+    left: 30%;
+    top: 45%;
   }
 }
 /*# sourceMappingURL=main.css.map */

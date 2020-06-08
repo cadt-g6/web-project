@@ -1,103 +1,127 @@
-.mainHome{
-    position: fixed;
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+}
+.hero-image{
     width: 100%;
-    z-index: -1;
-    pointer-events: none;
-    .presentation{
-        display: flex;
-        width: 90%;
-        margin: auto;
-        min-height: 80vh;
+    background: url(/image-files/Hexagon-dotted-connect-line-background.png) no-repeat 50% 50%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    z-index: -10;
+}
+.presentation {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+    .introduction {
         align-items: center;
-        .introduction{
-            align-items: center;
-            flex: 1;
-            .quote{
-                margin: 0 auto;
-                width: 80%;
-                p{
-                    color: #2042B2;
-                    font-size: 35px;
-                    font-weight: 500;
-                    text-align: center;
-                    flex: 1;
-                }
-                span{
-                    color: #DC2128;
-                }
-                .enroll{
-                    background-color: #DC2128;
-                    position: relative;
-                    color: white;
-                    padding: 5px 20px;
-                    font-weight: 400;
-                    border-radius: 50px;
-                    text-decoration: none;
-                }
+        flex: 1;
+        width: 50%;
+        .quote {
+            margin: 0 auto;
+            p {
+                color: #2042b2;
+                font-size: 2rem;
+                font-weight: 500;
+                text-align: center;
+                flex: 1;
+            }
+            span {
+                color: #dc2128;
             }
         }
-        .cover{
-            flex: 1;
-            img{
-                bottom: 0;
-                top: 6px;
-                margin: auto;
-            }
-        } 
-        .background-fixed{
+        .button{
             position: absolute;
+            left: 18%;
+            top: 65%;
+            .enroll {
+                background-color: #dc2128;
+                color: white;
+                padding: 15px 50px;
+                font-weight: 4000;
+                border-radius: 50px;
+                text-decoration: none;
+            }
+        }
+    }
+    .cover {
+        flex: 1;
+        width: 50%;
+        img {
+            top: 15vh;
             bottom: 0;
-            right: 0;
-            z-index: -2;
-            opacity: 0.2;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+            height: 95%;
         }
     }
 }
 
-.transparent{
-    pointer-events:all;
-    filter:Alpha(opacity=0);
-    height: 50em;
-    width: 1px;
-    z-index: -4;
-    background-color: #DC2128;
-    opacity: 0;
-    
-}
-.on-fixed{
-    z-index: 2;
-    position: relative;
-    height: 1000px;
-    background-color: #fbfbfb;
+.whitespace {
+    width: 100%;
+    height: 10vh;
+    color: rgb(255, 0, 0);
+    z-index: 0;
 }
 
-@media screen and (max-width: 1024px){
-    .presentation{
-        flex-direction: column;
-        .introduction{
-            .quote{
-                p{
-                    color: #2042B2;
-                    font-size: 20px;
+.on-fixed {
+    border: solid rgb(199, 199, 199) 0.1px;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    margin: 50px auto;
+
+    padding: 80px 0;
+    position: absolute;
+    z-index: 1000000;
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        .introduction {
+            width: 100%;
+            .quote {
+                width: 100%;
+                z-index: -1;
+                p {
+                    color: #2042b2;
                     margin-top: 80px;
                 }
             }
+            .button{
+                left: 20%;
+                top: 70%;
+            }
+        }
+        .cover {
+            img {
+                width: auto;
+            }
         }
     }
-    .cover{
-        img{
-            width: 100%;
-            display: flex;
-        }
-    }
+
 }
-@media screen and (max-width: 750px){
-    .presentation{
-        .introduction{
-            .quote{
-                p{
-                    font-size: 20px;
+@media screen and (max-width: 750px) {
+    .presentation {
+        flex-direction: column;
+        .introduction {
+            .quote {
+                top: -3%;
+                right: 13%;
+                position: absolute;
+                p {
+                    font-size: 25px;
                 }
+            }
+            .button{
+                left: 30%;
+                top: 45%;
             }
         }
     }
