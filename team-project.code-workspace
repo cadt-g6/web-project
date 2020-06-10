@@ -4,13 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "..\\GitHub_Course_Memory2020"
-		},
-		{
-			"path": "..\\Assingment 5"
+			"path": "..\\Practice\\laptop-ui-master"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Team Project"
+		"liveServer.settings.multiRootWorkspaceName": "teamproject"
 	}
 }

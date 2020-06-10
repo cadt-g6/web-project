@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="css/main-style/nav-bar.css">
     <link rel="stylesheet" href="css/styles/index/main.css">
     <!-- online -->
-    <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
 </head>
+
 <body>
     <div class="topnav" id="myTopnav">
-        <img src="image-files/SVG/left.svg" alt="left" id="left-img">
-        <img src="image-files/SVG/Subtraction 1.svg" alt="right" id="right-img">
-        <img class="niptict-logo" src="image-files/NIPTICT-logo.png" alt="">
+        <img src="image-files/SVG/left.svg" class="rellax" data-rellax-speed="5" alt="left" id="left-img">
+        <img src="image-files/SVG/Subtraction 1.svg" class="rellax" data-rellax-speed="10"alt="right" id="right-img">
+        <img class="niptict-logo" class="rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
         <nav>
             <div class="dropdown">
                 <button class="dropbtn">About Us
@@ -73,6 +75,43 @@
             }
         }
     </script>
+
     <!-- Write code here -->
+    <main>
+        <div class="rellax hero-image" data-rellax-speed="10"></div>
+        <section class="rellax presentation" data-rellax-speed="5">
+            <div class="introduction">
+                <div class="quote">
+                    <p>Learn the <span>skills</span> you<br>
+                        require to stand out from<br>
+                        the crowd in Digital Age<br><br>
+                    </p>
+                </div>
+                <div class="button">
+                    <a class="enroll" href="#">Enroll Now</a>
+                </div>
+            </div>
+            <div class="cover">
+                <img class="rellax" data-rellax-speed="10" src="./image-files/model-graduate.png" alt="model-graduate">
+            </div>
+        </section>
+    </main>
+
+    <!-- <div class="rellax whitespace" data-rellax-speed="20"></div> -->
+    <div class="rellax on-fixed" data-rellax-speed="30">
+        <div class="four-card">
+            <div class="academic">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi delectus perferendis magni quos, beatae
+                    sapiente adipisci iure quam cumque corporis? Voluptatem quo doloribus quis veniam blanditiis libero,
+                    ullam at necessitatibus!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="css/main-style/rellax.min.js"></script>
+    <script type="text/javascript">
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
+
 </html>
