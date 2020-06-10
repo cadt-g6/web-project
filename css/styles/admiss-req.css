@@ -1,0 +1,13 @@
+.navniptict {
+    padding: 10px 10px;
+    margin: 2px;
+   
+}
+.navniptict img {
+    width: 800px;
+    height: 500px;
+}
+.navbar navbar-light bg-light {
+    float: left;
+    text-align: center;
+}
