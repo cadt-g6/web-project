@@ -19,7 +19,6 @@ body{
     min-height: 80vh;
     align-items: center;
     .introduction {
-        align-items: center;
         flex: 1;
         width: 50%;
         .quote {
@@ -37,8 +36,6 @@ body{
         }
         .button{
             position: absolute;
-            left: 18%;
-            top: 65%;
             .enroll {
                 background-color: #dc2128;
                 color: white;
@@ -53,12 +50,12 @@ body{
         flex: 1;
         width: 50%;
         img {
-            top: 15vh;
+            top: 10vh;
             bottom: 0;
             position: absolute;
-            margin: auto;
+            margin: 0 auto;
             z-index: -1;
-            height: 95%;
+            height: 98%;
         }
     }
 }
@@ -89,39 +86,44 @@ body{
             .quote {
                 width: 100%;
                 z-index: -1;
-                p {
-                    color: #2042b2;
-                    margin-top: 80px;
-                }
-            }
-            .button{
-                left: 20%;
-                top: 70%;
+                p {margin-top: 80px;}
             }
         }
         .cover {
-            img {
-                width: auto;
+            img {   
+                right: 0;
             }
         }
     }
-
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 930px) {
     .presentation {
-        flex-direction: column;
         .introduction {
             .quote {
-                top: -3%;
-                right: 13%;
-                position: absolute;
                 p {
                     font-size: 25px;
                 }
             }
-            .button{
-                left: 30%;
-                top: 45%;
+        }
+        .cover {
+            img {   
+                top: 15vh;
+                width: 70vh;
+                height: auto;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .presentation {
+        flex-direction: column;
+        .cover {
+            img {
+                right: 5vh;
+                height: 80%;
+                width: auto;
+                top: 25vh;
             }
         }
     }
