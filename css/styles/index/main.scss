@@ -19,10 +19,11 @@ body{
     min-height: 80vh;
     align-items: center;
     .introduction {
+        display: block;
         flex: 1;
         width: 50%;
+        z-index: -1;
         .quote {
-            margin: 0 auto;
             p {
                 color: #2042b2;
                 font-size: 2rem;
@@ -35,8 +36,10 @@ body{
             }
         }
         .button{
-            position: absolute;
+            margin: -20px auto 0 auto;
+            width: 178px;
             .enroll {
+                margin: auto;
                 background-color: #dc2128;
                 color: white;
                 padding: 15px 50px;
@@ -54,7 +57,6 @@ body{
             bottom: 0;
             position: absolute;
             margin: 0 auto;
-            z-index: -1;
             height: 98%;
         }
     }
@@ -98,13 +100,7 @@ body{
 }
 @media screen and (max-width: 930px) {
     .presentation {
-        .introduction {
-            .quote {
-                p {
-                    font-size: 25px;
-                }
-            }
-        }
+        .introduction{.quote {p {font-size: 25px;}}}
         .cover {
             img {   
                 top: 15vh;
@@ -118,12 +114,15 @@ body{
 @media screen and (max-width: 800px) {
     .presentation {
         flex-direction: column;
+        .introduction{
+            margin-top: -8%;
+        }
         .cover {
             img {
                 right: 5vh;
                 height: 80%;
                 width: auto;
-                top: 25vh;
+                top: 26vh;
             }
         }
     }
