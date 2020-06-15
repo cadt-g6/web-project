@@ -107,6 +107,7 @@ body {
     z-index: -1;
   }
   .presentation .introduction .quote p {
+    font-size: 30px;
     margin-top: 80px;
   }
   .presentation .cover img {
@@ -137,10 +138,9 @@ body {
     margin-top: -8%;
   }
   .presentation .cover img {
-    right: 5vh;
-    height: 80%;
-    width: auto;
-    top: 26vh;
+    right: calc(50% - 30vh);
+    width: 60vh;
+    top: 30vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

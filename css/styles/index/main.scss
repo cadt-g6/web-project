@@ -88,7 +88,10 @@ body{
             .quote {
                 width: 100%;
                 z-index: -1;
-                p {margin-top: 80px;}
+                p {
+                    font-size: 30px;
+                    margin-top: 80px;
+                }
             }
         }
         .cover {
@@ -119,9 +122,9 @@ body{
         }
         .cover {
             img {
-                right: 5vh;
-                width: 90%;
-                top: 26vh;
+                right: calc(50% - 30vh);
+                width: 60vh;
+                top: 30vh;
             }
         }
     }
