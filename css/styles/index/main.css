@@ -139,9 +139,9 @@ body {
     margin-top: -8%;
   }
   .presentation .cover img {
-    right: calc(50% - 26vh);
-    width: calc(60vh - 10%);
-    top: 35vh;
+    right: calc(25vh - 15%);
+    width: calc(100% - 25vh);
+    top: calc(55vh - 20%);
   }
 }
 /*# sourceMappingURL=main.css.map */
