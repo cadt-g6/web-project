@@ -99,10 +99,6 @@ body {
   z-index: 1000000;
 }
 
-.on-fixed .four-card .academic {
-  width: 90%;
-}
-
 @media screen and (max-width: 1024px) {
   .presentation .introduction {
     width: 100%;
