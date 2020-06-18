@@ -99,18 +99,61 @@ body {
   z-index: 1000000;
 }
 
+.on-fixed .four-card .academic {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+}
+
+.on-fixed .four-card .academic .major {
+  padding: 10px;
+  color: #463D3D;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  text-align: center;
+  width: 50%;
+}
+
+.on-fixed .four-card .academic .major p, .on-fixed .four-card .academic .major h1 {
+  text-align: left;
+  width: 100%;
+  margin: 5px;
+  margin-left: 9px;
+}
+
+.on-fixed .four-card .academic .major p {
+  font-size: 18px;
+}
+
+.on-fixed .four-card .academic .major a {
+  text-decoration: none;
+  width: 90%;
+  font-weight: bold;
+  color: white;
+  background-color: #2D6481;
+  display: block;
+  padding: 6px;
+  margin: -5px;
+  margin-left: 10px;
+}
+
+.on-fixed .four-card .academic .graduate {
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+  margin: 8px 0 0 15px;
+}
+
+.on-fixed .four-card .academic .graduate img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
-  .presentation .introduction {
-    width: 100%;
-  }
-  .presentation .introduction .quote {
-    width: 100%;
-    z-index: -1;
-  }
-  .presentation .introduction .quote p {
-    font-size: 30px;
-    margin-top: 80px;
-  }
   .presentation .cover img {
     right: 0;
   }
@@ -136,26 +179,31 @@ body {
             flex-direction: column;
   }
   .presentation .introduction {
-    margin-top: -8%;
+    width: 100%;
+    margin-top: 0%;
   }
   .presentation .cover img {
     right: calc(8% + 5vh);
     width: calc(50vh + 10%);
     top: 35vh;
   }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
+  .on-fixed .four-card .academic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .on-fixed .four-card .academic .major {
+    width: 100%;
+  }
+  .on-fixed .four-card .academic .graduate {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .on-fixed .four-card .academic .graduate img {
+    max-width: 93%;
   }
 }
 /*# sourceMappingURL=main.css.map */
