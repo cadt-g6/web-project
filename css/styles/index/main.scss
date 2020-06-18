@@ -138,8 +138,8 @@ body{
         .cover {
             img {
                 right: calc(50% - 26vh);
-                width: 55vh;
-                top: 30vh;
+                width: calc(60vh - 10%);
+                top: 35vh;
             }
         }
     }
