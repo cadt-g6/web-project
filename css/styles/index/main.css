@@ -143,8 +143,8 @@ body {
     margin-top: -8%;
   }
   .presentation .cover img {
-    right: calc(50% - 30vh);
-    width: 60vh;
+    right: calc(50% - 26vh);
+    width: 55vh;
     top: 30vh;
   }
 }
