@@ -70,30 +70,64 @@ body{
 }
 
 .on-fixed {
-    border: solid rgb(199, 199, 199) 0.1px;
-    background: #fff;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+    box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+    // background: #fbfbfb;
+    background: #0400ff;
     height: 100vh;
     width: 100%;
     margin: 50px auto;
-
     padding: 80px 0;
     position: absolute;
     z-index: 1000000;
+    .four-card{
+        .academic{
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            .major{
+                padding: 10px;
+                color: #463D3D;
+                flex: 0.8;
+                text-align: center;
+                width: 50%;
+                p, h1{
+                    text-align: left;
+                    width: 100%;
+                    margin: 5px;
+                    margin-left: 9px;
+                }
+                p{font-size: 18px;}
+                a {
+                    text-decoration: none;
+                    width: 90%;
+                    font-weight: bold;
+                    color: white;
+                    background-color: #2D6481;
+                    display: block;
+                    padding: 6px;
+                    margin: -5px;
+                    margin-left: 10px;
+                }
+            }
+            .graduate{
+                flex: 1.2;
+                margin: 8px 0 0 15px;
+                img{
+                    width: 100%;
+                }
+
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width: 1024px) {
     .presentation {
-        .introduction {
-            width: 100%;
-            .quote {
-                width: 100%;
-                z-index: -1;
-                p {
-                    font-size: 30px;
-                    margin-top: 80px;
-                }
-            }
-        }
         .cover {
             img {   
                 right: 0;
@@ -118,13 +152,31 @@ body{
     .presentation {
         flex-direction: column;
         .introduction{
-            margin-top: -8%;
+            width: 100%;
+            margin-top: 0%;
         }
         .cover {
             img {
-                right: calc(50% - 30vh);
-                width: 60vh;
-                top: 30vh;
+                right: calc(8% + 5vh);
+                width:  calc(50vh + 10%);
+                top: 35vh;
+            }
+        }
+    }
+    .on-fixed{
+        .four-card{
+            .academic{
+                flex-direction: column;
+                .major{
+                    width: 100%;
+                }
+                .graduate{
+                    flex: 1;;
+                    width: 100%;
+                    img{
+                        max-width: 93%;
+                    }
+                }
             }
         }
     }
