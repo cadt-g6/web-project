@@ -1,13 +1,59 @@
-.navniptict {
-    padding: 10px 10px;
-    margin: 2px;
-   
+
+div.heander {
+    background-color: #6b6262;
+    padding: 0% 0%;
+    line-height: 80%;
+    top: 50%;
+    box-sizing: border-box;
+    margin: 110px 0px;
+    width: 50%;
+    height: 250%;
 }
-.navniptict img {
-    width: 800px;
-    height: 500px;
+div.heander img {
+    padding: 100px 10px;
+    margin: 0px;
+    width: 100%;
+    height: 50%;
+    float: none;
+    background-position: right;
 }
-.navbar navbar-light bg-light {
-    float: left;
-    text-align: center;
-}
+
+
+/* footer */
+footer#bottom-of-web>div#top-infor{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  footer#bottom-of-web>div#top-infor>div.information{
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;
+  /*   width: 100%; */
+    padding-left: 4%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div{
+    margin: 0;
+    display: block;
+    width: 30%;
+    padding: 10px 0;
+    padding-left: 1.5%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div>a{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 4px;
+    margin-left: -10px;
+  }
+  footer#bottom-of-web>div#bottom-copy-right{
+    background-color: #242424;  
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
