@@ -78,7 +78,7 @@ div.map_text{
 	border: solid 0px;
 	background-color: #2042B2;
 	float: left;
-	width: 400px;
+	width: 450px;
 	height: 600px;
 	position: relative;
 	color: white;
@@ -126,7 +126,7 @@ div.icon a:hover{
 	}
 	.contact-form{
 		padding: 30px;
-		width: 380px;
+		width: 430px;
 		height: 498px;
 		margin: auto;
 		padding: 10px;
@@ -167,84 +167,43 @@ div.icon a:hover{
 	}
 
 	/* footer */
-div.footer{
-		margin-top: 40px;
-		color: #2547B4;
-		display:flex;
-		justify-content: center;
-		margin-left: 200px;
-		
-
-	}
-	div.footer1{
-		margin-top: 40px;
-		color: #2547B4;
-		display:flex;
-		justify-content: center;
-		margin-left: 200px;
-		
-
-	}
-
-	div.link{
-		float: left;
-	}
-	div.link a{
-		text-decoration: none;
-		margin-right: 100px;
-		
-	}
-	h4{
-		margin-right: 100px;
-	}
-
-	@media only screen and (max-width: 540px) {
-		div.link a{
-			margin-left: 2px;
-			
-		}
-	  }
-
-	  @media only screen and (max-width: 540px) {
-		h4{
-			margin-left: 2px;
-			display:block;
-		}
-	  }
-
-	  @media only screen and (max-width: 540px) {
-		div.footer{
-			margin-left: 120px;
-			display:block;	
-		}
-	  }
-
-@media only screen and (max-width: 540px) {
-		div.footer1{
-			margin-left: 120px;
-			display:block;	
-		}
-	  }
-	  div a button.button2{
-		background-color:#2042B2;
-		width: 180px;
-		height: 40px;
-		font-size: 15px;
-		border-radius: 25px;
-		color: white;
-	}
-
-	div a button.button2:hover{
-		background-color: red;
-	}
-	div.copyright{
-		background-color: #2042B2;
-		text-align: center;
-		padding: 20px;
-		margin-top: 60px;
-		display: flex;
-		justify-content: center;
-	}
+footer#bottom-of-web>div#top-infor{
+	margin-top: 30px;
+	margin-bottom: 0;
+  }
+  footer#bottom-of-web>div#top-infor>div.information{
+	margin: 0;
+	padding: 0;
+	background-color: #2C2C2C;
+	color: white;
+	display: flex;
+  /*   width: 100%; */
+	padding-left: 4%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div{
+	margin: 0;
+	display: block;
+	width: 30%;
+	padding: 10px 0;
+	padding-left: 1.5%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div>a{
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	margin-top: 5px;
+	padding: 5px 4px;
+	margin-left: -10px;
+  }
+  footer#bottom-of-web>div#bottom-copy-right{
+	background-color: #242424;  
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
 
 
