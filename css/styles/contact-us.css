@@ -1,10 +1,12 @@
 body{
 	background-repeat: no-repeat;
-	
 	background-size: 100%;
+	background-attachment: fixed;
 	
 	
+	  
 }
+
 				
 div.dropdown button.dropbtn{
 	color:#2042B2;
@@ -41,6 +43,17 @@ div.text a button.button{
 	float: left;
 	color: #2042B2;
 	margin-top: 100px;
+	margin-bottom: 30px;
+
+
+
+  color: #2042b2;
+  font-size: 20px;
+  font-weight: 500;
+
+
+  
+
 }
 
 /* map */
@@ -78,7 +91,7 @@ div.map_text{
 	border: solid 0px;
 	background-color: #2042B2;
 	float: left;
-	width: 450px;
+	width: 460px;
 	height: 600px;
 	position: relative;
 	color: white;
@@ -96,8 +109,7 @@ div.icon a:hover{
 	.Location-information{
 		margin-left: 2px;
 		display:block;
-		width: 400px;
-	    height: 500px;
+		
 	}
   }
 
@@ -126,7 +138,7 @@ div.icon a:hover{
 	}
 	.contact-form{
 		padding: 30px;
-		width: 430px;
+		width: 440px;
 		height: 498px;
 		margin: auto;
 		padding: 10px;
