@@ -74,20 +74,25 @@ body{
     -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
     box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
     // background: #fbfbfb;
-    background: #0400ff;
+    // background: #0400ff;
+    background: #fbfbfb;
     height: 100vh;
     width: 100%;
     margin: 50px auto;
-    padding: 80px 0;
+    padding: 30px 0;
     position: absolute;
     z-index: 1000000;
     .four-card{
         .academic{
             margin: 0 auto;
-            width: 90%;
+            width: 85%;
             display: flex;
             background-color: white;
             padding: 10px;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+            box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+            
             .major{
                 padding: 10px;
                 color: #463D3D;
@@ -100,15 +105,16 @@ body{
                     margin: 5px;
                     margin-left: 9px;
                 }
-                p{font-size: 18px;}
-                a {
+                p{font-size: 26px;}
+                a{
                     text-decoration: none;
                     width: 90%;
-                    font-weight: bold;
+                    font-size: 24px;
+                    font-weight: 500;
                     color: white;
                     background-color: #2D6481;
                     display: block;
-                    padding: 6px;
+                    padding: 10px;
                     margin: -5px;
                     margin-left: 10px;
                 }

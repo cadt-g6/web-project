@@ -90,23 +90,25 @@ body {
 .on-fixed {
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
-  background: #0400ff;
+  background: #fbfbfb;
   height: 100vh;
   width: 100%;
   margin: 50px auto;
-  padding: 80px 0;
+  padding: 30px 0;
   position: absolute;
   z-index: 1000000;
 }
 
 .on-fixed .four-card .academic {
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: white;
   padding: 10px;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
 }
 
 .on-fixed .four-card .academic .major {
@@ -127,17 +129,18 @@ body {
 }
 
 .on-fixed .four-card .academic .major p {
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .on-fixed .four-card .academic .major a {
   text-decoration: none;
   width: 90%;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 500;
   color: white;
   background-color: #2D6481;
   display: block;
-  padding: 6px;
+  padding: 10px;
   margin: -5px;
   margin-left: 10px;
 }
