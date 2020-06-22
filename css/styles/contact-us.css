@@ -41,12 +41,8 @@ div.text a button.button{
 
 .text{
 
-	color: #2042B2;
-	margin-top: 100px;
-	margin-bottom: 30px;
-
-
-
+  margin-top: 100px;
+  margin-bottom: 30px;
   color: #2042b2;
   font-size: 20px;
   font-weight: 500;
@@ -91,7 +87,7 @@ div.map_text{
 	border: solid 0px;
 	background-color: #2042B2;
 	
-	width: 400px;
+	width: 410px;
 	height: 600px;
 	position: relative;
 	color: white;
@@ -116,7 +112,7 @@ div.icon a:hover{
 /* .send + Location-information */
 
 .send_Location-information{
-	margin-left: 290px;
+
 	margin-top: 70px;
 	margin-right: 200px;
 	display:flex;
@@ -134,7 +130,7 @@ div.icon a:hover{
 	.send{
 		border: solid 1px#3b4747;
 		background-color: white;
-		width: 400px;
+		width: 410px;
 		height: 597px;
 	
 	}
