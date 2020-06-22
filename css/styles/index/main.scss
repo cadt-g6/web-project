@@ -29,7 +29,6 @@ body{
                 font-size: 2rem;
                 font-weight: 500;
                 text-align: center;
-                flex: 1;
             }
             span {
                 color: #dc2128;
@@ -37,13 +36,14 @@ body{
         }
         .button{
             margin: -20px auto 0 auto;
-            width: 178px;
+            width: 200px;
             .enroll {
-                margin: auto;
+                margin: 0 auto;
                 background-color: #dc2128;
                 color: white;
-                padding: 15px 50px;
+                padding: 20px 50px;
                 font-weight: 4000;
+                font-size: 1em;
                 border-radius: 50px;
                 text-decoration: none;
             }
