@@ -41,9 +41,6 @@ body {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .presentation .introduction .quote span {
@@ -52,15 +49,16 @@ body {
 
 .presentation .introduction .button {
   margin: -20px auto 0 auto;
-  width: 178px;
+  width: 200px;
 }
 
 .presentation .introduction .button .enroll {
-  margin: auto;
+  margin: 0 auto;
   background-color: #dc2128;
   color: white;
-  padding: 15px 50px;
+  padding: 20px 50px;
   font-weight: 4000;
+  font-size: 1em;
   border-radius: 50px;
   text-decoration: none;
 }
@@ -154,6 +152,40 @@ body {
 
 .on-fixed .four-card .academic .graduate img {
   width: 100%;
+}
+
+.on-fixed .four-card .three-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.on-fixed .four-card .three-card .rnd {
+  width: 50%;
+  -webkit-box-flex: 2/4;
+      -ms-flex: 2/4;
+          flex: 2/4;
+  background: red;
+}
+
+.on-fixed .four-card .three-card .training {
+  width: 25%;
+  -webkit-box-flex: 1/4;
+      -ms-flex: 1/4;
+          flex: 1/4;
+  background: green;
+}
+
+.on-fixed .four-card .three-card .entrepre {
+  width: 25%;
+  -webkit-box-flex: 1/4;
+      -ms-flex: 1/4;
+          flex: 1/4;
+  background: blue;
 }
 
 @media screen and (max-width: 1024px) {
