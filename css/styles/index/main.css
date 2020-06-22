@@ -80,13 +80,6 @@ body {
   height: 98%;
 }
 
-.whitespace {
-  width: 100%;
-  height: 10vh;
-  color: red;
-  z-index: 0;
-}
-
 .on-fixed {
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
@@ -230,6 +223,31 @@ body {
   -webkit-box-flex: 1/2;
       -ms-flex: 1/2;
           flex: 1/2;
+}
+
+.on-fixed .youtube {
+  margin-top: 20px;
+  background-color: red;
+  height: 70vh;
+  width: 100%;
+  padding-top: 5vh;
+}
+
+.on-fixed .youtube .ytcontainer {
+  margin: 0 auto;
+  background: green;
+  width: 80%;
+  height: 80%;
+}
+
+.on-fixed .whyniptict {
+  background-color: green;
+  height: 10vh;
+}
+
+.on-fixed .smartscholar {
+  background-color: blue;
+  height: 10vh;
 }
 
 @media screen and (max-width: 1024px) {
