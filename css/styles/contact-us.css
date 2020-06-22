@@ -134,12 +134,12 @@ div.icon a:hover{
 	.send{
 		border: solid 1px#3b4747;
 		background-color: white;
+		width: 400px;
+		height: 597px;
 	
 	}
 	.contact-form{
 		padding: 30px;
-		width: 375px;
-		height: 498px;
 		margin: auto;
 		padding: 10px;
 		overflow: hidden;
