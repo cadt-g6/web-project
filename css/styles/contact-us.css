@@ -87,7 +87,7 @@ div.map_text{
 	border: solid 0px;
 	background-color: #2042B2;
 	
-	width: 410px;
+	width: 420px;
 	height: 600px;
 	position: relative;
 	color: white;
@@ -130,7 +130,7 @@ div.icon a:hover{
 	.send{
 		border: solid 1px#3b4747;
 		background-color: white;
-		width: 410px;
+		width: 420px;
 		height: 597px;
 	
 	}
