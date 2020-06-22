@@ -158,34 +158,47 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
+  width: calc(87.3% + 1vh);
   height: 100vh;
-  margin: 0 auto;
-  padding: 10px;
+  margin: 20px auto 0;
+}
+
+.on-fixed .four-card .three-card .rnd, .on-fixed .four-card .three-card .columnflex > * {
+  overflow: hidden;
+  margin: 0 5px;
+  border-right: solid 5px white;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+}
+
+.on-fixed .four-card .three-card .rnd img, .on-fixed .four-card .three-card .columnflex > * img {
+  height: 206px;
+  width: auto;
 }
 
 .on-fixed .four-card .three-card .rnd {
   width: 50%;
-  -webkit-box-flex: 2/4;
-      -ms-flex: 2/4;
-          flex: 2/4;
-  background: red;
+  -webkit-box-flex: 1/2;
+      -ms-flex: 1/2;
+          flex: 1/2;
 }
 
-.on-fixed .four-card .three-card .training {
-  width: 25%;
-  -webkit-box-flex: 1/4;
-      -ms-flex: 1/4;
-          flex: 1/4;
-  background: green;
+.on-fixed .four-card .three-card .columnflex {
+  width: 50%;
+  -webkit-box-flex: 1/2;
+      -ms-flex: 1/2;
+          flex: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.on-fixed .four-card .three-card .entrepre {
-  width: 25%;
-  -webkit-box-flex: 1/4;
-      -ms-flex: 1/4;
-          flex: 1/4;
-  background: blue;
+.on-fixed .four-card .three-card .columnflex .training, .on-fixed .four-card .three-card .columnflex .entrepre {
+  width: 50%;
+  -webkit-box-flex: 1/2;
+      -ms-flex: 1/2;
+          flex: 1/2;
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,6 +252,24 @@ body {
   }
   .on-fixed .four-card .academic .graduate img {
     max-width: 93%;
+  }
+  .on-fixed .four-card .three-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .on-fixed .four-card .three-card .rnd {
+    width: 100%;
+    margin: 10px auto;
+    margin-right: 10px;
+  }
+  .on-fixed .four-card .three-card .columnflex {
+    width: calc(100% + 2vh);
+    padding: 0;
+    margin: 10px auto;
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
