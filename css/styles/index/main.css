@@ -156,6 +156,40 @@ body {
   width: 100%;
 }
 
+.on-fixed .four-card .three-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.on-fixed .four-card .three-card .rnd {
+  width: 50%;
+  -webkit-box-flex: 2/4;
+      -ms-flex: 2/4;
+          flex: 2/4;
+  background: red;
+}
+
+.on-fixed .four-card .three-card .training {
+  width: 25%;
+  -webkit-box-flex: 1/4;
+      -ms-flex: 1/4;
+          flex: 1/4;
+  background: green;
+}
+
+.on-fixed .four-card .three-card .entrepre {
+  width: 25%;
+  -webkit-box-flex: 1/4;
+      -ms-flex: 1/4;
+          flex: 1/4;
+  background: blue;
+}
+
 @media screen and (max-width: 1024px) {
   .presentation .cover img {
     right: 0;
