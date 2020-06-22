@@ -2,10 +2,8 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
-	margin: 0;
-	padding: 0;
-	
-	
+	margin: 0px;
+	padding: 0px;
 	  
 }
 
@@ -42,7 +40,7 @@ div.text a button.button{
 /* text */
 
 .text{
-	float: left;
+
 	color: #2042B2;
 	margin-top: 100px;
 	margin-bottom: 30px;
@@ -61,7 +59,7 @@ div.text a button.button{
 /* map */
 
 .map{
-	float: left;
+	
 	margin-left: 20px;	
 }
 @media only screen and (max-width: 540px) {
@@ -92,7 +90,7 @@ div.map_text{
   .Location-information{
 	border: solid 0px;
 	background-color: #2042B2;
-	float: left;
+	
 	width: 400px;
 	height: 600px;
 	position: relative;
@@ -136,7 +134,7 @@ div.icon a:hover{
 	.send{
 		border: solid 1px#3b4747;
 		background-color: white;
-		float: left;
+	
 	}
 	.contact-form{
 		padding: 30px;
@@ -166,7 +164,7 @@ div.icon a:hover{
 		height: 120px;
 	}
 	.contact-form-btn{
-		float: right;
+		
 		border: 100%;
 		background:red;
 		color:white ;
