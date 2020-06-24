@@ -1,0 +1,3 @@
+[submodule "teamproject"] 
+  path = teamproject
+  url = https://github.com/niptict-web/site.git
