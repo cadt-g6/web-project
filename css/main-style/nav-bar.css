@@ -41,8 +41,7 @@ nav {
   text-align: center;
   padding: 35px 16px;
   text-decoration: none;
-  font-family: Segoe UI;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   color: #2142b3;
 }
@@ -70,8 +69,7 @@ nav {
   background-color: inherit;
   margin: 0;
   font-size: 20px;
-  font-family: Segoe UI;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Style the dropdown content (hidden by default) */

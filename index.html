@@ -18,7 +18,7 @@
 <body>
     <div class="topnav" id="myTopnav">
         <img src="image-files/SVG/left.svg" class="rellax" data-rellax-speed="3" alt="left" id="left-img">
-        <img src="image-files/SVG/Subtraction 1.svg" class="rellax" data-rellax-speed="5"alt="right" id="right-img">
+        <img src="image-files/SVG/Subtraction 1.svg" class="rellax" data-rellax-speed="5" alt="right" id="right-img">
         <img class="niptict-logo" class="rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
         <nav>
             <div class="dropdown">
@@ -36,9 +36,9 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="academic/ba-of-ecom.html">Bachelar of E-Commerce</a>
-                    <a href="academic/ba-of-tn.html">Bachelar of Telecom</a>
-                    <a href="academic/ba-of-cs.html">Bachelar of Computer Science</a>
+                    <a href="academic/Bachelor of E-commerce/ba-of-ecom.html">Bachelar of E-Commerce</a>
+                    <a href="academic/Bachelor of Networking and Telecome/ba-of-tn.html">Bachelar of Telecom</a>
+                    <a href="academic/Bachelor of Computer Science/ba-of-cs.html">Bachelar of Computer Science</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -70,8 +70,7 @@
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
-            }
-            else {
+            } else {
                 x.className = "topnav";
             }
         }
@@ -83,13 +82,11 @@
         <section class="rellax presentation" data-rellax-speed="3">
             <div class="introduction">
                 <div class="quote">
-                    <p>Learn the <span>skills</span> you<br>
-                        require to stand out from<br>
-                        the crowd in Digital Age<br><br>
-                    </p>
+                    <h1>Learn the <span>skills</span> you<br> require to stand out from<br> the crowd in Digital Age<br><br>
+                    </h1>
                 </div>
                 <div class="button">
-                    <a class="enroll" href="#">Enroll Now</a>
+                    <a href="#">Enroll Now</a>
                 </div>
             </div>
             <div class="cover">
@@ -98,21 +95,24 @@
         </section>
     </main>
 
-    <div class="rellax on-fixed" data-rellax-speed="10">
+
+    <section class="rellax on-fixed" data-rellax-speed="50">
+        <!-- section 2: 4 cards -->
         <div class="four-card">
             <!-- Bachelor Program -->
             <div class="academic">
                 <div class="major">
-                    <h1>Bachelar Program</h1>
-                    <p>Acquire a comprehensive knowledge of the digital
-                        and entrepreneurship world
-                    </p><br>
+                    <div class="text-container">
+                        <h1>Bachelar Program</h1>
+                        <p>Acquire a comprehensive knowledge of the digital and entrepreneurship world
+                        </p>
+                    </div>
                     <a href="#">Computer Science</a><br>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>  
+                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>
                     <a href="#">E-Commerce</a><br>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>  
+                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>
                     <a href="#">Network and Telecom</a>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>  
+                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam deserunt commodi at praesentium est sit suscipit.</p>
                 </div>
                 <div class="graduate">
                     <img src="image-files/celebrates.png" alt="">
@@ -121,22 +121,54 @@
             <div class="three-card">
                 <!-- R&D -->
                 <div class="rnd">
-                    <img src="./image-files/celebrates.png" alt="">
-
+                    <img src="./image-files/r&d.png" alt="">
+                    <h1>R&D</h1>
+                    <p>Work with us on research, development, design, and engineering</p>
+                    <div class="btn">
+                        <a href="#">Learn more</a>
+                    </div>
                 </div>
-                <!-- Training -->
-                <div class="training">
-                    <img src="./image-files/Training.png" alt="">
-
-                </div>
-                <!-- Entrepreneurship -->
-                <div class="entrepre">
-
+                <div class="columnflex">
+                    <!-- Training -->
+                    <div class="training">
+                        <img src="./image-files/Training.png" alt="">
+                        <h1>Training</h1>
+                        <p>Expand your knowledge through our range of ICT courses.</p>
+                    </div>
+                    <!-- Entrepreneurship -->
+                    <div class="entrepre">
+                        <img src="./image-files/entrepreneur.png" alt="">
+                        <h1>Entrepreneurship</h1>
+                        <p>Expand your connection through our range of tech & startup event program</p>
+                    </div>
                 </div>
             </div>
- 
         </div>
-    </div>
+        <!-- section 3: emb youtube -->
+        <section class="youtube">
+            <div class="ytcontainer">
+
+            </div>
+
+        </section>
+
+        <!-- section 4: why niptict -->
+        <section class="whyniptict">
+
+        </section>
+
+        <!-- section 5: smart scholar -->
+        <section class="smartscholar">
+
+        </section>
+
+        <!-- footer -->
+        <footer>
+
+        </footer>
+    </section>
+
+
 
     <script src="css/main-style/rellax.min.js"></script>
     <script type="text/javascript">

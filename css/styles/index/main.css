@@ -36,11 +36,11 @@ body {
   z-index: -1;
 }
 
-.presentation .introduction .quote p {
+.presentation .introduction .quote h1 {
   color: #2042b2;
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: calc(1.2em + 0.8vw);
   text-align: center;
+  line-height: calc(30px + 0.6vw);
 }
 
 .presentation .introduction .quote span {
@@ -48,18 +48,20 @@ body {
 }
 
 .presentation .introduction .button {
-  margin: -20px auto 0 auto;
-  width: 200px;
+  margin: -42px auto 0 auto;
+  width: calc(115px + 5vw);
+  height: calc(5vh + 0.5vw);
+  background-color: #dc2128;
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 0 5px 0;
 }
 
-.presentation .introduction .button .enroll {
+.presentation .introduction .button a {
   margin: 0 auto;
-  background-color: #dc2128;
   color: white;
-  padding: 20px 50px;
-  font-weight: 4000;
-  font-size: 1em;
-  border-radius: 50px;
+  font-weight: 700;
+  font-size: calc(1em + 0.5vw);
   text-decoration: none;
 }
 
@@ -78,18 +80,11 @@ body {
   height: 98%;
 }
 
-.whitespace {
-  width: 100%;
-  height: 10vh;
-  color: red;
-  z-index: 0;
-}
-
 .on-fixed {
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
   background: #fbfbfb;
-  height: 100vh;
+  height: 500vh;
   width: 100%;
   margin: 50px auto;
   padding: 30px 0;
@@ -119,28 +114,34 @@ body {
   width: 50%;
 }
 
-.on-fixed .four-card .academic .major p, .on-fixed .four-card .academic .major h1 {
+.on-fixed .four-card .academic .major .text-container {
+  margin: 0 auto 20px;
+  width: 96%;
+}
+
+.on-fixed .four-card .academic .major .text-container p, .on-fixed .four-card .academic .major .text-container h1 {
   text-align: left;
   width: 100%;
   margin: 5px;
   margin-left: 9px;
+  font-size: calc(18px + 0.5vw);
+  line-height: calc(25px + 0.5vw);
 }
 
-.on-fixed .four-card .academic .major p {
-  font-size: 26px;
+.on-fixed .four-card .academic .major h1 {
+  font-size: 30px;
 }
 
 .on-fixed .four-card .academic .major a {
   text-decoration: none;
   width: 90%;
-  font-size: 24px;
+  font-size: calc(15px + 0.5vw);
   font-weight: 500;
   color: white;
   background-color: #2D6481;
   display: block;
   padding: 10px;
-  margin: -5px;
-  margin-left: 10px;
+  margin: -10px auto 0;
 }
 
 .on-fixed .four-card .academic .graduate {
@@ -148,6 +149,7 @@ body {
       -ms-flex: 1.2;
           flex: 1.2;
   margin: 8px 0 0 15px;
+  overflow: hidden;
 }
 
 .on-fixed .four-card .academic .graduate img {
@@ -158,46 +160,112 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 85%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 10px;
+  width: calc(87.3% + 1vh);
+  margin: 20px auto 0;
+}
+
+.on-fixed .four-card .three-card .rnd, .on-fixed .four-card .three-card .columnflex > * {
+  overflow: hidden;
+  margin: 0 5px;
+  border-right: solid 5px white;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  text-align: center;
+}
+
+.on-fixed .four-card .three-card .rnd img, .on-fixed .four-card .three-card .columnflex > * img {
+  height: 206px;
+  width: auto;
+}
+
+.on-fixed .four-card .three-card .rnd h1, .on-fixed .four-card .three-card .columnflex > * h1 {
+  font-size: calc(15px + 0.5vw);
+  font-weight: 400;
+  margin: 0;
+}
+
+.on-fixed .four-card .three-card .rnd p, .on-fixed .four-card .three-card .columnflex > * p {
+  font-size: 15px;
+  margin: 10px auto 20px;
+  width: 80%;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .on-fixed .four-card .three-card .rnd {
   width: 50%;
-  -webkit-box-flex: 2/4;
-      -ms-flex: 2/4;
-          flex: 2/4;
-  background: red;
 }
 
-.on-fixed .four-card .three-card .training {
-  width: 25%;
-  -webkit-box-flex: 1/4;
-      -ms-flex: 1/4;
-          flex: 1/4;
+.on-fixed .four-card .three-card .rnd .btn {
+  width: 100%;
+  background: #AD3123;
+  margin: 0 0 5px 5px;
+  padding: 10px;
+}
+
+.on-fixed .four-card .three-card .rnd .btn a {
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.on-fixed .four-card .three-card .columnflex {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.on-fixed .four-card .three-card .columnflex .training, .on-fixed .four-card .three-card .columnflex .entrepre {
+  width: 50%;
+  -webkit-box-flex: 1/2;
+      -ms-flex: 1/2;
+          flex: 1/2;
+}
+
+.on-fixed .youtube {
+  margin-top: 20px;
+  background-color: red;
+  height: 70vh;
+  width: 100%;
+  padding-top: 5vh;
+}
+
+.on-fixed .youtube .ytcontainer {
+  margin: 0 auto;
   background: green;
+  width: 80%;
+  height: 80%;
 }
 
-.on-fixed .four-card .three-card .entrepre {
-  width: 25%;
-  -webkit-box-flex: 1/4;
-      -ms-flex: 1/4;
-          flex: 1/4;
-  background: blue;
+.on-fixed .whyniptict {
+  background-color: green;
+  height: 10vh;
+}
+
+.on-fixed .smartscholar {
+  background-color: blue;
+  height: 10vh;
 }
 
 @media screen and (max-width: 1024px) {
   .presentation .cover img {
     right: 0;
   }
+  .on-fixed .four-card .academic .graduate {
+    height: 70vh;
+    width: auto;
+    overflow: hidden;
+  }
+  .on-fixed .four-card .academic .graduate img {
+    height: 100%;
+    width: auto;
+  }
 }
 
-@media screen and (max-width: 930px) {
-  .presentation .introduction .quote p {
-    font-size: 25px;
-  }
+@media screen and (max-width: 925px) {
   .presentation .cover img {
     top: 15vh;
     width: 70vh;
@@ -215,7 +283,7 @@ body {
   }
   .presentation .introduction {
     width: 100%;
-    margin-top: 0%;
+    margin-top: 5vh;
   }
   .presentation .cover img {
     right: calc(8% + 5vh);
@@ -230,15 +298,36 @@ body {
   }
   .on-fixed .four-card .academic .major {
     width: 100%;
+    padding-left: 0;
   }
   .on-fixed .four-card .academic .graduate {
+    margin: 0 auto;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    width: 100%;
+    width: 95%;
   }
   .on-fixed .four-card .academic .graduate img {
-    max-width: 93%;
+    width: 100%;
+    height: auto;
+  }
+  .on-fixed .four-card .three-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .on-fixed .four-card .three-card .rnd {
+    width: 100%;
+    margin: 10px auto;
+    margin-right: 10px;
+  }
+  .on-fixed .four-card .three-card .columnflex {
+    width: calc(100% + 2vh);
+    padding: 0;
+    margin: 10px auto;
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
