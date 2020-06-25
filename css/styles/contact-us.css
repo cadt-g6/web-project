@@ -1,10 +1,9 @@
 body{
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed;
+
 	margin: 0px;
-	padding: 0px;
-	  
+	padding: 0px;	 
 }
 
 				
@@ -46,6 +45,7 @@ div.text a button.button{
   color: #2042b2;
   font-size: 20px;
   font-weight: 500;
+  
 
 
   
@@ -86,13 +86,14 @@ div.map_text{
   .Location-information{
 	border: solid 0px;
 	background-color: #2042B2;
-	
 	width: 407px;
 	height: 600px;
 	position: relative;
 	color: white;
 	padding: 25px;
 	box-sizing: border-box;
+	overflow: hidden;
+	
 }
 div.icon a{
 	margin-left: 50px;
@@ -112,9 +113,7 @@ div.icon a:hover{
 /* .send + Location-information */
 
 .send_Location-information{
-    margin-left: 200px;
 	margin-top: 70px;
-	margin-right: 200px;
 	display:flex;
 	justify-content: center;
 }
