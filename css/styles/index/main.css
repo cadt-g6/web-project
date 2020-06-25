@@ -225,12 +225,16 @@ body {
           flex: 1/2;
 }
 
+.on-fixed section h2 {
+  margin-left: 10vh;
+}
+
 .on-fixed .youtube {
   margin-top: 20px;
   background-color: #2042b2;
   height: 90vh;
   width: 100%;
-  padding-top: 8.5vh;
+  padding-top: 3vh;
 }
 
 .on-fixed .youtube .ytcontainer {

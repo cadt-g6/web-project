@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <title>Responsive Navigation</title>
     <!-- local style -->
     <link rel="stylesheet" href="css/main-style/main.css">
@@ -18,8 +17,8 @@
 <body>
     <div class="topnav" id="myTopnav">
         <img src="image-files/SVG/left.svg" class="rellax" data-rellax-speed="3" alt="left" id="left-img">
-        <img src="image-files/SVG/Subtraction 1.svg" class="rellax" data-rellax-speed="5" alt="right" id="right-img">
-        <img class="niptict-logo" class="rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
+        <img src="image-files/SVG/Subtraction.svg" class="rellax" data-rellax-speed="5" alt="right" id="right-img">
+        <img class="niptict-logo rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
         <nav>
             <div class="dropdown">
                 <button class="dropbtn">About Us
@@ -36,9 +35,9 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="academic/Bachelor of E-commerce/ba-of-ecom.html">Bachelar of E-Commerce</a>
-                    <a href="academic/Bachelor of Networking and Telecome/ba-of-tn.html">Bachelar of Telecom</a>
-                    <a href="academic/Bachelor of Computer Science/ba-of-cs.html">Bachelar of Computer Science</a>
+                    <a href="academic/ba-of-ecom">Bachelar of E-Commerce</a>
+                    <a href="academic/ba-of-tn">Bachelar of Telecom</a>
+                    <a href="academic/ba-of-cs">Bachelar of Computer Science</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -146,6 +145,7 @@
         </div>
         <!-- section 3: emb youtube -->
         <section class="youtube">
+            <h2>Youtube</h2>
             <div class="ytcontainer">
 
             </div>
@@ -154,17 +154,18 @@
 
         <!-- section 4: why niptict -->
         <section class="whyniptict">
+            <h2>Why NIPTICT?</h2>
 
         </section>
 
         <!-- section 5: smart scholar -->
         <section class="smartscholar">
+            <h2>Smart Scholarship</h2>
             <div class="container"></div>
         </section>
-
-        <!-- footer -->
-
     </section>
+
+    <!-- footer -->
     <footer>
 
         <div class="copyright">
@@ -174,9 +175,8 @@
     </footer>
 
 
-
     <script src="css/main-style/rellax.min.js"></script>
-    <script type="text/javascript">
+    <script>
         var rellax = new Rellax('.rellax');
     </script>
 </body>
