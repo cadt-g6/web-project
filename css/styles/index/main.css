@@ -227,27 +227,54 @@ body {
 
 .on-fixed .youtube {
   margin-top: 20px;
-  background-color: red;
-  height: 70vh;
+  background-color: #2042b2;
+  height: 90vh;
   width: 100%;
-  padding-top: 5vh;
+  padding-top: 8.5vh;
 }
 
 .on-fixed .youtube .ytcontainer {
   margin: 0 auto;
-  background: green;
+  background: #fbfbfb;
   width: 80%;
-  height: 80%;
+  height: 90%;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
 }
 
 .on-fixed .whyniptict {
-  background-color: green;
-  height: 10vh;
+  border: solid 1px rgba(128, 128, 128, 0.459);
+  background-color: #fbfbfb;
+  height: 80vh;
 }
 
 .on-fixed .smartscholar {
-  background-color: blue;
-  height: 10vh;
+  background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  height: 80vh;
+}
+
+footer {
+  height: 100vh;
+  background-color: #10109c;
+  width: 100%;
+  position: absolute;
+  top: 300vh;
+}
+
+footer .copyright {
+  width: 100%;
+  position: inherit;
+  height: 8vh;
+  bottom: 0;
+  background-color: #0a0a57;
+  z-index: 10;
+}
+
+footer .copyright p {
+  text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
