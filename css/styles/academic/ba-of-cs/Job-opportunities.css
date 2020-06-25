@@ -1,0 +1,15 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+div#img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

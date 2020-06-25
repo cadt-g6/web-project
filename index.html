@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <title>Responsive Navigation</title>
     <!-- local style -->
     <link rel="stylesheet" href="css/main-style/main.css">
     <link rel="stylesheet" href="css/main-style/nav-bar.css">
     <link rel="stylesheet" href="css/styles/index/main.css">
     <!-- online -->
-    <!-- <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
         <img src="image-files/SVG/left.svg" class="rellax" data-rellax-speed="3" alt="left" id="left-img">
-        <img src="image-files/SVG/Subtraction 1.svg" class="rellax" data-rellax-speed="5" alt="right" id="right-img">
-        <img class="niptict-logo" class="rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
+        <img src="image-files/SVG/Subtraction.svg" class="rellax" data-rellax-speed="5" alt="right" id="right-img">
+        <img class="niptict-logo rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
         <nav>
             <div class="dropdown">
                 <button class="dropbtn">About Us
@@ -36,9 +35,9 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="academic/ba-of-ecom.html">Bachelar of E-Commerce</a>
-                    <a href="academic/ba-of-tn.html">Bachelar of Telecom</a>
-                    <a href="academic/ba-of-cs.html">Bachelar of Computer Science</a>
+                    <a href="academic/ba-of-ecom">Bachelar of E-Commerce</a>
+                    <a href="academic/ba-of-tn">Bachelar of Telecom</a>
+                    <a href="academic/ba-of-cs">Bachelar of Computer Science</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -70,8 +69,7 @@
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
-            }
-            else {
+            } else {
                 x.className = "topnav";
             }
         }
@@ -83,13 +81,12 @@
         <section class="rellax presentation" data-rellax-speed="3">
             <div class="introduction">
                 <div class="quote">
-                    <p>Learn the <span>skills</span> you<br>
-                        require to stand out from<br>
-                        the crowd in Digital Age<br><br>
-                    </p>
+                    <h1>Learn the <span>skills</span> you<br> require to stand out from<br> the crowd in Digital
+                        Age<br><br>
+                    </h1>
                 </div>
                 <div class="button">
-                    <a class="enroll" href="#">Enroll Now</a>
+                    <a href="#">Enroll Now</a>
                 </div>
             </div>
             <div class="cover">
@@ -98,15 +95,18 @@
         </section>
     </main>
 
-    <div class="rellax on-fixed" data-rellax-speed="10">
+
+    <section class="rellax on-fixed" data-rellax-speed="40">
+        <!-- section 2: 4 cards -->
         <div class="four-card">
             <!-- Bachelor Program -->
             <div class="academic">
                 <div class="major">
-                    <h1>Bachelar Program</h1>
-                    <p>Acquire a comprehensive knowledge of the digital
-                        and entrepreneurship world
-                    </p><br>
+                    <div class="text-container">
+                        <h1>Bachelar Program</h1>
+                        <p>Acquire a comprehensive knowledge of the digital and entrepreneurship world
+                        </p>
+                    </div>
                     <a href="#">Computer Science</a><br>
                     <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam
                         deserunt commodi at praesentium est sit suscipit.</p>
@@ -127,28 +127,81 @@
                     <img src="./image-files/r&d.png" alt="">
                     <h1>R&D</h1>
                     <p>Work with us on research, development, design, and engineering</p>
-                    <a href="#">Learn more</a>
+                    <div class="btn">
+                        <a href="#">Learn more</a>
+                    </div>
                 </div>
                 <div class="columnflex">
                     <!-- Training -->
                     <div class="training">
                         <img src="./image-files/Training.png" alt="">
                         <h1>Training</h1>
-                        <p>Expand your knowledge, through our range of ICT courses.</p>
+                        <p>Expand your knowledge through our range of ICT courses.</p>
                     </div>
                     <!-- Entrepreneurship -->
                     <div class="entrepre">
                         <img src="./image-files/entrepreneur.png" alt="">
                         <h1>Entrepreneurship</h1>
-                        <p>Expand your connection through our range of tech startup event program</p>
+                        <p>Expand your connection through our range of tech & startup event program</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- section 3: emb youtube -->
+        <section class="youtube">
+            <h2>Youtube</h2>
+            <div class="ytcontainer">
+
+            </div>
+
+        </section>
+
+        <!-- section 4: why niptict -->
+        <section class="whyniptict">
+            <h2></h2>
+            <div class="aver-year">
+                <div class="cicle">
+                    <p>3.5</p>
+                </div>
+            </div>
+
+            <div class="got-job">
+                <div class="cicle">
+                    <p>3.5</p>
+                </div>
+            </div>
+
+            <div class="scholar">
+                <div class="cicle">
+                    <p>3.5</p>
+                </div>
+            </div>
+            <div class="ecom-and-tn">
+                <div class="cicle">
+                    <p>3.5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5: smart scholar -->
+        <section class="smartscholar">
+            <h2>Smart Scholarship</h2>
+            <div class="container"></div>
+        </section>
+    </section>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="copyright">
+            <p>2020 by Team 4</p>
+        </div>
+
+    </footer>
+
 
     <script src="css/main-style/rellax.min.js"></script>
-    <script type="text/javascript">
+    <script>
         var rellax = new Rellax('.rellax');
     </script>
 </body>

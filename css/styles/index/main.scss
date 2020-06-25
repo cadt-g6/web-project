@@ -24,28 +24,31 @@ body{
         width: 50%;
         z-index: -1;
         .quote {
-            p {
+            h1 {
                 color: #2042b2;
-                font-size: 2rem;
-                font-weight: 500;
+                font-size: calc(1.2em + 0.8vw);
                 text-align: center;
+                line-height: calc(30px + 0.6vw);
             }
             span {
                 color: #dc2128;
             }
         }
         .button{
-            margin: -20px auto 0 auto;
-            width: 200px;
-            .enroll {
+            margin: -42px auto 0 auto;
+            width: calc(115px + 5vw);
+            height: calc(5vh + 0.5vw);
+            background-color: #dc2128;
+            border-radius: 50px;
+            text-align: center;
+            padding: 15px 0 5px 0;
+            a {
                 margin: 0 auto;
-                background-color: #dc2128;
                 color: white;
-                padding: 20px 50px;
-                font-weight: 4000;
-                font-size: 1em;
-                border-radius: 50px;
+                font-weight: 700;
+                font-size: calc(1em + 0.5vw);
                 text-decoration: none;
+                
             }
         }
     }
@@ -62,13 +65,6 @@ body{
     }
 }
 
-.whitespace {
-    width: 100%;
-    height: 10vh;
-    color: rgb(255, 0, 0);
-    z-index: 0;
-}
-
 .on-fixed {
     -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
@@ -76,7 +72,7 @@ body{
     // background: #fbfbfb;
     // background: #0400ff;
     background: #fbfbfb;
-    height: 100vh;
+    height: 500vh;
     width: 100%;
     margin: 50px auto;
     padding: 30px 0;
@@ -92,46 +88,49 @@ body{
             -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
             -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
             box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
-
             .major{
                 padding: 10px;
                 color: #463D3D;
                 flex: 0.8;
                 text-align: center;
                 width: 50%;
-                p, h1{
-                    text-align: left;
-                    width: 100%;
-                    margin: 5px;
-                    margin-left: 9px;
+                .text-container{
+                    margin: 0 auto 20px;
+                    width: 96%;
+                    p, h1{
+                        text-align: left;
+                        width: 100%;
+                        margin: 5px;
+                        margin-left: 9px;
+                        font-size: calc(18px + 0.5vw);
+                        line-height: calc(25px + 0.5vw);
+                    }
                 }
-                p{font-size: 23px;}
+                h1{font-size: 30px;}
                 a{
                     text-decoration: none;
                     width: 90%;
-                    font-size: 22px;
+                    font-size: calc(15px + 0.5vw);
                     font-weight: 500;
                     color: white;
                     background-color: #2D6481;
                     display: block;
                     padding: 10px;
-                    margin: -5px;
-                    margin-left: 10px;
+                    margin: -10px auto 0;
                 }
             }
             .graduate{
                 flex: 1.2;
                 margin: 8px 0 0 15px;
+                overflow: hidden;
                 img{
                     width: 100%;
                 }
-
             }
         }
         .three-card{
             display: flex;
             width: calc(87.3% + 1vh);
-            height: 100vh;
             margin: 20px auto 0;
             // padding: 10px;
             .rnd, .columnflex > *{
@@ -142,18 +141,41 @@ body{
                 -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
                 -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
                 box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+                text-align: center;
                 img{
                     height: 206px;
                     width: auto;
                 }
+                h1{
+                    font-size: calc(15px + 0.5vw);
+                    font-weight: 400;
+                    margin: 0;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 10px auto 20px;
+                    width: 80%;
+                    font-weight: 300;
+                    line-height: 20px;
+                }
             }
             .rnd{
                 width: 50%;
-                flex: 1/2;
+                .btn{    
+                    width: 100%;
+                    background: #AD3123;
+                    margin: 0 0 5px 5px; 
+                    padding: 10px; 
+                    a{
+                        font-size: 18px;
+                        text-decoration: none;
+                        text-align: center;     
+                        color: white;
+                    }
+                }
             }
             .columnflex{
                 width: 50%;
-                flex: 1/2;
                 display: flex;
                 .training, .entrepre{
                     width: 50%;
@@ -162,8 +184,100 @@ body{
             }
         }
     }
+    section{
+        h2{
+            margin-left: 10vh;
+        }
+    }
+    .youtube{
+        margin-top: 20px;
+        background-color: #2042b2;
+        height: 90vh;
+        width: 100%;
+        padding-top: 3vh;
+        .ytcontainer{
+            margin: 0 auto;
+            background: #fbfbfb;
+            width: 80%;
+            height: 90%;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+            box-shadow: 0px 0px 6px 0px rgba(189,189,189,1);
+        }
+    }
+    .whyniptict{
+        border: solid 1px rgba(128, 128, 128, 0.459);
+        background-color: #fbfbfb;
+        height: 80vh;
+        display: flex;
+        padding-left: calc(10px + 1vw);
+            .aver-year{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #1b3176;
+                }
+            }
+            .got-job{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #3d8791;
+                }
+            }
+        
+            .scholar{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #337373;
+                }
+            }
+            .ecom-and-tn{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #f6c233;
+                }
+            }
+        
+
+    }
+    .smartscholar{
+        background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+        background-size: cover;
+        position: absolute;
+        height:80vh;
+    }
 }
 
+footer{
+    height: 100vh;
+    background-color: rgb(16, 16, 156);
+    width: 100%; 
+    position: absolute;
+    top: 300vh;
+    .copyright{
+        width: 100%;
+        position: inherit;
+        height: 8vh;
+        bottom: 0;
+        background-color: rgb(10, 10, 87);
+        z-index: 10;
+        p{
+            text-align: center;
+            color: white;
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .presentation {
@@ -173,10 +287,25 @@ body{
             }
         }
     }
+    .on-fixed{
+        .four-card{
+            .academic{
+                .graduate{
+                    height: 70vh;
+                    width: auto;
+                    overflow: hidden;
+                    img{
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 925px) {
     .presentation {
-        .introduction{.quote {p {font-size: 25px;}}}
+        // .introduction{.quote {p {font-size: 25px;}}}
         .cover {
             img {
                 top: 15vh;
@@ -186,13 +315,53 @@ body{
             }
         }
     }
+    .on-fixed{
+        .whyniptict{
+            .aver-year{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #1b3176;
+                }
+            }
+            .got-job{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #3d8791;
+                }
+            }
+            .scholar{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #337373;
+                }
+            }
+            .ecom-and-tn{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #f6c233;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 800px) {
     .presentation {
         flex-direction: column;
         .introduction{
             width: 100%;
-            margin-top: 0%;
+            margin-top: 5vh;
         }
         .cover {
             img {
@@ -205,15 +374,18 @@ body{
     .on-fixed{
         .four-card{
             .academic{
-                flex-direction: column;
+                flex-direction: column;   
                 .major{
                     width: 100%;
+                    padding-left: 0;
                 }
                 .graduate{
-                    flex: 1;;
-                    width: 100%;
+                    margin: 0 auto;
+                    flex: 1;
+                    width: 95%;
                     img{
-                        max-width: 93%;
+                        width: 100%;
+                        height: auto;
                     }
                 }
             }
