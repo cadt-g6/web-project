@@ -209,6 +209,47 @@ body{
         border: solid 1px rgba(128, 128, 128, 0.459);
         background-color: #fbfbfb;
         height: 80vh;
+        display: flex;
+        padding-left: calc(10px + 1vw);
+            .aver-year{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #1b3176;
+                }
+            }
+            .got-job{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #3d8791;
+                }
+            }
+        
+            .scholar{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #337373;
+                }
+            }
+            .ecom-and-tn{
+                flex: 1;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #f6c233;
+                }
+            }
+        
+
     }
     .smartscholar{
         background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
@@ -271,6 +312,46 @@ footer{
                 width: 70vh;
                 height: auto;
                 right: 0;
+            }
+        }
+    }
+    .on-fixed{
+        .whyniptict{
+            .aver-year{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #1b3176;
+                }
+            }
+            .got-job{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #3d8791;
+                }
+            }
+            .scholar{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #337373;
+                }
+            }
+            .ecom-and-tn{
+                flex: 2;
+                .cicle{
+                    width: 28vh;
+                    height: 28vh;
+                    border-radius: 50%;
+                    background: #f6c233;
+                }
             }
         }
     }

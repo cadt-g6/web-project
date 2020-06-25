@@ -250,6 +250,62 @@ body {
   border: solid 1px rgba(128, 128, 128, 0.459);
   background-color: #fbfbfb;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: calc(10px + 1vw);
+}
+
+.on-fixed .whyniptict .aver-year {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.on-fixed .whyniptict .aver-year .cicle {
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background: #1b3176;
+}
+
+.on-fixed .whyniptict .got-job {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.on-fixed .whyniptict .got-job .cicle {
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background: #3d8791;
+}
+
+.on-fixed .whyniptict .scholar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.on-fixed .whyniptict .scholar .cicle {
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background: #337373;
+}
+
+.on-fixed .whyniptict .ecom-and-tn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.on-fixed .whyniptict .ecom-and-tn .cicle {
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background: #f6c233;
 }
 
 .on-fixed .smartscholar {
@@ -302,6 +358,50 @@ footer .copyright p {
     width: 70vh;
     height: auto;
     right: 0;
+  }
+  .on-fixed .whyniptict .aver-year {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .on-fixed .whyniptict .aver-year .cicle {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 50%;
+    background: #1b3176;
+  }
+  .on-fixed .whyniptict .got-job {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .on-fixed .whyniptict .got-job .cicle {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 50%;
+    background: #3d8791;
+  }
+  .on-fixed .whyniptict .scholar {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .on-fixed .whyniptict .scholar .cicle {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 50%;
+    background: #337373;
+  }
+  .on-fixed .whyniptict .ecom-and-tn {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .on-fixed .whyniptict .ecom-and-tn .cicle {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 50%;
+    background: #f6c233;
   }
 }
 
