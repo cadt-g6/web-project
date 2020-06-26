@@ -36,6 +36,13 @@ body{
 img.img1{
   max-width:100%;height:auto;"
 }
+@media only screen and (min-width: 1348px) {
+  img.img1{
+    width: 700px;
+
+   
+  }
+}
 .Tech_center_text{
     display: flex;
     justify-content: center;
@@ -53,7 +60,7 @@ img.img1{
 
   @media only screen and (max-width: 540px) {
     img.img1{
-      height: 400px;
+      height: 300px;
      
     }
   }
@@ -74,6 +81,7 @@ img.img1{
       width: auto;
       display: flex;
       justify-content: center;
+      font-size: 15px;
     }
   }
 
