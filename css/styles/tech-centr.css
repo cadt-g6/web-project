@@ -30,7 +30,8 @@ body{
     font-family: DaunPenh;
     font-size: 35px;
     margin-top: 0px;
-    width: 600px; 
+    width: 600px;
+    color: #5c584f; 
 }
 img.img1{
   max-width:100%;height:auto;"
@@ -46,6 +47,13 @@ img.img1{
     #center{
       display: block;
       width: auto;
+     
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    img.img1{
+      height: 400px;
      
     }
   }
@@ -69,25 +77,12 @@ img.img1{
     }
   }
 
-  @media only screen and (max-width: 1324px) {
-    #text{
-      overflow: scroll;
-      overflow: hidden;
-      height: 500px;
-    }
-  }
-
-
-
-   
   @media only screen and (max-width: 988px) {
     #text{
       display: block;
       width: auto; 
       display: flex;
       justify-content: center;
-      
-
 
     }
   }
