@@ -209,47 +209,42 @@ body{
         border: solid 1px rgba(128, 128, 128, 0.459);
         background-color: #fbfbfb;
         height: 80vh;
-        display: flex;
-        padding-left: calc(10px + 1vw);
-            .aver-year{
-                flex: 1;
-                .cicle{
-                    width: 28vh;
-                    height: 28vh;
-                    border-radius: 50%;
-                    background: #1b3176;
-                }
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+        margin: 0 auto;
+        .aver-year{
+            .cicle{
+                background: #1b3176;
             }
-            .got-job{
-                flex: 1;
-                .cicle{
-                    width: 28vh;
-                    height: 28vh;
-                    border-radius: 50%;
-                    background: #3d8791;
-                }
+        }
+        .got-job{
+            .cicle{
+                background: #3d8791;
             }
-        
-            .scholar{
-                flex: 1;
-                .cicle{
-                    width: 28vh;
-                    height: 28vh;
-                    border-radius: 50%;
-                    background: #337373;
-                }
+        }
+        .scholar{
+            .cicle{
+                background: #337373;
             }
-            .ecom-and-tn{
-                flex: 1;
-                .cicle{
-                    width: 28vh;
-                    height: 28vh;
-                    border-radius: 50%;
-                    background: #f6c233;
-                }
+        }
+        .ecom-and-tn{
+             .cicle{
+                  background: #f6c233;
+              }
+        }
+        .card{
+            width: 90%;
+            overflow: hidden;        
+            text-align: center;
+            background-color: red;
+            .cicle{
+                width: 50vh;
+                height: 50vh;
+                border-radius: 50%;
             }
-        
 
+        }
     }
     .smartscholar{
         background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
