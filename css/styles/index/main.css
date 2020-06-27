@@ -342,7 +342,7 @@ body {
 }
 
 .on-fixed .smartscholar .container {
-  margin-left: 5em;
+  margin-left: 5vw;
   width: 55vh;
   height: 100%;
 }
@@ -439,6 +439,11 @@ body {
   line-height: calc(1.2em + 0.5vw);
 }
 
+.on-fixed .president .container .right-container .equal {
+  height: 85px;
+  width: 2px;
+}
+
 .on-fixed .president .container .right-container .button-container {
   border-radius: 50%;
   border: none;
@@ -448,12 +453,12 @@ body {
   background-color: #1c3177;
   color: white;
   position: absolute;
-  right: 1em;
-  bottom: 1em;
+  right: calc(0.5em + 0.5vw);
+  bottom: calc(0.5em + 0.5vw);
 }
 
 .on-fixed footer {
-  height: 200vh;
+  height: 100vh;
   background-color: #1c3177;
   width: 100%;
   z-index: -10;
