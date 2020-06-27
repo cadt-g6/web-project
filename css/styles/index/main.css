@@ -619,5 +619,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .on-fixed .president .container .right-container .button-container {
+    padding: 7px 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

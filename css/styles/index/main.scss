@@ -565,6 +565,11 @@ body{
         .president{
             .container{
                 flex-direction: column;
+                .right-container{
+                    .button-container{
+                        padding: 7px 20px; 
+                    }
+                }
             }
         }
     }
