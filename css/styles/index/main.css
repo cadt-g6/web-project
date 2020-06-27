@@ -277,16 +277,23 @@ body {
   overflow: hidden;
   text-align: center;
   margin-top: 5rem;
-  height: 43vh;
+  height: 45vh;
 }
 
 .on-fixed .whyniptict .card .cicle {
-  text-align: center;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  line-height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   font-size: 60px;
   font-weight: 500;
@@ -308,10 +315,12 @@ body {
 }
 
 .on-fixed .smartscholar {
-  background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+  background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
   background-size: cover;
+  position: absolute;
   height: 80vh;
   width: 100%;
+  z-index: 100;
 }
 
 footer {
