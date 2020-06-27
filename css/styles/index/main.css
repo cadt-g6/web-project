@@ -399,7 +399,7 @@ body {
 .on-fixed .president .container {
   background-color: white;
   width: 80%;
-  height: 80vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,15 +433,23 @@ body {
 }
 
 .on-fixed .president .container .right-container p {
-  padding: 2vw;
+  padding: 2vw 4vw;
   font-size: calc(1em + 0.5vw);
   color: #646363;
+  line-height: calc(1.2em + 0.5vw);
 }
 
-.on-fixed .president .container .right-container::after {
-  content: "";
-  width: 30px;
-  height: 30px;
+.on-fixed .president .container .right-container .button-container {
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5em;
+  padding: 15px 28px;
+  cursor: pointer;
+  background-color: #1c3177;
+  color: white;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
 }
 
 .on-fixed::after {
@@ -457,10 +465,11 @@ body {
 
 footer {
   height: 100vh;
-  background-color: #10109c;
+  background-color: #1c3177;
   width: 100%;
   position: absolute;
   top: 280vh;
+  z-index: 10000;
 }
 
 footer .copyright {
@@ -468,7 +477,7 @@ footer .copyright {
   position: inherit;
   height: 8vh;
   bottom: 0;
-  background-color: #0a0a57;
+  background-color: #122050;
   z-index: 10;
 }
 
@@ -605,6 +614,9 @@ footer .copyright p {
     padding: 0;
     margin: 10px auto;
     margin-left: 0px;
+  }
+  footer {
+    top: 450px;
   }
 }
 /*# sourceMappingURL=main.css.map */
