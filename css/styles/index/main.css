@@ -133,6 +133,7 @@ body {
   margin-left: 9px;
   font-size: calc(18px + 0.5vw);
   line-height: calc(25px + 0.5vw);
+  word-break: break-word;
 }
 
 .on-fixed .four-card .academic .major h1 {
@@ -308,7 +309,7 @@ body {
   display: flex;
   display: -ms-flexbox;
   color: white;
-  font-size: 60px;
+  font-size: calc(2.5em + 2vh);
   font-weight: 500;
 }
 
@@ -325,6 +326,7 @@ body {
   margin: 0 auto;
   line-height: 19px;
   font-size: 15px;
+  word-break: break-word;
 }
 
 .on-fixed .smartscholar {
@@ -414,7 +416,7 @@ body {
 
 .on-fixed .partner h2 {
   color: #2D6481;
-  font-size: calc(0.5em + 2vw);
+  font-size: calc(1em + 1.5vw);
   overflow: hidden;
 }
 
