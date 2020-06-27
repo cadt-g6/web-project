@@ -1,21 +1,7 @@
-// Breakpoints
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
-$bp-xlarge: 120em; // 1920px
-$bp-xxlarge: 160em; // 2560px
-
-// Media Queries
-$mq-small: "(min-width: #{$bp-small})";
-$mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
-$mq-xlarge: "(min-width: #{$bp-xlarge})";
-$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-
 body{
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: scroll;
+    max-width: 266px;
 }
 .hero-image{
     width: 100%;
@@ -563,21 +549,30 @@ body{
             }
         }
         .smartscholar{
-            background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
-            background-size: cover;
-            position: relative;
             height: calc(30vh + 20em);
-            width: 100%;
+            .logo{
+                width: 12em;
+                height: 3em;
+                background-color: rgb(255, 255, 255);
+                margin-top: 1.5em;
+                border-radius: 4em;
+                right: -5em;
+                position: absolute;
+                img{
+                    width: 5em;
+                    height: auto;
+                    position: absolute;
+                    left: 1.6em;
+                    top: -2em;
+                }
+            }
             .container{
                 left: 1.8em;
                 width: 55vh;
                 position: absolute;
-                height: 100%;
             }
         }
-        .partner{
-            
-        }
+        
         .president{
             .container{
                 flex-direction: column;
@@ -591,6 +586,22 @@ body{
                 }
             }
         }
+    }   
+}
+@media screen and (max-width: 360px){
+    .on-fixed{
+        .smartscholar{
+            position: relative;
+            width: 100%;
+            .container{
+                left: 0;
+                width: 90%;
+                .text{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
     }
-    
 }

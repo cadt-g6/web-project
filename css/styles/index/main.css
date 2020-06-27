@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
   overflow-y: scroll;
+  max-width: 266px;
 }
 
 .hero-image {
@@ -614,17 +615,28 @@ body {
     margin-left: 0px;
   }
   .on-fixed .smartscholar {
-    background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
-    background-size: cover;
-    position: relative;
     height: calc(30vh + 20em);
-    width: 100%;
+  }
+  .on-fixed .smartscholar .logo {
+    width: 12em;
+    height: 3em;
+    background-color: white;
+    margin-top: 1.5em;
+    border-radius: 4em;
+    right: -5em;
+    position: absolute;
+  }
+  .on-fixed .smartscholar .logo img {
+    width: 5em;
+    height: auto;
+    position: absolute;
+    left: 1.6em;
+    top: -2em;
   }
   .on-fixed .smartscholar .container {
     left: 1.8em;
     width: 55vh;
     position: absolute;
-    height: 100%;
   }
   .on-fixed .president .container {
     -webkit-box-orient: vertical;
@@ -637,6 +649,22 @@ body {
   }
   .on-fixed .president .container .right-container .button-container {
     padding: 7px 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .on-fixed .smartscholar {
+    position: relative;
+    width: 100%;
+  }
+  .on-fixed .smartscholar .container {
+    left: 0;
+    width: 90%;
+  }
+  .on-fixed .smartscholar .container .text {
+    position: absolute;
+    width: 100%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
