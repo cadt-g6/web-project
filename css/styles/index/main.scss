@@ -350,7 +350,7 @@ body{
     }
     .president{
         width: 100%;
-        height: auto;
+        height: 20em;
         padding: 5em 0;
         .container{
             background-color: white;
@@ -399,6 +399,25 @@ body{
             }
         }
     }
+    footer{
+        height: 200vh;
+        background-color: #1c3177;
+        width: 100%; 
+        z-index: -10;
+        position: absolute;
+        .copyright{
+            width: 100%;
+            height: 8vh;
+            bottom: 0;
+            position: absolute;
+            background-color: #122050;
+            z-index: 10;
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+    }
 }
 
 .on-fixed::after{
@@ -411,26 +430,7 @@ body{
     right: -20px;
     z-index: -100;
 }
-footer{
-    height: 100vh;
-    background-color: #1c3177;
-    width: 100%; 
-    position: absolute;
-    top: 280vh; 
-    z-index: 10000;
-    .copyright{
-        width: 100%;
-        position: inherit;
-        height: 8vh;
-        bottom: 0;
-        background-color: #122050;
-        z-index: 10;
-        p{
-            text-align: center;
-            color: white;
-        }
-    }
-}
+
 
 @media screen and (max-width: 1024px) {
     .presentation {
@@ -507,11 +507,6 @@ footer{
                 }
             }
         }
-        .president{
-            .container{
-                flex-direction: column;
-            }
-        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -563,9 +558,11 @@ footer{
                 }
             }
         }
-    }
-    footer{
-        top: 450px;
+        .president{
+            .container{
+                flex-direction: column;
+            }
+        }
     }
     
 }
