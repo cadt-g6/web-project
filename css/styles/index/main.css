@@ -95,6 +95,10 @@ body {
   z-index: 1000000;
 }
 
+.on-fixed .four-card {
+  overflow: hidden;
+}
+
 .on-fixed .four-card .academic {
   margin: 0 auto;
   width: 85%;
@@ -228,11 +232,16 @@ body {
           flex: 1/2;
 }
 
+.on-fixed section {
+  overflow: hidden;
+}
+
 .on-fixed section h2 {
   margin-left: 10vh;
 }
 
 .on-fixed .youtube {
+  overflow: hidden;
   margin-top: 20px;
   background-color: #2042b2;
   height: 90vh;
@@ -250,6 +259,7 @@ body {
 }
 
 .on-fixed .whyniptict {
+  overflow: hidden;
   background-color: #fbfbfb;
   width: 90%;
   display: -ms-grid;
@@ -280,7 +290,7 @@ body {
   overflow: hidden;
   text-align: center;
   margin-top: 5rem;
-  height: 45vh;
+  height: 50vh;
 }
 
 .on-fixed .whyniptict .card .cicle {
@@ -417,7 +427,7 @@ body {
   border-bottom: 1px solid #2D6481;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .on-fixed .partner h2::after {
@@ -485,7 +495,7 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 1em;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
 }
