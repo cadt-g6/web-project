@@ -244,19 +244,42 @@ body {
 .on-fixed .youtube {
   overflow: hidden;
   margin-top: 20px;
-  background-color: #2042b2;
+  background-color: #1c3177;
   height: 90vh;
   width: 100%;
   padding: 3vh 0 6vh 0;
 }
 
 .on-fixed .youtube .ytcontainer {
-  margin: 0 auto;
+  margin: 2.3em auto;
   background: #fbfbfb;
   width: 80%;
-  height: 80%;
+  height: 80vh;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.on-fixed .youtube .ytcontainer iframe {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2em;
+}
+
+.on-fixed .youtube .ytcontainer .videos {
+  display: inline;
+  background: url();
+}
+
+.on-fixed .youtube .ytcontainer .videos a {
+  text-decoration: none;
 }
 
 .on-fixed .whyniptict {
