@@ -272,6 +272,7 @@ body{
         position: relative;
         height: calc(30vh + 20em);
         width: 100%;
+        overflow: hidden;
         .logo{
             width: 15em;
             height: 4em;
@@ -280,6 +281,7 @@ body{
             border-radius: 4em;
             right: -4em;
             position: absolute;
+            overflow: hidden;
             img{
                 width: 8em;
                 height: auto;
