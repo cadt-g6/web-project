@@ -284,12 +284,9 @@ body {
   text-align: center;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
-  height: 10em;
-  width: 10em;
-}
-
-.on-fixed .whyniptict .card .cicle p {
-  padding-top: 65px;
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
   color: white;
   font-size: 60px;
   font-weight: 500;
@@ -306,7 +303,7 @@ body {
   font-weight: 300;
   width: 70%;
   margin: 0 auto;
-  line-height: 25px;
+  line-height: 19px;
   font-size: 15px;
 }
 
