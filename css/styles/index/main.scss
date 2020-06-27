@@ -562,10 +562,26 @@ body{
                 }
             }
         }
+        .smartscholar{
+            background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+            background-size: cover;
+            position: relative;
+            height: calc(30vh + 20em);
+            width: 100%;
+            .container{
+                left: 1.8em;
+                width: 55vh;
+                position: absolute;
+                height: 100%;
+            }
+        }
         .president{
             .container{
                 flex-direction: column;
                 .right-container{
+                    p{
+                        margin-top: -5px;
+                    }
                     .button-container{
                         padding: 7px 20px; 
                     }

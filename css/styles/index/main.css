@@ -613,11 +613,27 @@ body {
     margin: 10px auto;
     margin-left: 0px;
   }
+  .on-fixed .smartscholar {
+    background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    height: calc(30vh + 20em);
+    width: 100%;
+  }
+  .on-fixed .smartscholar .container {
+    left: 1.8em;
+    width: 55vh;
+    position: absolute;
+    height: 100%;
+  }
   .on-fixed .president .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .on-fixed .president .container .right-container p {
+    margin-top: -5px;
   }
   .on-fixed .president .container .right-container .button-container {
     padding: 7px 20px;
