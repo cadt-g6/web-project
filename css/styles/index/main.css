@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
   overflow-y: scroll;
+  position: absolute;
+  width: 100%;
 }
 
 .hero-image {
@@ -83,13 +85,18 @@ body {
 .on-fixed {
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
+  border-bottom: none;
   background: #fbfbfb;
-  height: 500vh;
+  height: auto;
   width: 100%;
   margin: 50px auto;
   padding: 30px 0;
   position: absolute;
   z-index: 1000000;
+}
+
+.on-fixed .four-card {
+  overflow: hidden;
 }
 
 .on-fixed .four-card .academic {
@@ -126,6 +133,7 @@ body {
   margin-left: 9px;
   font-size: calc(18px + 0.5vw);
   line-height: calc(25px + 0.5vw);
+  word-break: break-word;
 }
 
 .on-fixed .four-card .academic .major h1 {
@@ -225,37 +233,41 @@ body {
           flex: 1/2;
 }
 
+.on-fixed section {
+  overflow: hidden;
+}
+
 .on-fixed section h2 {
   margin-left: 10vh;
 }
 
 .on-fixed .youtube {
+  overflow: hidden;
   margin-top: 20px;
   background-color: #2042b2;
   height: 90vh;
   width: 100%;
-  padding-top: 3vh;
+  padding: 3vh 0 6vh 0;
 }
 
 .on-fixed .youtube .ytcontainer {
   margin: 0 auto;
   background: #fbfbfb;
   width: 80%;
-  height: 90%;
+  height: 80%;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
 }
 
 .on-fixed .whyniptict {
-  border: solid 1px rgba(128, 128, 128, 0.459);
+  overflow: hidden;
   background-color: #fbfbfb;
-  height: 80vh;
-  width: 95%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(1rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-  margin: 0 auto;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  margin: 0 auto 2rem;
 }
 
 .on-fixed .whyniptict .aver-year .cicle {
@@ -275,45 +287,296 @@ body {
 }
 
 .on-fixed .whyniptict .card {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: red;
+  margin-top: 5rem;
+  height: 50vh;
 }
 
 .on-fixed .whyniptict .card .cicle {
-  width: 50vh;
-  height: 50vh;
+  margin: 0 auto 0.5rem;
   border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  color: white;
+  font-size: calc(2.5em + 2vh);
+  font-weight: 500;
+}
+
+.on-fixed .whyniptict .card span {
+  color: #1C3177;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.on-fixed .whyniptict .card p {
+  color: #707070;
+  font-weight: 300;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 19px;
+  font-size: 15px;
+  word-break: break-word;
 }
 
 .on-fixed .smartscholar {
-  background: url(smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+  background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
   background-size: cover;
-  position: absolute;
-  height: 80vh;
+  position: relative;
+  height: calc(30vh + 20em);
+  width: 100%;
+  overflow: hidden;
 }
 
-footer {
+.on-fixed .smartscholar .logo {
+  width: 15em;
+  height: 4em;
+  background-color: white;
+  margin-top: 2em;
+  border-radius: 4em;
+  right: -4em;
+  position: absolute;
+}
+
+.on-fixed .smartscholar .logo img {
+  width: 8em;
+  height: auto;
+  position: absolute;
+  left: 2em;
+  top: -3.2em;
+}
+
+.on-fixed .smartscholar .container {
+  margin-left: 5vw;
+  width: 55vh;
+  height: 100%;
+}
+
+.on-fixed .smartscholar .container .text {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #facf00;
+  border-radius: 2em;
+  width: 55vh;
+  height: 40vh;
+}
+
+.on-fixed .smartscholar .container .text .text-con {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.on-fixed .smartscholar .container .text .text-con p {
+  text-align: center;
+  font-weight: 800;
+  font-size: calc(1em + 0.5vw);
+  margin-bottom: 1.5em;
+  opacity: 0.8;
+}
+
+.on-fixed .smartscholar .container .text .text-con span {
+  color: #009a3e;
+  font-size: calc(1.2em + 0.5vw);
+  opacity: 1;
+}
+
+.on-fixed .smartscholar .container .text .text-con a {
+  padding: 0.8em 2em;
+  background-color: #009a3e;
+  text-decoration: none;
+  color: white;
+  border-radius: 2em;
+}
+
+.on-fixed .partner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 0.5em;
+}
+
+.on-fixed .partner h2 {
+  color: #2D6481;
+  font-size: calc(1em + 1.5vw);
+  overflow: hidden;
+}
+
+.on-fixed .partner h2::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-left: -100%;
+  border-bottom: 1px solid #2D6481;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  opacity: 0.1;
+}
+
+.on-fixed .partner h2::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-right: -100%;
+  border-bottom: 1px solid #2D6481;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  opacity: 0.2;
+}
+
+.on-fixed .partner .gallery {
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  grid-auto-flow: dense;
+}
+
+.on-fixed .partner .gallery .img {
+  position: relative;
+  height: calc(5em + 5vw);
+  width: auto;
+}
+
+.on-fixed .partner .gallery .img img {
+  height: 100%;
+  width: auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.on-fixed .partner .gallery .span-2 {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.on-fixed .partner .gallery .img:hover img {
+  -webkit-filter: brightness(0.5) grayscale(100);
+          filter: brightness(0.5) grayscale(100);
+}
+
+.on-fixed .president {
+  width: 100%;
+  height: 20em;
+  padding: 5em 0;
+}
+
+.on-fixed .president .container {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+}
+
+.on-fixed .president .container .left-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+.on-fixed .president .container .left-container img {
+  width: 95%;
+  height: auto;
+  padding: 1.4vw;
+}
+
+.on-fixed .president .container .right-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.on-fixed .president .container .right-container p {
+  padding: 2vw 4vw;
+  font-size: calc(1em + 0.5vw);
+  color: #646363;
+  line-height: calc(1.2em + 0.5vw);
+}
+
+.on-fixed .president .container .right-container .equal {
+  height: 85px;
+  width: 2px;
+}
+
+.on-fixed .president .container .right-container .button-container {
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5em;
+  padding: 15px 28px;
+  cursor: pointer;
+  background-color: #1c3177;
+  color: white;
+  position: absolute;
+  right: calc(0.5em + 0.5vw);
+  bottom: calc(0.5em + 0.5vw);
+}
+
+.on-fixed footer {
   height: 100vh;
-  background-color: #10109c;
+  background-color: #1c3177;
   width: 100%;
+  z-index: -10;
   position: absolute;
-  top: 300vh;
 }
 
-footer .copyright {
+.on-fixed footer .copyright {
   width: 100%;
-  position: inherit;
   height: 8vh;
   bottom: 0;
-  background-color: #0a0a57;
+  position: absolute;
+  background-color: #122050;
   z-index: 10;
 }
 
-footer .copyright p {
+.on-fixed footer .copyright p {
   text-align: center;
   color: white;
+}
+
+.on-fixed::after {
+  background-color: white;
+  height: 20px;
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -100;
 }
 
 @media screen and (max-width: 1024px) {
@@ -328,6 +591,10 @@ footer .copyright p {
   .on-fixed .four-card .academic .graduate img {
     height: 100%;
     width: auto;
+  }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
   }
 }
 
@@ -438,6 +705,74 @@ footer .copyright p {
     padding: 0;
     margin: 10px auto;
     margin-left: 0px;
+  }
+  .on-fixed .smartscholar {
+    height: calc(30vh + 20em);
+  }
+  .on-fixed .smartscholar .logo {
+    width: 12em;
+    height: 3em;
+    background-color: white;
+    margin-top: 1.5em;
+    border-radius: 4em;
+    right: -5em;
+    position: absolute;
+  }
+  .on-fixed .smartscholar .logo img {
+    width: 5em;
+    height: auto;
+    position: absolute;
+    left: 1.6em;
+    top: -2em;
+  }
+  .on-fixed .smartscholar .container {
+    left: 1.8em;
+    width: 55vh;
+    position: absolute;
+  }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .on-fixed .partner .gallery .img {
+    position: relative;
+    height: calc(2em + 6vw);
+    width: auto;
+  }
+  .on-fixed .president .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .on-fixed .president .container .right-container p {
+    margin-top: -5px;
+  }
+  .on-fixed .president .container .right-container .button-container {
+    padding: 7px 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .on-fixed .smartscholar {
+    position: relative;
+    width: 100%;
+  }
+  .on-fixed .smartscholar .container {
+    left: 0;
+    width: 90%;
+  }
+  .on-fixed .smartscholar .container .text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .on-fixed .partner .gallery .img {
+    height: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
