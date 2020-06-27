@@ -2,7 +2,6 @@ body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
   overflow-y: scroll;
-  max-width: 266px;
 }
 
 .hero-image {
@@ -391,6 +390,80 @@ body {
   border-radius: 2em;
 }
 
+.on-fixed .partner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 0.5em;
+}
+
+.on-fixed .partner h2 {
+  color: #2D6481;
+  font-size: calc(0.8em + 2vw);
+  overflow: hidden;
+}
+
+.on-fixed .partner h2::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-left: -100%;
+  border-bottom: 1px solid #2D6481;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  opacity: 0.2;
+}
+
+.on-fixed .partner h2::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-right: -100%;
+  border-bottom: 1px solid #2D6481;
+  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  opacity: 0.2;
+}
+
+.on-fixed .partner .gallery {
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  grid-auto-flow: dense;
+}
+
+.on-fixed .partner .gallery .img {
+  position: relative;
+  height: calc(5em + 5vw);
+  width: auto;
+}
+
+.on-fixed .partner .gallery .img img {
+  height: 100%;
+  width: auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.on-fixed .partner .gallery .span-2 {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.on-fixed .partner .gallery .img:hover img {
+  -webkit-filter: brightness(0.5) grayscale(100);
+          filter: brightness(0.5) grayscale(100);
+}
+
 .on-fixed .president {
   width: 100%;
   height: 20em;
@@ -503,6 +576,10 @@ body {
   .on-fixed .four-card .academic .graduate img {
     height: 100%;
     width: auto;
+  }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
   }
 }
 
@@ -638,6 +715,15 @@ body {
     width: 55vh;
     position: absolute;
   }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .on-fixed .partner .gallery .img {
+    position: relative;
+    height: calc(2em + 6vw);
+    width: auto;
+  }
   .on-fixed .president .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -665,6 +751,13 @@ body {
     position: absolute;
     width: 100%;
     left: 0;
+  }
+  .on-fixed .partner .gallery {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .on-fixed .partner .gallery .img {
+    height: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
