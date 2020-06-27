@@ -44,13 +44,15 @@ div.text a button.button{
   margin-bottom: 30px;
   color: #2042b2;
   font-size: 20px;
-  font-weight: 500;
-  
-
-
-  
+  font-weight: 500; 
 
 }
+@media only screen and (max-width: 540px) {
+	.text{
+		margin-left: 0px;
+		width: 100%;height: auto;
+	}
+  }
 
 /* map */
 
@@ -61,6 +63,7 @@ div.text a button.button{
 @media only screen and (max-width: 540px) {
 	.map{
 		margin-left: 0px;
+		width: 100%;height: auto;
 	}
   }
 
@@ -106,7 +109,8 @@ div.icon a:hover{
 	.Location-information{
 		margin-left: 0px;
 		display:block;
-		
+		width: 100%;height: auto;
+		padding-left: 25px 80px;
 	}
   }
 
@@ -133,6 +137,13 @@ div.icon a:hover{
 		height: 597px;
 	
 	}
+	@media only screen and (max-width: 540px) {
+		.send{
+			width: 100%;height: auto;
+		}
+	  }
+
+
 	.contact-form{
 		padding: 30px;
 		margin: auto;
