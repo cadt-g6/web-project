@@ -332,7 +332,6 @@ body {
   border-radius: 4em;
   right: -4em;
   position: absolute;
-  overflow: hidden;
 }
 
 .on-fixed .smartscholar .logo img {
