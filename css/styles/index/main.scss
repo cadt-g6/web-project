@@ -197,7 +197,7 @@ body{
     .youtube{
         margin-top: 20px;
         background-color: #1c3177;
-        height: 90vh;
+        height: calc(60vh + 30vw);
         width: 100%;
         padding: 3vh 0 6vh 0;
         .ytcontainer{
