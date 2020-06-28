@@ -254,6 +254,7 @@ body {
   background: #fbfbfb;
   width: 80%;
   height: 90%;
+  border-radius: 0.3em;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
   display: -webkit-box;
