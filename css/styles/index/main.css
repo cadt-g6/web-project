@@ -1,3 +1,55 @@
+/* BODY */
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn_back {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.2;
+  }
+}
+
+@keyframes slideIn_back {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.2;
+  }
+}
+
 body {
   overflow-x: hidden;
   /* Hide horizontal scrollbar */
@@ -6,6 +58,7 @@ body {
   width: 100%;
 }
 
+/* BACKGROUND IMAGE */
 .hero-image {
   width: 100%;
   background: url(/image-files/Hexagon-dotted-connect-line-background.png) no-repeat 50% 50%;
@@ -15,8 +68,13 @@ body {
   opacity: 0.3;
   top: 0;
   z-index: -10;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  -webkit-animation: 1s ease-out 0s 1 slideIn_back;
+          animation: 1s ease-out 0s 1 slideIn_back;
 }
 
+/* HOMEPAGE - FIRST VIEW */
 .presentation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +85,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* LEFT SIDE - TEXT AND BTN */
+  /* RIGHT SIDE - MODEL GIRL IMAGE */
 }
 
 .presentation .introduction {
@@ -36,6 +96,10 @@ body {
           flex: 1;
   width: 50%;
   z-index: -1;
+  -webkit-animation: 1s ease-out 0s 1 slideIn;
+          animation: 1s ease-out 0s 1 slideIn;
+  /* TEXT */
+  /* BUTTON */
 }
 
 .presentation .introduction .quote h1 {
@@ -79,6 +143,8 @@ body {
 }
 
 .presentation .cover img {
+  -webkit-animation: 1s ease-out 0s 1 slideIn;
+          animation: 1s ease-out 0s 1 slideIn;
   top: 10vh;
   bottom: 0;
   position: absolute;
@@ -86,6 +152,7 @@ body {
   height: 98%;
 }
 
+/* ALL SECTIONS CONTAINER CLASS */
 .on-fixed {
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
@@ -97,10 +164,14 @@ body {
   padding: 30px 0;
   position: absolute;
   z-index: 1000000;
+  /* FOUR CARDS */
+  /* WHY NIPICT - 4 POINTS*/
+  /* SMART SCHOLARSHIP */
 }
 
 .on-fixed .four-card {
   overflow: hidden;
+  /* FIRST CARD - ACADEMIC */
 }
 
 .on-fixed .four-card .academic {
@@ -113,6 +184,7 @@ body {
   padding: 10px;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
+  /* LEFT SIDE - MAJOR TEXT */
 }
 
 .on-fixed .four-card .academic .major {
@@ -154,7 +226,13 @@ body {
   background-color: #2d6481;
   display: block;
   padding: 10px;
+  -webkit-transition: ease-in-out 0.3;
+  transition: ease-in-out 0.3;
   margin: -10px auto 0;
+}
+
+.on-fixed .four-card .academic .major a:hover {
+  background-color: #ad3123;
 }
 
 .on-fixed .four-card .academic .graduate {
@@ -174,7 +252,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: calc(87.3% + 1vh);
-  margin: 20px auto 0;
+  margin: 20px auto 20px;
 }
 
 .on-fixed .four-card .three-card .rnd,
@@ -226,6 +304,12 @@ body {
   text-decoration: none;
   text-align: center;
   color: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.on-fixed .four-card .three-card .rnd .btn:hover {
+  background-color: #2d6481;
 }
 
 .on-fixed .four-card .three-card .columnflex {
@@ -244,7 +328,6 @@ body {
 }
 
 .on-fixed .youtube {
-  margin-top: 20px;
   background-color: #1c3177;
   height: calc(70vh + 20vw);
   width: 100%;
@@ -307,6 +390,10 @@ body {
   padding: 0.2em;
 }
 
+.on-fixed .youtube .ytcontainer .videos .card-yt img:hover {
+  opacity: 0.7;
+}
+
 .on-fixed .youtube .ytcontainer .videos .active img {
   opacity: 1;
 }
@@ -320,6 +407,11 @@ body {
   -ms-grid-columns: (minmax(17rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   margin: 0 auto 2rem;
+  /* FIRST POINT*/
+  /* SECOND POINT*/
+  /* THIRD POINT*/
+  /*FOURTH POINT*/
+  /* ALL POINT WITH SAME STYLE */
 }
 
 .on-fixed .whyniptict .aver-year .cicle {
@@ -345,6 +437,7 @@ body {
   margin-top: calc(1em + 4vw);
   height: 50vh;
   line-height: 28px;
+  /* BIG CICLE */
 }
 
 .on-fixed .whyniptict .card .cicle {
@@ -364,6 +457,12 @@ body {
   color: white;
   font-size: calc(2.5em + 2vh);
   font-weight: 500;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.on-fixed .whyniptict .card .cicle:hover {
+  background-color: #ad3123;
 }
 
 .on-fixed .whyniptict .card span {
@@ -389,6 +488,7 @@ body {
   height: calc(30vh + 20em);
   width: 100%;
   overflow: hidden;
+  /* LOGO ON RIGHT */
 }
 
 .on-fixed .smartscholar .logo {
@@ -438,24 +538,30 @@ body {
 
 .on-fixed .smartscholar .container .text .text-con p {
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: calc(1em + 0.5vw);
   margin-bottom: 1.5em;
   opacity: 0.8;
 }
 
 .on-fixed .smartscholar .container .text .text-con span {
+  font-weight: 700;
   color: #009a3e;
   font-size: 1.5em;
   opacity: 1;
 }
 
 .on-fixed .smartscholar .container .text .text-con a {
+  font-weight: 700;
   padding: 0.8em 2em;
   background-color: #009a3e;
   text-decoration: none;
   color: white;
   border-radius: 2em;
+}
+
+.on-fixed .smartscholar .container .text .text-con a:hover {
+  background-color: #746727;
 }
 
 .on-fixed .partner {
@@ -592,6 +698,10 @@ body {
   bottom: calc(0.5em + 0.5vw);
 }
 
+.on-fixed .president .container .right-container .button-container:hover {
+  background-color: #dc2128;
+}
+
 .on-fixed footer {
   overflow: hidden;
   height: 40em;
@@ -646,6 +756,17 @@ body {
   font-weight: 600;
 }
 
+.on-fixed footer .up-section ul li a:hover,
+.on-fixed footer .dwn-section ul li a:hover {
+  color: #a1b5ff;
+}
+
+.on-fixed footer .up-section ul li .register:hover,
+.on-fixed footer .dwn-section ul li .register:hover {
+  background-color: #dc2128;
+  color: white;
+}
+
 .on-fixed footer .copyright {
   width: 100%;
   height: 8vh;
@@ -660,6 +781,7 @@ body {
   color: white;
 }
 
+/* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
 .on-fixed::after {
   background-color: white;
   height: 20px;

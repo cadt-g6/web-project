@@ -1,9 +1,32 @@
+/* BODY */
+@keyframes slideIn {
+    0% {
+        transform: translateY(70%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideIn_back {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 0.2;
+    }
+}
+
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: scroll;
     position: absolute;
     width: 100%;
 }
+/* BACKGROUND IMAGE */
 .hero-image {
     width: 100%;
     background: url(/image-files/Hexagon-dotted-connect-line-background.png) no-repeat 50% 50%;
@@ -13,18 +36,25 @@ body {
     opacity: 0.3;
     top: 0;
     z-index: -10;
+    transition: ease-in-out 1s;
+    animation: 1s ease-out 0s 1 slideIn_back;
 }
+
+/* HOMEPAGE - FIRST VIEW */
 .presentation {
     display: flex;
     width: 100%;
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    /* LEFT SIDE - TEXT AND BTN */
     .introduction {
         display: block;
         flex: 1;
         width: 50%;
         z-index: -1;
+        animation: 1s ease-out 0s 1 slideIn;
+        /* TEXT */
         .quote {
             h1 {
                 color: #2042b2;
@@ -36,14 +66,9 @@ body {
                 color: #dc2128;
             }
         }
+        /* BUTTON */
         .button {
             margin: -25px auto 0 auto;
-            // width: calc(115px + 5vw);
-            // height: calc(5vh + 0.5vw);
-            // background-color: #dc2128;
-            // border-radius: 50px;
-            // text-align: center;
-            // padding: 15px 0 5px 0;
             width: 100%;
             text-align: center;
             a {
@@ -57,14 +82,16 @@ body {
                 transition: ease-in-out 0.2s;
             }
         }
-        .button :hover{
+        .button :hover {
             background-color: #1c3177;
         }
     }
+    /* RIGHT SIDE - MODEL GIRL IMAGE */
     .cover {
         flex: 1;
         width: 50%;
         img {
+            animation: 1s ease-out 0s 1 slideIn;
             top: 10vh;
             bottom: 0;
             position: absolute;
@@ -74,12 +101,11 @@ body {
     }
 }
 
+/* ALL SECTIONS CONTAINER CLASS */
 .on-fixed {
     -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
     box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-    // background: #fbfbfb;
-    // background: #0400ff;
     border-bottom: none;
     background: #fbfbfb;
     height: auto;
@@ -88,8 +114,10 @@ body {
     padding: 30px 0;
     position: absolute;
     z-index: 1000000;
+    /* FOUR CARDS */
     .four-card {
         overflow: hidden;
+        /* FIRST CARD - ACADEMIC */
         .academic {
             margin: 0 auto;
             width: 85%;
@@ -99,6 +127,7 @@ body {
             -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
             -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
             box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            /* LEFT SIDE - MAJOR TEXT */
             .major {
                 padding: 10px;
                 color: #463d3d;
@@ -131,7 +160,11 @@ body {
                     background-color: #2d6481;
                     display: block;
                     padding: 10px;
+                    transition: ease-in-out 0.3;
                     margin: -10px auto 0;
+                }
+                a:hover {
+                    background-color: #ad3123;
                 }
             }
             .graduate {
@@ -146,8 +179,7 @@ body {
         .three-card {
             display: flex;
             width: calc(87.3% + 1vh);
-            margin: 20px auto 0;
-            // padding: 10px;
+            margin: 20px auto 20px;
             .rnd,
             .columnflex > * {
                 overflow: hidden;
@@ -187,7 +219,11 @@ body {
                         text-decoration: none;
                         text-align: center;
                         color: white;
+                        transition: ease-in-out 0.3s;
                     }
+                }
+                .btn:hover {
+                    background-color: #2d6481;
                 }
             }
             .columnflex {
@@ -202,7 +238,6 @@ body {
         }
     }
     .youtube {
-        margin-top: 20px;
         background-color: #1c3177;
         height: calc(70vh + 20vw);
         width: 100%;
@@ -230,7 +265,6 @@ body {
                 padding: 1em;
                 height: 22%;
                 bottom: 0;
-                // display: inline-block;
 
                 -webkit-overflow-scrolling: touch;
                 overflow-x: scroll;
@@ -249,6 +283,9 @@ body {
                         opacity: 0.4;
                         padding: 0.2em;
                     }
+                    img:hover {
+                        opacity: 0.7;
+                    }
                 }
                 .active {
                     img {
@@ -258,6 +295,7 @@ body {
             }
         }
     }
+    /* WHY NIPICT - 4 POINTS*/
     .whyniptict {
         overflow: hidden;
         background-color: #fbfbfb;
@@ -265,26 +303,31 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
         margin: 0 auto 2rem;
+        /* FIRST POINT*/
         .aver-year {
             .cicle {
                 background: #1b3176;
             }
         }
+        /* SECOND POINT*/
         .got-job {
             .cicle {
                 background: #3d8791;
             }
         }
+        /* THIRD POINT*/
         .scholar {
             .cicle {
                 background: #337373;
             }
         }
+        /*FOURTH POINT*/
         .ecom-and-tn {
             .cicle {
                 background: #f6c233;
             }
         }
+        /* ALL POINT WITH SAME STYLE */
         .card {
             width: 100%;
             overflow: hidden;
@@ -292,6 +335,7 @@ body {
             margin-top: calc(1em + 4vw);
             height: 50vh;
             line-height: 28px;
+            /* BIG CICLE */
             .cicle {
                 margin: 0 auto 0.5rem;
                 border-radius: 50%;
@@ -304,6 +348,10 @@ body {
                 color: white;
                 font-size: calc(2.5em + 2vh);
                 font-weight: 500;
+                transition: ease-in-out .5s;
+            }
+            .cicle:hover {
+                background-color: #ad3123;
             }
             span {
                 color: #1c3177;
@@ -321,6 +369,7 @@ body {
             }
         }
     }
+    /* SMART SCHOLARSHIP */
     .smartscholar {
         background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
         background-size: cover;
@@ -328,6 +377,7 @@ body {
         height: calc(30vh + 20em);
         width: 100%;
         overflow: hidden;
+        /* LOGO ON RIGHT */
         .logo {
             width: 15em;
             height: 4em;
@@ -368,22 +418,27 @@ body {
                     p {
                         text-align: center;
                         // margin-top: calc(1.3em + 0.5vw);
-                        font-weight: 800;
+                        font-weight: 700;
                         font-size: calc(1em + 0.5vw);
                         margin-bottom: 1.5em;
                         opacity: 0.8;
                     }
                     span {
+                        font-weight: 700;
                         color: #009a3e;
                         font-size: 1.5em;
                         opacity: 1;
                     }
                     a {
+                        font-weight: 700;
                         padding: 0.8em 2em;
                         background-color: #009a3e;
                         text-decoration: none;
                         color: white;
                         border-radius: 2em;
+                    }
+                    a:hover {
+                        background-color: #746727;
                     }
                 }
             }
@@ -492,6 +547,9 @@ body {
                     right: calc(0.5em + 0.5vw);
                     bottom: calc(0.5em + 0.5vw);
                 }
+                .button-container:hover {
+                    background-color: #dc2128;
+                }
             }
         }
     }
@@ -512,7 +570,6 @@ body {
             justify-content: space-between;
             width: 60%;
             margin: 0 auto;
-
             ul {
                 list-style: none;
                 li {
@@ -533,6 +590,13 @@ body {
                         border-radius: 20px;
                         font-weight: 600;
                     }
+                    a:hover {
+                        color: #a1b5ff;
+                    }
+                    .register:hover {
+                        background-color: #dc2128;
+                        color: white;
+                    }
                 }
             }
         }
@@ -551,6 +615,7 @@ body {
     }
 }
 
+/* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
 .on-fixed::after {
     background-color: white;
     height: 20px;
@@ -778,7 +843,7 @@ body {
     .on-fixed {
         .smartscholar {
             height: calc(30vh + 20em);
-            
+
             .container {
                 width: 100%;
                 margin: 0 auto;
