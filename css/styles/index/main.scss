@@ -408,6 +408,7 @@ body {
                 border-radius: 2em;
                 width: 55vh;
                 height: 40vh;
+                transition: ease-in-out .5s;
                 .text-con {
                     position: absolute;
                     margin: 0;
@@ -486,7 +487,7 @@ body {
         width: 100%;
         height: 20em;
         padding: 5em 0;
-        .container {
+        .container{
             background-color: white;
             width: 80%;
             height: auto;
