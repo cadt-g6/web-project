@@ -849,6 +849,9 @@ body {
   }
   .on-fixed .president .container .right-container p {
     margin-top: -5px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   .on-fixed .president .container .right-container .button-container {
     padding: 7px 20px;
@@ -866,6 +869,16 @@ body {
 }
 
 @media screen and (max-width: 560px) {
+  .on-fixed .smartscholar {
+    height: calc(30vh + 20em);
+  }
+  .on-fixed .smartscholar .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .on-fixed .smartscholar .container .text {
+    width: 75%;
+  }
   .on-fixed footer {
     height: 70em;
   }
