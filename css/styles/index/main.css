@@ -143,8 +143,8 @@ body {
 }
 
 .presentation .cover img {
-  -webkit-animation: 1s ease-out 0s 1 slideIn;
-          animation: 1s ease-out 0s 1 slideIn;
+  -webkit-animation: .8s ease-out 0s 1 slideIn;
+          animation: .8s ease-out 0s 1 slideIn;
   top: 10vh;
   bottom: 0;
   position: absolute;
