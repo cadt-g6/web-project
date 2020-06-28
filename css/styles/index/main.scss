@@ -54,7 +54,11 @@ body {
                 font-size: calc(1em + 0.5vw);
                 font-weight: 700;
                 color: white;
+                transition: ease-in-out 0.2s;
             }
+        }
+        .button :hover{
+            background-color: #1c3177;
         }
     }
     .cover {
@@ -508,14 +512,15 @@ body {
             justify-content: space-between;
             width: 60%;
             margin: 0 auto;
+
             ul {
                 list-style: none;
-                h1 {
-                    font-size: calc(13px + 0.5vw);
-                    color: white;
-                    margin-bottom: 0.2em;
-                }
                 li {
+                    h1 {
+                        font-size: calc(13px + 0.5vw);
+                        color: white;
+                        margin-bottom: 0.2em;
+                    }
                     a {
                         text-decoration: none;
                         color: white;
