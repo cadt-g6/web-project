@@ -37,19 +37,23 @@ body {
             }
         }
         .button {
-            margin: -42px auto 0 auto;
-            width: calc(115px + 5vw);
-            height: calc(5vh + 0.5vw);
-            background-color: #dc2128;
-            border-radius: 50px;
+            margin: -25px auto 0 auto;
+            // width: calc(115px + 5vw);
+            // height: calc(5vh + 0.5vw);
+            // background-color: #dc2128;
+            // border-radius: 50px;
+            // text-align: center;
+            // padding: 15px 0 5px 0;
+            width: 100%;
             text-align: center;
-            padding: 15px 0 5px 0;
-            a {
-                margin: 0 auto;
-                color: white;
-                font-weight: 700;
-                font-size: calc(1em + 0.5vw);
+            a{
+                background-color: #dc2128;
+                padding: 18px 25px;
+                border-radius: 35px;
                 text-decoration: none;
+                font-size: calc(1em + 0.5vw);
+                font-weight: 700;
+                color: white;
             }
         }
     }
@@ -283,6 +287,7 @@ body {
             text-align: center;
             margin-top: calc(1em + 4vw);
             height: 50vh;
+            line-height: 28px;
             .cicle {
                 margin: 0 auto 0.5rem;
                 border-radius: 50%;
@@ -366,7 +371,7 @@ body {
                     }
                     span {
                         color: #009a3e;
-                        font-size: calc(1.2em + 0.5vw);
+                        font-size: 1.5em;
                         opacity: 1;
                     }
                     a {
@@ -580,13 +585,14 @@ body {
     }
     .on-fixed {
         .whyniptict {
+            margin-top: 1em;
             .card {
                 margin-top: 0;
                 margin-bottom: -2em;
             }
             .aver-year {
                 flex: 2;
-                margin-top: 1em;
+                
                 .cicle {
                     margin: 0 auto 0.3em;
                     width: 28vh;
@@ -756,6 +762,14 @@ body {
                 flex-direction: column;
             }
 
+        }
+        .smartscholar {
+            height: calc(30vh + 20em);
+            .container{
+                .text{
+                    width: 85%;
+                }
+            }
         }
     }
 }
