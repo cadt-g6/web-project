@@ -269,6 +269,7 @@ body {
 
 .on-fixed .youtube .ytcontainer iframe {
   height: 78%;
+  border: none;
 }
 
 .on-fixed .youtube .ytcontainer .videos {
