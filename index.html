@@ -150,16 +150,36 @@
         <!-- section 3: emb youtube -->
         <div class="youtube">
             <div class="ytcontainer">
-                <div class="container">
-                    <div class="text">
-                        <h2>H.E Tram Iv Tek</h2>
-                        <h3>Ministry Interview</h3>
-                        <p>Tram Iv Teuk is the current Minister of Posts and Telecommunications in Cambodia. He belongs to the Cambodian People's Party and was elected to represent Kampong Chhnang Province in the National Assembly of Cambodia in 2003.</p>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J38tvqbzQnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="./youtube-videos/video1.html" frameborder="0" name="change-yt"></iframe>
+                <div class="videos">
+                    <a class="card-yt active" href="./youtube-videos/video1.html" onclick="addActiveClass('video1')" id="video1" target="change-yt">
+                        <img src="./youtube-videos/youtube1.png">
+                    </a>
+                    <a class="card-yt" href="./youtube-videos/video2.html" onclick="addActiveClass('video2')" id="video2" target="change-yt">
+                        <img src="./youtube-videos/youtube2.png">
+                    </a>
+                    <a class="card-yt" href="./youtube-videos/video3.html" onclick="addActiveClass('video3')" id="video3" target="change-yt">
+                        <img src="./youtube-videos/youtube3.png">
+                    </a>
+                    <a class="card-yt" href="./youtube-videos/video4.html" onclick="addActiveClass('video4')" id="video4" target="change-yt">
+                        <img src="./youtube-videos/youtube4.png">
+                    </a>
+                    <a class="card-yt" href="./youtube-videos/video5.html" onclick="addActiveClass('video5')" id="video5" target="change-yt">
+                        <img src="./youtube-videos/youtube5.png">
+                    </a>
                 </div>
             </div>
         </div>
+        <script>
+            function addActiveClass(name) {
+                var x = document.getElementById(name);
+                if (x.className === "card-yt") {
+                    x.className += " active";
+                } else {
+                    x.className = "card-yt";
+                }
+            }
+        </script>
 
         <!-- section 4: why niptict -->
         <div class="whyniptict">

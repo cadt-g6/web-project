@@ -1,0 +1,42 @@
+.container{
+    overflow: hidden;
+    display: flex;
+    padding: 2em 2em;
+    height: 100%;
+    .text{
+        flex: 1;
+        margin-top: -1.5em;
+        h2{
+            color: #1c3177;
+            font-size: calc(1em + 1.5vw);
+        }
+        h3{
+            color: #AD3123;
+            font-size: calc(1em + 1vw);
+            font-weight: 300;
+            margin-top: -1em;
+        }
+        p{
+            color: #7e5e5a;
+            line-height: 1.5em;
+            margin-top: -1em;
+            width: 95%;
+            font-size: calc(0.8em + 0.5vw);
+        }
+    }
+    iframe{
+        margin-left: 1em;
+        width: calc(25em + 10vw);
+        height: calc(13.39em + 5.35vw);
+    }
+} 
+@media screen and (max-width: 962px){
+    .container{
+        flex-direction: column;
+        iframe{
+            width: 90%;
+            height: 90%;
+            margin: 0 auto;
+        }
+    }
+}
