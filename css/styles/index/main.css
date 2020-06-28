@@ -779,6 +779,7 @@ body {
 .on-fixed footer .copyright p {
   text-align: center;
   color: white;
+  font-weight: 300;
 }
 
 /* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
