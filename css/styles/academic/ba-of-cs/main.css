@@ -84,7 +84,7 @@ main div#block-job {
 
 main div#block-job div#job-oppor {
     display: flex;
-    width: 70%;
+    width: 85%;
     height: 400px;
     /* background-color: gray; */
     margin: 0 auto;
@@ -107,6 +107,8 @@ main div#block-job div#job-oppor div#left-side h2 {
 main div#block-job div#job-oppor div#left-side div.job-content>ul>li {
     list-style-type: none;
     margin-bottom: 25px;
+    margin-left: 0;
+    /* list-style-position: inside; */
 }
 
 main div#block-job div#job-oppor div#left-side div.job-content>ul>li>a {
