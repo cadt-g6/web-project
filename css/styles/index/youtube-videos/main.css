@@ -48,6 +48,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container .text {
+    margin: 0 auto;
+  }
   .container iframe {
     width: 90%;
     height: 90%;

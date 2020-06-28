@@ -35,6 +35,9 @@
 @media screen and (max-width: 962px){
     .container{
         flex-direction: column;
+        .text{
+            margin: 0 auto;
+        }
         iframe{
             width: 90%;
             height: 90%;

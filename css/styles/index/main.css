@@ -244,13 +244,13 @@ body {
 .on-fixed .youtube {
   margin-top: 20px;
   background-color: #1c3177;
-  height: calc(60vh + 30vw);
+  height: calc(70vh + 20vw);
   width: 100%;
-  padding: 3vh 0 6vh 0;
+  padding: 3vh 0 0 0;
 }
 
 .on-fixed .youtube .ytcontainer {
-  margin: 2.3em auto;
+  margin: 3em auto 0;
   background: #fbfbfb;
   width: 80%;
   height: 80%;
@@ -267,7 +267,7 @@ body {
 }
 
 .on-fixed .youtube .ytcontainer iframe {
-  height: 80%;
+  height: 85%;
 }
 
 .on-fixed .youtube .ytcontainer .videos {
@@ -279,7 +279,7 @@ body {
   width: 70%;
   margin: 0 auto;
   padding: 1em;
-  height: 20%;
+  height: 15%;
   bottom: 0;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
