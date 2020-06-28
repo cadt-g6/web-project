@@ -253,7 +253,7 @@ body {
   margin: 2.3em auto;
   background: #fbfbfb;
   width: 80%;
-  height: 90%;
+  height: 80%;
   border-radius: 0.3em;
   -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
   box-shadow: 0px 0px 6px 0px #bdbdbd;
@@ -277,9 +277,10 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
-  margin: 0 auto -2em;
+  margin: 0 auto;
   padding: 1em;
   height: 25%;
+  bottom: 0;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: hidden;
