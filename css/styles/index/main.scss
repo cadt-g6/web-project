@@ -464,7 +464,7 @@ body {
                     width: auto;
                     h1,
                     h2 {
-                        line-height: 20px;
+                        line-height: calc(10px + 1vw);
                         padding: 0 4vw;
                         font-weight: 300;
                         color: #646363;
