@@ -383,29 +383,39 @@ body {
     .partner {
         position: relative;
         width: 100%;
-        margin: 0 auto;
-        position: relative;
         height: auto;
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
-        grid-auto-flow: dense;
-        .img {
+        text-align: center;
+        background-color: #fff;
+        padding-top: 0.5em;
+        h2 {
+            color: #2d6481;
+            font-size: calc(1em + 1.5vw);
+            overflow: hidden;
+        }
+        .gallery {
             position: relative;
-            height: calc(5em + 5vw);
-            width: auto;
-            img {
-                height: 100%;
+            height: auto;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            grid-auto-flow: dense;
+            .img {
+                position: relative;
+                height: calc(5em + 5vw);
                 width: auto;
-                transition: 0.3s ease-in-out;
+                img {
+                    height: 100%;
+                    width: auto;
+                    transition: 0.3s ease-in-out;
+                }
             }
-        }
-        .span-2 {
-            grid-column-start: span 2;
-        }
-        .img:hover img {
-            filter: brightness(0.5) grayscale(100);
+            .span-2 {
+                grid-column-start: span 2;
+            }
+            .img:hover img {
+                filter: brightness(0.5) grayscale(100);
+            }
         }
     }
     .president {
