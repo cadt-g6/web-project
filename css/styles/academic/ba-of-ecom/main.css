@@ -1,1 +1,1186 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* header set */
+
+h1,
+h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    margin-left: 8%;
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+main div#block-cs {
+    display: block;
+    /* background-color: blue; */
+    /* padding-bottom: 200px; */
+    /* position: absolute; */
+}
+
+main div#block-cs div#con-cs-top {
+    width: 100%;
+    height: 480px;
+    display: flex;
+}
+
+main div#block-cs div#con-cs-top div#content-cs {
+    height: 100%;
+    display: inline-block;
+    width: 60%;
+    margin-left: 8%;
+    color: black;
+}
+
+main div#block-cs div#con-cs-top div#content-cs h1 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+main div#block-cs div#con-cs-top div#content-cs p {
+    margin-bottom: 30px;
+}
+
+main div#block-cs div#con-cs-top div#content-cs form label a {
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+main div#block-cs div#con-cs-top div#content-cs form label a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px whitesmoke, 0 0 5px whitesmoke;
+}
+
+main div#block-cs div#con-cs-top div#image-of-cs-logo {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+    /* position: relative; */
+    width: 250px;
+    height: 250px;
+}
+
+
+/* job opportunity */
+
+main div#block-job {
+    display: block;
+}
+
+main div#block-job div#job-oppor {
+    display: flex;
+    width: 85%;
+    height: 500px;
+    /* background-color: gray; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+main div#block-job div#job-oppor div#left-side {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    /* float: left; */
+    background-color: blue;
+}
+
+main div#block-job div#job-oppor div#left-side h2 {
+    color: white;
+    font-size: 2em;
+}
+
+main div#block-job div#job-oppor div#left-side div.job-content>ul>li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    margin-left: 0;
+    /* list-style-position: inside; */
+}
+
+main div#block-job div#job-oppor div#left-side div.job-content>ul>li>a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 22px; */
+}
+
+main div#block-job div#job-oppor div#right-side {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    /* float: right; */
+    /* background-color: blue; */
+}
+
+main div#block-job div#job-oppor div#right-side>iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Learn out come */
+
+
+/* main div#learn-out {
+    background-color: #04354A;
+    color: black;
+    padding: 40px 0;
+    height: 360px;
+}
+
+main div#learn-out h2 {
+    margin-bottom: 20px;
+    margin-left: 7%;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main div#learn-out p {
+    font-size: 1.25em;
+    margin-left: 7%;
+}
+
+main div#learn-out ul li {
+    margin-left: 9%;
+    list-style-type: square;
+}
+
+main div#learn-out ul li p {
+    margin-left: 1.5%;
+    font-size: 1em;
+} */
+
+div#learn-out {
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    background-color: #2042B2;
+    color: white;
+}
+
+
+/* program structure */
+
+
+/* main div#pro-struct {
+    margin-top: 30px;
+}
+
+main div#pro-struct h2 {
+    font-weight: bold;
+    color: #04354A;
+    margin-left: 7%;
+    font-size: 2em;
+}
+
+main div#pro-struct div.year p {
+    font-size: 2em;
+    margin-left: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 {
+    width: 30%;
+    display: inline-block;
+    margin-left: 2.5%;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 p.by-term {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct p {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 2px;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+} */
+
+main div#pro-struct {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct h2 {
+    font-weight: bold;
+    color: black;
+}
+
+main div#pro-struct div.year {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct>div.year>p {
+    font-size: 1.2em;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+
+main div#pro-struct div.year div#term {
+    width: 100%;
+    display: flex;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 {
+    width: 31%;
+    display: inline-block;
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 p.by-term {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct div {
+    height: 50px;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct div p {
+    /* height: 40px; */
+    text-align: left;
+    padding: 15px 0;
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: solid 0.5px #0d47a1;
+}
+
+
+/* for term 6 and 10 */
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.no-border {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.no-border div {
+    height: 50px;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.no-border p {
+    text-align: left;
+    padding: 15px 0;
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* year 4 */
+
+main div#pro-struct div.year4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct div.year4 div#term {
+    width: 100%;
+    display: flex;
+}
+
+main div#pro-struct>div.year4>p {
+    font-size: 1.2em;
+    width: 29.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+
+main div#pro-struct div.year4 div#term div.term-1-2-3 {
+    width: 31%;
+    display: inline-block;
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+main div#pro-struct div.year4 div#term div.term-1-2-3 div.no-border {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year4 div#term div.term-1-2-3 div.no-border div {
+    height: 50px;
+}
+
+main div#pro-struct div.year4 div#term div.term-1-2-3 div.no-border p {
+    text-align: left;
+    padding: 15px 0;
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* end of term 6 and 10 */
+
+
+/* first gen */
+
+div#first-gen {
+    height: 355px;
+    width: 50%;
+    /* display: inline-block; */
+    margin-left: 15%;
+    /* opacity: 0.75; */
+    /* background-attachment: fixed; */
+    background-image: url('../../../../image-files/celebrates.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-color: blue;
+    /* opacity: 0.5; */
+    /* opacity: 0.25; */
+    /* border: solid black 0.5px; */
+}
+
+div#first-gen div#paragraph {
+    position: absolute;
+    /* height: 100%; */
+    width: 50%;
+    display: block;
+}
+
+div#first-gen div#paragraph h2 {
+    color: white;
+    margin: 0;
+    margin-left: 4%;
+    padding-bottom: 10px;
+    opacity: 1;
+}
+
+div#first-gen div#paragraph p {
+    margin-left: 4%;
+    padding-top: 10px;
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+/* facebook icon */
+
+
+/* div#first-gen div.icon {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    direction: rtl;
+    padding-right: 5%;
+    background-color: blue;
+    opacity: 0.5;
+} */
+
+div#first-gen a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.50em;
+    padding: 3px 10px;
+    /* letter-spacing: 3px; */
+    background-color: white;
+    border: solid 1px blue;
+    border-radius: 50px;
+    width: 130px;
+    font-family: Abegnale Typeface;
+    float: right;
+    direction: rtl;
+    display: block;
+    margin-top: 200px;
+    margin-right: 10px;
+}
+
+
+/* footer */
+
+footer#bottom-of-web>div#top-infor {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+footer#bottom-of-web>div#top-infor>div.information {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    /* padding-left: 4%; */
+    background-color: #32353a;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div {
+    margin: 0;
+    display: block;
+    width: 30%;
+    padding: 10px 0;
+    padding-left: 1.5%;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div>a {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 4px;
+    margin-left: -10px;
+}
+
+footer#bottom-of-web>div#bottom-copy-right {
+    background-color: #242424;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1097px) {
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.50em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        border: solid 1px blue;
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 200px;
+        margin-right: 10px;
+        margin-top: 180px;
+    }
+}
+@media screen and (max-width: 908px){
+    main div#block-job {
+    display: block;
+    }
+
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 85%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 843px){
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        margin-bottom: 20px;
+    }
+    main div#block-job {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        margin-bottom: 20px;
+    }
+    main div#block-job {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 817px) {
+    /* Computer science top information */
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 780px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 45%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 20px;
+    }
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        font-size: 24px;
+        font-weight: bolder;
+        background-color: blue;
+        color: black;
+        text-decoration: none;
+        padding: 5px 25px;
+        /* margin-top: 20px; */
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 1em;
+        color: white;
+        padding: 10px 20px;
+        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 80%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        /* float: left; */
+        background-color: blue;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding: 0;
+    }
+    main div#block-job div#job-oppor div#left-side div.job-content>ul>li {
+        list-style-type: none;
+        margin-bottom: 25px;
+    }
+    main div#block-job div#job-oppor div#left-side div.job-content>ul>li>a {
+        text-decoration: none;
+        color: white;
+        /* font-size: 22px; */
+    }
+    main div#block-job div#job-oppor div#right-side {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        border-top: solid black 1px;
+        border-right: solid black 1px;
+        border-bottom: solid black 1px;
+        /* float: right; */
+        /* background-color: blue; */
+    }
+    main div#block-job div#job-oppor div#right-side>iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 780px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 45%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 10px;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 90%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 682px){
+    /* ec imgage */
+    
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 780px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 45%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 10px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+    }
+   
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        /* float: left; */
+        background-color: blue;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    /* year 4 of program structure*/
+    main div#pro-struct div.year4 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main div#pro-struct div.year4 div#term {
+        width: 100%;
+        display: flex;
+    }
+    main div#pro-struct>div.year4>p {
+        font-size: 1.2em;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding: 10px 0;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: red;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    /* form to rnroll register and image */
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 45%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 20px;
+    }
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        font-size: 24px;
+        font-weight: bolder;
+        background-color: blue;
+        color: black;
+        text-decoration: none;
+        padding: 5px 25px;
+        /* margin-top: 20px; */
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 1em;
+        color: white;
+        padding: 10px 20px;
+        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.50em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        border: solid 1px blue;
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 160px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 572px){
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 45%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 5px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+    /* first generation  */
+    div#first-gen {
+        height: 255px;
+        width: 50%;
+        /* display: inline-block; */
+        margin-left: 15%;
+        /* opacity: 0.75; */
+        /* background-attachment: fixed; */
+        background-image: url('../../../../image-files/celebrates.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+        background-color: blue;
+        margin-top: 100px;
+    }
+    div#first-gen div#paragraph {
+        position: absolute;
+        /* height: 100%; */
+        width: 50%;
+        display: block;
+        /* top: 100px; */
+    }
+    div#first-gen div#paragraph h2 {
+        color: white;
+        margin: 0;
+        margin-left: 4%;
+        padding-bottom: 10px;
+        opacity: 1;
+    }
+    div#first-gen div#paragraph p {
+        margin-left: 4%;
+        padding-top: 10px;
+        color: black;
+        opacity: 1;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.50em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        border: solid 1px blue;
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 70px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 100px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 100px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 484px){
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    /* job oppurtunities */
+    main div#block-job {
+        display: block;
+        margin-top: 120px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 590px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 477px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+        
+    }
+    
+}
+@media screen and (max-width: 456px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 190px;
+        
+    }
+    main div#block-job {
+        display: block;
+        margin-top: 140px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 433px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        height: 55%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 210px;
+        
+    }
+    main div#block-job {
+        display: block;
+        margin-top: 160px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    /* year 4 for border and background */
+    main div#pro-struct>div.year4>p {
+    font-size: 1.2em;
+    width: 26.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+    
+}
