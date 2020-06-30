@@ -106,12 +106,7 @@ img.img1{
  
 
   
-
-
-
-
-
-
+/* footer */
 footer#bottom-of-web>div#top-infor{
 	margin-top: 30px;
 	margin-bottom: 0;
@@ -119,33 +114,67 @@ footer#bottom-of-web>div#top-infor{
   footer#bottom-of-web>div#top-infor>div.information{
 	margin: 0;
 	padding: 0;
-	background-color: #2C2C2C;
-	color: white;
+	background-color:#e3dddc;
+	color: #0E4F6B;
 	display: flex;
   /*   width: 100%; */
 	padding-left: 4%;
   }
+ 
   footer#bottom-of-web>div#top-infor>div.information>div{
 	margin: 0;
 	display: block;
-	width: 30%;
+	width: 35%;
 	padding: 10px 0;
 	padding-left: 1.5%;
+	
   }
-  footer#bottom-of-web>div#top-infor>div.information>div>a{
+  h4{
+	  display: flex;
+	  justify-content: center;
+  }
+  div.information p {
+	  display: flex;
+	  justify-content: center;
+	  margin-left: 30px;
+  }
+ 
+  @media only screen and (max-width: 540px) {
+	div.information p{
+		margin: 0;
+	}
+  }
+  @media only screen and (max-width: 540px) {
+	h4{
+		margin: 0;
+	}
+  }
+
+  a.a{
 	text-decoration: none;
 	border-radius: 10px;
-	background-color: white;
-	color: black;
+	background-color:#0E4F6B;
+	color:white;
 	font-weight: bold;
 	margin-top: 5px;
-	padding: 5px 4px;
+	padding: 5px 20px;
 	margin-left: -10px;
   }
   footer#bottom-of-web>div#bottom-copy-right{
-	background-color: #242424;  
+	background-color:#122050;  
 	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
   }
+
+
+
+
+
+
+
+
+
+
+
