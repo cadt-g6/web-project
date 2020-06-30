@@ -32,7 +32,8 @@ img.image_2 {
   } 
 }
 .border {
-  border: solid 2px;
+  
+  border: solid 1px;
   height: 400px;
   background-color: blue;
 }
@@ -44,7 +45,7 @@ img.image_2 {
 .href_1 a {
   text-decoration: none;
   color: beige;
-  background-image: url("");
+  
 }
 
 
@@ -82,7 +83,7 @@ footer#bottom-of-web>div#top-infor{
     margin-left: -10px;
   }
   footer#bottom-of-web>div#bottom-copy-right{
-    background-color: #242424;  
+    background-color: #272626;  
     height: 50px;
     display: flex;
     justify-content: center;
