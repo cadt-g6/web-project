@@ -404,6 +404,7 @@ div#first-gen {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100% 100%;
+    margin-top: -10px;
     /* opacity: 0.5; */
     /* opacity: 0.25; */
     /* border: solid black 0.5px; */
@@ -411,7 +412,7 @@ div#first-gen {
 
 div#first-gen div#paragraph {
     position: absolute;
-    /* height: 100%; */
+    /* height: 550px; */
     width: 50%;
     display: block;
 }
@@ -421,14 +422,14 @@ div#first-gen div#paragraph h2 {
     margin: 0;
     margin-left: 4%;
     padding-bottom: 10px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 div#first-gen div#paragraph p {
     margin-left: 4%;
     padding-top: 10px;
     color: white;
-    opacity: 1;
+    /* opacity: 1; */
     font-weight: bold;
     margin-top: 0;
 }
@@ -498,8 +499,6 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     /* font-size: 14px; */
     /* color: red; */
 }
-
-
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
@@ -951,6 +950,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         background-attachment: scroll;
         background-size: 100% 100%;
         /* background-color: blue; */
+        margin-top: -10px;
         margin-top: 100px;
     }
     div#first-gen div#paragraph {
@@ -1053,18 +1053,36 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 477px) {
-    main div#block-cs div#con-cs-top div#content-cs p {
+    /* main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
+    } */
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 880px;
+        display: fblocklex;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        height: 55%;
+        /* height: 55%; */
         justify-content: center;
         align-items: center;
-        margin-top: 170px;
+        /* margin-top: 210px; */
+        /* margin-bottom: 210px; */
+    }
+    main div#block-job {
+        display: block;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 85%;
+        height: 400px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 }
 
@@ -1093,6 +1111,26 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    div#first-gen {
+        height: 270px;
+        width: 50%;
+        /* display: inline-block; */
+        margin-left: 15%;
+        /* opacity: 0.75; */
+        /* background-attachment: fixed; */
+        background-image: url('../../../../image-files/academic/graduate.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+        /* margin-top: -10px; */
+        margin-top: 73px;
+        /* opacity: 0.5; */
+        /* opacity: 0.25; */
+        /* border: solid black 0.5px; */
     }
 }
 
@@ -1144,5 +1182,39 @@ footer#bottom-of-web>div#bottom-copy-right {
     footer#bottom-of-web>div#top-infor>div.information>div h4 {
         font-size: 125%;
         /* 1em/2 */
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.30em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    div#first-gen {
+        height: 270px;
+        width: 50%;
+        /* display: inline-block; */
+        margin-left: 15%;
+        /* opacity: 0.75; */
+        /* background-attachment: fixed; */
+        background-image: url('../../../../image-files/academic/graduate.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+        /* margin-top: -10px; */
+        margin-top: 73px;
+        /* opacity: 0.5; */
+        /* opacity: 0.25; */
+        /* border: solid black 0.5px; */
     }
 }
