@@ -27,6 +27,7 @@ div.text a button.button{
 		font-size: 15px;
 		border-radius: 25px;
 		color: white;
+		border: none;
 	}
 	div.text a button.button:hover{
 		background-color:#2547B4;
@@ -43,7 +44,7 @@ div.text a button.button{
   margin-top: 100px;
   margin-bottom: 30px;
   color: #2042b2;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500; 
 
 }
@@ -72,6 +73,7 @@ div.text a button.button{
 		width: 100%;height: auto;
 	}
   }
+ 
 
  /* div text+map  */
 
@@ -96,19 +98,29 @@ div.map_text{
 	border: solid 0px;
 	background-color: #2042B2;
 	width: 407px;
-	height: 600px;
+	height: 450px;
 	position: relative;
 	color: white;
 	padding: 25px;
 	box-sizing: border-box;
 	overflow: hidden;
+	box-shadow: 0px 0px 6px 0px #bdbdbd;
+	border: none;
+	
 	
 }
 div.icon a{
 	margin-left: 50px;
+	color:#b8b4b4;
 }
 div.icon a:hover{
-	color: red;
+	color: white;
+}
+.i{
+	color: #b8b4b4;
+}
+.i:hover{
+	color: white;
 }
 
 @media only screen and (max-width: 540px) {
@@ -122,10 +134,13 @@ div.icon a:hover{
 
 /* .send + Location-information */
 
+
 .send_Location-information{
 	margin-top: 70px;
 	display:flex;
 	justify-content: center;
+	
+	
 }
 @media only screen and (max-width: 540px) {
 	.send_Location-information{
@@ -137,10 +152,13 @@ div.icon a:hover{
   /* contact-us */
 
 	.send{
-		border: solid 1px #7e7e80;
+		border: none;
 		background-color: white;
 		width: 407px;
-		height: 597px;
+		height: 450px;
+		box-shadow: 0px 0px 6px 0px #bdbdbd;
+		
+		
 	
 	}
 	@media only screen and (max-width: 540px) {
@@ -161,11 +179,12 @@ div.icon a:hover{
 		width: 100%;
 		box-sizing: border-box;
 		margin: 16px 0;
-		border: solid 1px;
-		padding: 20px 40px;
+		border: solid 1.5px #b1b0b5;
+		padding: 14px 40px;
 		outline: none;
 		color: black;
 		border-radius: 10px;
+		
 		
 	}
 	::placeholder{
@@ -177,92 +196,88 @@ div.icon a:hover{
 	}
 	.contact-form-btn{
 		
-		border: 100%;
+		border: none;
 		background:red;
 		color:white ;
 		padding: 12px 50px;
 		border-radius: 40px;
 		cursor: pointer;
+		float: right;
+
 		
 	}
 	.contact-form-btn:hover{
-		background:white;
 		color: #2042B2;
 	}
 
 	/* footer */
-footer#bottom-of-web>div#top-infor{
-	margin-top: 30px;
-	margin-bottom: 0;
-  }
-  footer#bottom-of-web>div#top-infor>div.information{
-	margin: 0;
-	padding: 0;
-	background-color:#e3dddc;
-	color: #0E4F6B;
-	display: flex;
-  /*   width: 100%; */
-	padding-left: 4%;
-  }
- 
-  footer#bottom-of-web>div#top-infor>div.information>div{
-	margin: 0;
-	display: block;
-	width: 35%;
-	padding: 10px 0;
-	padding-left: 1.5%;
-	
-  }
-  h4{
-	  display: flex;
-	  justify-content: center;
-  }
-  div.information p {
-	  display: flex;
-	  justify-content: center;
-	  margin-left: 30px;
-  }
- 
-  @media only screen and (max-width: 540px) {
-	div.information p{
-		margin: 0;
-	}
-  }
-  @media only screen and (max-width: 540px) {
-	h4{
-		margin: 0;
-	}
-  }
 
-  a.a{
+footer#bottom-of-web>div#top-infor {
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: block;
+}
+
+footer#bottom-of-web>div#top-infor>div.information {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding-left: 4%; */
+    background-color:#f3f2fa ;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div {
+    margin: 0;
+    display: block;
+    width: 20%;
+    padding: 10px 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-left {
+    text-align: left;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-center {
+    text-align: center;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-right {
+    text-align: right;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div>a {
+    text-decoration: none;
+    border-radius: 20px;
+    background-color:#0E4F6B;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 10px;
+    margin-left: -10px;
+}
+
+footer#bottom-of-web>div#bottom-copy-right {
+    background-color:#122050;
+    height: 40px;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.information a,h4{
 	text-decoration: none;
-	border-radius: 10px;
-	background-color:#0E4F6B;
-	color:white;
-	font-weight: bold;
-	margin-top: 5px;
-	padding: 5px 20px;
-	margin-left: -10px;
-  }
-  footer#bottom-of-web>div#bottom-copy-right{
-	background-color:#122050;  
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+	color: #0E4F6B;
+}
+.information a:hover{
+	color: red;
+	}
 
-
-
-
-
-
-	
-
-	
-
-	  
-	
 	 
 
 	

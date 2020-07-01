@@ -105,68 +105,74 @@ img.img1{
   
  
 
-  
-/* footer */
-footer#bottom-of-web>div#top-infor{
-	margin-top: 30px;
-	margin-bottom: 0;
-  }
-  footer#bottom-of-web>div#top-infor>div.information{
-	margin: 0;
-	padding: 0;
-	background-color:#e3dddc;
-	color: #0E4F6B;
-	display: flex;
-  /*   width: 100%; */
-	padding-left: 4%;
-  }
- 
-  footer#bottom-of-web>div#top-infor>div.information>div{
-	margin: 0;
-	display: block;
-	width: 35%;
-	padding: 10px 0;
-	padding-left: 1.5%;
-	
-  }
-  h4{
-	  display: flex;
-	  justify-content: center;
-  }
-  div.information p {
-	  display: flex;
-	  justify-content: center;
-	  margin-left: 30px;
-  }
- 
-  @media only screen and (max-width: 540px) {
-	div.information p{
-		margin: 0;
-	}
-  }
-  @media only screen and (max-width: 540px) {
-	h4{
-		margin: 0;
-	}
-  }
+  /* footer */
 
-  a.a{
-	text-decoration: none;
-	border-radius: 10px;
-	background-color:#0E4F6B;
-	color:white;
-	font-weight: bold;
-	margin-top: 5px;
-	padding: 5px 20px;
-	margin-left: -10px;
-  }
-  footer#bottom-of-web>div#bottom-copy-right{
-	background-color:#122050;  
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+footer#bottom-of-web>div#top-infor {
+  margin-top: 60px;
+  margin-bottom: 0;
+  display: block;
+}
+
+footer#bottom-of-web>div#top-infor>div.information {
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* padding-left: 4%; */
+  background-color:#f3f2fa ;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div {
+  margin: 0;
+  display: block;
+  width: 20%;
+  padding: 10px 0;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-left {
+  text-align: left;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-center {
+  text-align: center;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-right {
+  text-align: right;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div>a {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color:#0E4F6B;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px 10px;
+  margin-left: -10px;
+}
+
+footer#bottom-of-web>div#bottom-copy-right {
+  background-color:#122050;
+  height: 40px;
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+}
+
+.information a,h4{
+text-decoration: none;
+color: #0E4F6B;
+}
+.information a:hover{
+color: red;
+}
+
 
 
 
