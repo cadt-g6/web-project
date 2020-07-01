@@ -1136,10 +1136,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         display: block;
         width: 29%;
         padding: 10px 0;
-        padding-left: 1.5%;
+        padding-left: 1.5%;font-size: 13px;
     }
-    footer#bottom-of-web>div#top-infor>div.information>div {
-        font-size: 16px;
-        color: red;
-    }
+    
 }
