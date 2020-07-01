@@ -19,22 +19,17 @@ div.h1 {
     max-width:100%;
     height:auto;
   }
-  
-  .heander {
-    padding-top: 10px;
-    padding-bottom: 50px;
-    float: right;
-  
-  }
   @media only screen and (max-width: 540px) { 
     .row_2 {
       display: block;
     } 
   }
-
-
-/* footer */
-footer#bottom-of-web>div#top-infor{
+  
+  
+  
+  
+  /* footer */
+  footer#bottom-of-web>div#top-infor{
     margin-top: 30px;
     margin-bottom: 0;
   }
