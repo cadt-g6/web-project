@@ -348,7 +348,7 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 p.by-term {
 
 main div#pro-struct>div.year4>p {
     font-size: 1.2em;
-    width: 30%;
+    width: 31%;
     margin-left: 1.5%;
     margin-right: 1.5%;
     padding: 10px 0;
@@ -820,7 +820,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     }
     main div#pro-struct>div.year4>p {
         font-size: 1.2em;
-        width: 28%;
+        width: 31%;
         margin-left: 1.5%;
         margin-right: 1.5%;
         padding: 10px 0;
@@ -1160,7 +1160,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     /* year 4 for border and background */
     main div#pro-struct>div.year4>p {
         font-size: 1.2em;
-        width: 26.5%;
+        width: 31%;
         margin-left: 1.5%;
         margin-right: 1.5%;
         padding: 10px 0;
