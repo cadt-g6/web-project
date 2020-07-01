@@ -1,0 +1,99 @@
+
+
+
+
+div.h1 {
+    margin-top: 70px;
+    margin-left: 70px;
+    color: red;
+  }
+  .row_2 {
+    background-color: rgb(253, 253, 253);
+    background-size: cover;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  img.image_2 {
+    margin: 20px;
+    width: 800px;
+    height: 500px;
+    max-width:100%;
+    height:auto;
+  }
+  
+  .heander {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    float: right;
+  
+  }
+  @media only screen and (max-width: 540px) { 
+    .row_2 {
+      display: block;
+    } 
+  }
+  .border {
+    
+    border: solid 1px;
+    height: 400px;
+    background-color: blue;
+  }
+  
+  .href_1 {
+    width: 400px;
+    height: 200px;
+  }
+  .href_1 a {
+    text-decoration: none;
+    color: beige;
+    
+  }
+
+
+
+
+
+
+
+
+/* footer */
+footer#bottom-of-web>div#top-infor{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  footer#bottom-of-web>div#top-infor>div.information{
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;
+  /*   width: 100%; */
+    padding-left: 4%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div{
+    margin: 0;
+    display: block;
+    width: 30%;
+    padding: 10px 0;
+    padding-left: 1.5%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div>a{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 4px;
+    margin-left: -10px;
+  }
+  footer#bottom-of-web>div#bottom-copy-right{
+    background-color: #272626;  
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 

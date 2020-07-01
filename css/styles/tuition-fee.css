@@ -20,10 +20,10 @@ div.apply a {
     text-decoration: none;
 }
 div.paragrab h1 {
-  color: blue;
+  color: rgb(12, 12, 194);
 }
 div.paragrab p {
-  color: rgb(87, 87, 228);
+  color: rgb(77, 77, 156);
 }
 
 div.paragrab {
@@ -62,7 +62,7 @@ div.paragrab {
 }
 #school {
   border: 1px solid rgb(88, 88, 88);
-  background-color: rgb(7, 7, 145);
+  background-color: rgb(34, 34, 194);
   height: 900px;
   display: flex;
   padding-left: 30px;
