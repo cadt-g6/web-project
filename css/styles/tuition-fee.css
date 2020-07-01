@@ -1,0 +1,144 @@
+#image {
+    margin-top: 10px;
+    float: leftx;
+    display: flex;
+    justify-content: center;
+}
+div.apply a {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 14px 20px;
+    font-size: 15px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+div.paragrab h1 {
+  color: rgb(12, 12, 194);
+}
+div.paragrab p {
+  color: rgb(77, 77, 156);
+}
+
+div.paragrab {
+    margin-top: 120px;
+}
+.apply a:hover {
+    color: blue;
+}
+
+.image_1 img {
+    margin-left: 100px;
+    width: 400px;
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    float: left;
+}
+@media only screen and (max-width: 540px) { 
+    #image {
+      display: block;
+    } 
+}
+@media only screen and (max-width: 540px) { 
+    .image_1 img {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    } 
+}
+@media only screen and (max-width: 540px) { 
+    .paragrab {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    } 
+}
+#school {
+  border: 1px solid rgb(88, 88, 88);
+  background-color: rgb(22, 6, 165);
+  height: 900px;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow-x: visible;
+  display: flex;
+  justify-content: center;
+}
+caption, h2 {
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  
+}
+tr, th, td {
+  border: 1px solid rgb(173, 164, 164);
+  padding: 15px;
+  width: 300px;
+  
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer#bottom-of-web>div#top-infor{
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  footer#bottom-of-web>div#top-infor>div.information{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: rgb(22, 129, 133);
+    display: flex;
+  /*   width: 100%; */
+    padding-left: 4%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div{
+    margin: 0;
+    display: block;
+    width: 30%;
+    padding: 10px 0;
+    padding-left: 1.5%;
+  }
+  footer#bottom-of-web>div#top-infor>div.information>div>a{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(22, 129, 133);
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 4px;
+    margin-left: -10px;
+  }
+  footer#bottom-of-web>div#bottom-copy-right{
+    background-color: rgb(3, 3, 65); 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  } 
+  
+
+
+
+
+
