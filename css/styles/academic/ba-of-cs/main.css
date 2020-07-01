@@ -495,6 +495,8 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     padding: 10px 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    font-size: 14px;
+    /* color: red; */
 }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
@@ -1135,5 +1137,9 @@ footer#bottom-of-web>div#bottom-copy-right {
         width: 29%;
         padding: 10px 0;
         padding-left: 1.5%;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div {
+        font-size: 16px;
+        color: red;
     }
 }
