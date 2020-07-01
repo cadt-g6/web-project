@@ -495,7 +495,7 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     padding: 10px 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    font-size: 14px;
+    /* font-size: 14px; */
     /* color: red; */
 }
 
@@ -1136,7 +1136,11 @@ footer#bottom-of-web>div#bottom-copy-right {
         display: block;
         width: 29%;
         padding: 10px 0;
-        padding-left: 1.5%;font-size: 13px;
+        padding-left: 1.5%;
+        font-size: 13px;
     }
-    
+    footer#bottom-of-web>div#top-infor>div.information>div h4 {
+        font-size: 50%;
+        /* 1em/2 */
+    }
 }
