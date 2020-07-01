@@ -499,6 +499,8 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     /* color: red; */
 }
 
+
+
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
 }
@@ -1140,7 +1142,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 13px;
     }
     footer#bottom-of-web>div#top-infor>div.information>div h4 {
-        font-size: 50%;
+        font-size: 125%;
         /* 1em/2 */
     }
 }
