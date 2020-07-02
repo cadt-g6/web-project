@@ -38,6 +38,7 @@ main div#block-cs div#con-cs-top div#content-cs h1 {
 
 main div#block-cs div#con-cs-top div#content-cs p {
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 main div#block-cs div#con-cs-top div#content-cs form label a {
@@ -606,7 +607,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-cs div#con-cs-top div#content-cs form label a {
         font-size: 24px;
         font-weight: bolder;
-        background-color: blue;
+        background-color: red;
         color: black;
         text-decoration: none;
         padding: 5px 25px;
@@ -616,7 +617,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 1em;
         color: white;
         padding: 10px 20px;
-        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -828,9 +828,9 @@ footer#bottom-of-web>div#bottom-copy-right {
         padding-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color: red;
+        /* background-color: red; */
         font-weight: bold;
-        color: white;
+        color: black;
     }
 }
 
@@ -855,7 +855,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-cs div#con-cs-top div#content-cs form label a {
         font-size: 24px;
         font-weight: bolder;
-        background-color: blue;
+        background-color: red;
         color: black;
         text-decoration: none;
         padding: 5px 25px;
@@ -865,7 +865,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 1em;
         color: white;
         padding: 10px 20px;
-        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -903,9 +902,27 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-top: 140px;
         margin-right: 10px;
     }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 400px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding-bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 556px) {
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 920px;
+        display: block;
+    }
     main div#block-cs div#con-cs-top div#content-cs {
         height: 45%;
         display: block;
@@ -938,10 +955,24 @@ footer#bottom-of-web>div#bottom-copy-right {
         height: 100%;
         margin-bottom: 60px;
     }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 450px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        margin-bottom: 5%;
+        margin-top: 7%;
+    }
     /* first generation  */
     div#first-gen {
         height: 255px;
-        width: 50%;
+        width: 65%;
         /* display: inline-block; */
         margin-left: 15%;
         /* opacity: 0.75; */
@@ -951,30 +982,42 @@ footer#bottom-of-web>div#bottom-copy-right {
         background-attachment: scroll;
         background-size: 100% 100%;
         /* background-color: blue; */
-        margin-top: -10px;
-        margin-top: 100px;
+        /* margin-top: -20px; */
+        margin-top: 84px;
     }
-    div#first-gen div#paragraph {
+    div#first-gen {
         position: absolute;
         /* height: 100%; */
-        width: 50%;
+        width: 65%;
         display: block;
-        /* top: 100px; */
+        margin-left: 35%;
     }
-    div#first-gen div#paragraph h2 {
+    div#first-gen div.toptopic h2 {
         color: white;
         margin: 0;
         margin-left: 4%;
         padding-bottom: 10px;
         opacity: 1;
     }
-    div#first-gen div#paragraph p {
+    div#first-gen div.toptopic p {
         margin-left: 4%;
         padding-top: 10px;
         color: black;
         opacity: 1;
         font-weight: bold;
         margin-top: 0;
+    }
+    div#first-gen div.icon {
+        height: 15%;
+        width: 100%;
+        display: block;
+        /* justify-content: right; */
+        /* align-items: center; */
+        float: right;
+        direction: rtl;
+        padding-right: 5%;
+        /* background-color: blue; */
+        /* opacity: 0.5; */
     }
     div#first-gen a {
         text-align: left;
@@ -990,8 +1033,11 @@ footer#bottom-of-web>div#bottom-copy-right {
         float: right;
         direction: rtl;
         display: block;
-        margin-top: 40px;
-        margin-right: 10px;
+        margin-top: 50px;
+        /* margin-top: 100px; */
+        /* margin-right: 70%; */
+        /* margin-right: 50px; */
+        margin-left: -50px;
     }
 }
 
@@ -1017,7 +1063,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 90%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
@@ -1046,21 +1092,21 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 480px) {
     /* main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
     } */
     main div#block-cs div#con-cs-top {
         width: 100%;
         height: 880px;
-        display: fblocklex;
+        display: block;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -1078,12 +1124,41 @@ footer#bottom-of-web>div#bottom-copy-right {
     }
     main div#block-job div#job-oppor {
         display: flex;
-        width: 85%;
-        height: 400px;
+        width: 100%;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div {
+        margin: 0;
+        display: block;
+        width: 29%;
+        padding: 10px 0;
+        padding-left: 1.5%;
+        font-size: 13px;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div h4 {
+        font-size: 125%;
+        /* 1em/2 */
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 40px;
+        margin-right: 10px;
     }
 }
 
@@ -1115,57 +1190,6 @@ footer#bottom-of-web>div#bottom-copy-right {
     }
 }
 
-@media screen and (max-width: 556px) {
-    div#first-gen {
-        height: 270px;
-        width: 50%;
-        /* display: inline-block; */
-        margin-left: 15%;
-        /* opacity: 0.75; */
-        /* background-attachment: fixed; */
-        background-image: url('../../../../image-files/academic/graduate.png');
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: 100% 100%;
-        /* margin-top: -10px; */
-        margin-top: 73px;
-        /* opacity: 0.5; */
-        /* opacity: 0.25; */
-        /* border: solid black 0.5px; */
-    }
-    div#first-gen div.icon {
-        height: 15%;
-        width: 100%;
-        display: block;
-        /* justify-content: right; */
-        /* align-items: center; */
-        float: right;
-        direction: rtl;
-        padding-right: 5%;
-        /* background-color: blue; */
-        /* opacity: 0.5; */
-    }
-    div#first-gen a {
-        text-align: left;
-        text-decoration: none;
-        font-size: 1.30em;
-        padding: 3px 10px;
-        /* letter-spacing: 3px; */
-        background-color: white;
-        /* border: solid 1px blue; */
-        border-radius: 50px;
-        width: 130px;
-        font-family: Abegnale Typeface;
-        float: right;
-        direction: rtl;
-        display: block;
-        margin-top: 210px;
-        /* margin-right: 70%; */
-        /* margin-right: 50px; */
-        margin-left: -50px;
-    }
-}
-
 @media screen and (max-width: 433px) {
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -1184,7 +1208,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 460px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
@@ -1203,47 +1227,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-weight: bold;
         color: white;
     }
-    footer#bottom-of-web>div#top-infor>div.information>div {
-        margin: 0;
-        display: block;
-        width: 29%;
-        padding: 10px 0;
-        padding-left: 1.5%;
-        font-size: 13px;
-    }
-    footer#bottom-of-web>div#top-infor>div.information>div h4 {
-        font-size: 125%;
-        /* 1em/2 */
-    }
-    div#first-gen a {
-        text-align: left;
-        text-decoration: none;
-        font-size: 1.20em;
-        padding: 3px 10px;
-        /* letter-spacing: 3px; */
-        background-color: white;
-        /* border: solid 1px blue; */
-        border-radius: 50px;
-        width: 130px;
-        font-family: Abegnale Typeface;
-        float: right;
-        direction: rtl;
-        display: block;
-        margin-top: 40px;
-        margin-right: 10px;
-    }
-    div#first-gen div.icon {
-        height: 15%;
-        width: 100%;
-        display: block;
-        /* justify-content: right; */
-        /* align-items: center; */
-        float: right;
-        direction: rtl;
-        padding-right: 5%;
-        /* background-color: blue; */
-        /* opacity: 0.5; */
-    }
     div#first-gen a {
         text-align: left;
         text-decoration: none;
@@ -1258,9 +1241,24 @@ footer#bottom-of-web>div#bottom-copy-right {
         float: right;
         direction: rtl;
         display: block;
-        margin-top: 210px;
+        margin-top: 40px;
         /* margin-right: 70%; */
         /* margin-right: 50px; */
         margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    main div#block-job {
+        display: block;
+        margin-top: 160px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 }
