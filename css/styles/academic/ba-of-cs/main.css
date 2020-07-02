@@ -253,9 +253,9 @@ main div#pro-struct>div.year>p {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    /* background-color: red; */
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 main div#pro-struct div.year div.term {
@@ -355,9 +355,9 @@ main div#pro-struct>div.year4>p {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    /* background-color: red; */
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 main div#pro-struct div.year4 div.term div.term-1-2-3 {
@@ -394,30 +394,30 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border p {
 /* first gen */
 
 div#first-gen {
-    height: 355px;
-    width: 50%;
+    height: 375px;
+    width: 65%;
     /* display: inline-block; */
-    margin-left: 15%;
+    margin-left: 5%;
     /* opacity: 0.75; */
     /* background-attachment: fixed; */
     background-image: url('../../../../image-files/academic/graduate.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100% 100%;
-    margin-top: -10px;
+    margin-top: -35px;
     /* opacity: 0.5; */
     /* opacity: 0.25; */
     /* border: solid black 0.5px; */
 }
 
-div#first-gen div#paragraph {
+div#first-gen {
     position: absolute;
-    /* height: 550px; */
-    width: 50%;
+    width: 65%;
     display: block;
+    margin-left: 35%;
 }
 
-div#first-gen div#paragraph h2 {
+div#first-gen div.toptopic h2 {
     color: white;
     margin: 0;
     margin-left: 4%;
@@ -425,7 +425,7 @@ div#first-gen div#paragraph h2 {
     /* opacity: 1; */
 }
 
-div#first-gen div#paragraph p {
+div#first-gen div.toptopic p {
     margin-left: 4%;
     padding-top: 10px;
     color: white;
@@ -437,19 +437,18 @@ div#first-gen div#paragraph p {
 
 /* facebook icon */
 
-
-/* div#first-gen div.icon {
+div#first-gen div.icon {
     height: 15%;
     width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    display: block;
+    /* justify-content: right; */
+    /* align-items: center; */
     float: right;
     direction: rtl;
     padding-right: 5%;
-    background-color: blue;
-    opacity: 0.5;
-} */
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+}
 
 div#first-gen a {
     text-align: left;
@@ -465,8 +464,10 @@ div#first-gen a {
     float: right;
     direction: rtl;
     display: block;
-    margin-top: 190px;
-    margin-right: 10px;
+    margin-top: 210px;
+    /* margin-right: 70%; */
+    /* margin-right: 50px; */
+    margin-left: -50px;
 }
 
 
@@ -486,7 +487,7 @@ footer#bottom-of-web>div#top-infor>div.information {
     width: 100%;
     justify-content: center;
     /* padding-left: 4%; */
-    background-color: #32353a;
+    background-color: #1c3177;
 }
 
 footer#bottom-of-web>div#top-infor>div.information>div {
@@ -516,7 +517,7 @@ footer#bottom-of-web>div#top-infor>div.information>div>a {
     text-decoration: none;
     border-radius: 20px;
     background-color: white;
-    color: black;
+    color: #1c3177;
     font-weight: bold;
     margin-top: 5px;
     padding: 5px 10px;
@@ -524,7 +525,7 @@ footer#bottom-of-web>div#top-infor>div.information>div>a {
 }
 
 footer#bottom-of-web>div#bottom-copy-right {
-    background-color: #242424;
+    background-color: #122050;
     height: 40px;
     display: flex;
     color: black;
@@ -1107,7 +1108,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
