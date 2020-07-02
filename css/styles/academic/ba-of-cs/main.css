@@ -1145,7 +1145,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* background-color: blue; */
         /* opacity: 0.5; */
     }
-    
     div#first-gen a {
         text-align: left;
         text-decoration: none;
@@ -1165,7 +1164,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* margin-right: 50px; */
         margin-left: -50px;
     }
-    
 }
 
 @media screen and (max-width: 433px) {
@@ -1233,7 +1231,8 @@ footer#bottom-of-web>div#bottom-copy-right {
         display: block;
         margin-top: 40px;
         margin-right: 10px;
-    }div#first-gen div.icon {
+    }
+    div#first-gen div.icon {
         height: 15%;
         width: 100%;
         display: block;
@@ -1245,7 +1244,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* background-color: blue; */
         /* opacity: 0.5; */
     }
-    
     div#first-gen a {
         text-align: left;
         text-decoration: none;
@@ -1265,6 +1263,4 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* margin-right: 50px; */
         margin-left: -50px;
     }
-    
-
 }
