@@ -1272,6 +1272,12 @@ footer#bottom-of-web>div#bottom-copy-right {
     }
 }
 
+@media screen and (max-width: 411px) {
+    h1 {
+        color: brown;
+    }
+}
+
 @media screen and (max-width: 359px) {
     main div#block-job {
         display: block;
