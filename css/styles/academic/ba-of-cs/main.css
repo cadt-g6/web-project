@@ -38,12 +38,13 @@ main div#block-cs div#con-cs-top div#content-cs h1 {
 
 main div#block-cs div#con-cs-top div#content-cs p {
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 main div#block-cs div#con-cs-top div#content-cs form label a {
     font-size: 24px;
     font-weight: bolder;
-    background-color: blue;
+    background-color: red;
     color: black;
     text-decoration: none;
     padding: 5px 25px;
@@ -53,12 +54,12 @@ main div#block-cs div#con-cs-top div#content-cs form label a {
     font-size: 1em;
     color: white;
     padding: 10px 20px;
-    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    /* box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 }
 
 main div#block-cs div#con-cs-top div#content-cs form label a:hover {
     color: white;
-    text-shadow: 1px 1px 2px white, 0 0 25px whitesmoke, 0 0 5px whitesmoke;
+    /* text-shadow: 1px 1px 2px white, 0 0 25px whitesmoke, 0 0 5px whitesmoke; */
 }
 
 main div#block-cs div#con-cs-top div#image-of-cs-logo {
@@ -253,9 +254,9 @@ main div#pro-struct>div.year>p {
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    /* background-color: red; */
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 main div#pro-struct div.year div.term {
@@ -348,16 +349,16 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 p.by-term {
 
 main div#pro-struct>div.year4>p {
     font-size: 1.2em;
-    width: 29.5%;
+    width: 31%;
     margin-left: 1.5%;
     margin-right: 1.5%;
     padding: 10px 0;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    /* background-color: red; */
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 main div#pro-struct div.year4 div.term div.term-1-2-3 {
@@ -394,41 +395,42 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border p {
 /* first gen */
 
 div#first-gen {
-    height: 355px;
-    width: 50%;
+    height: 375px;
+    width: 65%;
     /* display: inline-block; */
-    margin-left: 15%;
+    margin-left: 5%;
     /* opacity: 0.75; */
     /* background-attachment: fixed; */
     background-image: url('../../../../image-files/academic/graduate.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 100% 100%;
+    margin-top: -35px;
     /* opacity: 0.5; */
     /* opacity: 0.25; */
     /* border: solid black 0.5px; */
 }
 
-div#first-gen div#paragraph {
+div#first-gen {
     position: absolute;
-    /* height: 100%; */
-    width: 50%;
+    width: 65%;
     display: block;
+    margin-left: 35%;
 }
 
-div#first-gen div#paragraph h2 {
+div#first-gen div.toptopic h2 {
     color: white;
     margin: 0;
     margin-left: 4%;
     padding-bottom: 10px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
-div#first-gen div#paragraph p {
+div#first-gen div.toptopic p {
     margin-left: 4%;
     padding-top: 10px;
     color: white;
-    opacity: 1;
+    /* opacity: 1; */
     font-weight: bold;
     margin-top: 0;
 }
@@ -436,19 +438,18 @@ div#first-gen div#paragraph p {
 
 /* facebook icon */
 
-
-/* div#first-gen div.icon {
+div#first-gen div.icon {
     height: 15%;
     width: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    display: block;
+    /* justify-content: right; */
+    /* align-items: center; */
     float: right;
     direction: rtl;
     padding-right: 5%;
-    background-color: blue;
-    opacity: 0.5;
-} */
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+}
 
 div#first-gen a {
     text-align: left;
@@ -464,8 +465,10 @@ div#first-gen a {
     float: right;
     direction: rtl;
     display: block;
-    margin-top: 190px;
-    margin-right: 10px;
+    margin-top: 210px;
+    /* margin-right: 70%; */
+    /* margin-right: 50px; */
+    margin-left: -50px;
 }
 
 
@@ -485,7 +488,7 @@ footer#bottom-of-web>div#top-infor>div.information {
     width: 100%;
     justify-content: center;
     /* padding-left: 4%; */
-    background-color: #32353a;
+    background-color: #1c3177;
 }
 
 footer#bottom-of-web>div#top-infor>div.information>div {
@@ -498,8 +501,6 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     /* font-size: 14px; */
     /* color: red; */
 }
-
-
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
@@ -517,7 +518,7 @@ footer#bottom-of-web>div#top-infor>div.information>div>a {
     text-decoration: none;
     border-radius: 20px;
     background-color: white;
-    color: black;
+    color: #1c3177;
     font-weight: bold;
     margin-top: 5px;
     padding: 5px 10px;
@@ -525,7 +526,7 @@ footer#bottom-of-web>div#top-infor>div.information>div>a {
 }
 
 footer#bottom-of-web>div#bottom-copy-right {
-    background-color: #242424;
+    background-color: #122050;
     height: 40px;
     display: flex;
     color: black;
@@ -537,7 +538,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     div#first-gen a {
         text-align: left;
         text-decoration: none;
-        font-size: 1.30em;
+        font-size: 1.20em;
         padding: 3px 10px;
         /* letter-spacing: 3px; */
         background-color: white;
@@ -606,7 +607,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-cs div#con-cs-top div#content-cs form label a {
         font-size: 24px;
         font-weight: bolder;
-        background-color: blue;
+        background-color: red;
         color: black;
         text-decoration: none;
         padding: 5px 25px;
@@ -616,7 +617,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 1em;
         color: white;
         padding: 10px 20px;
-        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -821,20 +821,23 @@ footer#bottom-of-web>div#bottom-copy-right {
     }
     main div#pro-struct>div.year4>p {
         font-size: 1.2em;
-        width: 28%;
+        width: 31%;
         margin-left: 1.5%;
         margin-right: 1.5%;
         padding: 10px 0;
         padding-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color: red;
+        /* background-color: red; */
         font-weight: bold;
-        color: white;
+        color: black;
     }
 }
 
 @media screen and (max-width: 597px) {
+    h1 {
+        color: rgb(9, 255, 0);
+    }
     /* form to rnroll register and image */
     main div#block-cs div#con-cs-top div#content-cs {
         height: 45%;
@@ -855,7 +858,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-cs div#con-cs-top div#content-cs form label a {
         font-size: 24px;
         font-weight: bolder;
-        background-color: blue;
+        background-color: red;
         color: black;
         text-decoration: none;
         padding: 5px 25px;
@@ -865,7 +868,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 1em;
         color: white;
         padding: 10px 20px;
-        box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
@@ -886,10 +888,13 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 595px) {
+    h1 {
+        color: royalblue;
+    }
     div#first-gen a {
         text-align: left;
         text-decoration: none;
-        font-size: 1.30em;
+        font-size: 1.20em;
         padding: 3px 10px;
         /* letter-spacing: 3px; */
         background-color: white;
@@ -903,9 +908,30 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-top: 140px;
         margin-right: 10px;
     }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 400px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding-bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 556px) {
+    h1 {
+        color: orange;
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 920px;
+        display: block;
+    }
     main div#block-cs div#con-cs-top div#content-cs {
         height: 45%;
         display: block;
@@ -938,10 +964,24 @@ footer#bottom-of-web>div#bottom-copy-right {
         height: 100%;
         margin-bottom: 60px;
     }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 450px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        margin-bottom: 5%;
+        margin-top: 7%;
+    }
     /* first generation  */
     div#first-gen {
         height: 255px;
-        width: 50%;
+        width: 65%;
         /* display: inline-block; */
         margin-left: 15%;
         /* opacity: 0.75; */
@@ -951,23 +991,24 @@ footer#bottom-of-web>div#bottom-copy-right {
         background-attachment: scroll;
         background-size: 100% 100%;
         /* background-color: blue; */
-        margin-top: 100px;
+        /* margin-top: -20px; */
+        margin-top: 84px;
     }
-    div#first-gen div#paragraph {
+    div#first-gen {
         position: absolute;
         /* height: 100%; */
-        width: 50%;
+        width: 65%;
         display: block;
-        /* top: 100px; */
+        margin-left: 35%;
     }
-    div#first-gen div#paragraph h2 {
+    div#first-gen div.toptopic h2 {
         color: white;
         margin: 0;
         margin-left: 4%;
         padding-bottom: 10px;
         opacity: 1;
     }
-    div#first-gen div#paragraph p {
+    div#first-gen div.toptopic p {
         margin-left: 4%;
         padding-top: 10px;
         color: black;
@@ -975,10 +1016,22 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-weight: bold;
         margin-top: 0;
     }
+    div#first-gen div.icon {
+        height: 15%;
+        width: 100%;
+        display: block;
+        /* justify-content: right; */
+        /* align-items: center; */
+        float: right;
+        direction: rtl;
+        padding-right: 5%;
+        /* background-color: blue; */
+        /* opacity: 0.5; */
+    }
     div#first-gen a {
         text-align: left;
         text-decoration: none;
-        font-size: 1.30em;
+        font-size: 1.20em;
         padding: 3px 10px;
         /* letter-spacing: 3px; */
         background-color: white;
@@ -989,12 +1042,18 @@ footer#bottom-of-web>div#bottom-copy-right {
         float: right;
         direction: rtl;
         display: block;
-        margin-top: 40px;
-        margin-right: 10px;
+        margin-top: 50px;
+        /* margin-top: 100px; */
+        /* margin-right: 70%; */
+        /* margin-right: 50px; */
+        margin-left: -50px;
     }
 }
 
 @media screen and (max-width: 542px) {
+    h1 {
+        color: gray;
+    }
     main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
     }
@@ -1016,7 +1075,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 90%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
@@ -1024,6 +1083,9 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 506px) {
+    h1 {
+        color: violet;
+    }
     main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
     }
@@ -1045,30 +1107,83 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width: 477px) {
-    main div#block-cs div#con-cs-top div#content-cs p {
+@media screen and (max-width: 480px) {
+    h1 {
+        color: pink;
+    }
+    /* main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
+    } */
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 880px;
+        display: block;
     }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        height: 55%;
+        /* height: 55%; */
         justify-content: center;
         align-items: center;
-        margin-top: 170px;
+        /* margin-top: 210px; */
+        /* margin-bottom: 210px; */
+    }
+    main div#block-job {
+        display: block;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 450px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div {
+        margin: 0;
+        display: block;
+        width: 29%;
+        padding: 10px 0;
+        padding-left: 1.5%;
+        font-size: 13px;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div h4 {
+        font-size: 125%;
+        /* 1em/2 */
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 40px;
+        margin-right: 10px;
     }
 }
 
 @media screen and (max-width: 456px) {
+    h1 {
+        color: green;
+    }
     main div#block-cs div#con-cs-top div#content-cs p {
         margin-bottom: 0;
     }
@@ -1089,7 +1204,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 450px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
@@ -1097,6 +1212,9 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 433px) {
+    h1 {
+        color: yellow;
+    }
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
         width: 84%;
@@ -1114,7 +1232,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-job div#job-oppor {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 460px;
         /* background-color: gray; */
         margin: 0 auto;
         margin-bottom: 50px;
@@ -1122,7 +1240,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     /* year 4 for border and background */
     main div#pro-struct>div.year4>p {
         font-size: 1.2em;
-        width: 26.5%;
+        width: 31%;
         margin-left: 1.5%;
         margin-right: 1.5%;
         padding: 10px 0;
@@ -1133,16 +1251,77 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-weight: bold;
         color: white;
     }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 40px;
+        /* margin-right: 70%; */
+        /* margin-right: 50px; */
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    h1 {
+        color: brown;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    main div#block-job {
+        display: block;
+        margin-top: 160px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 352px) {
     footer#bottom-of-web>div#top-infor>div.information>div {
         margin: 0;
         display: block;
         width: 29%;
         padding: 10px 0;
         padding-left: 1.5%;
-        font-size: 13px;
+        font-size: 12px;
     }
     footer#bottom-of-web>div#top-infor>div.information>div h4 {
         font-size: 125%;
         /* 1em/2 */
+    }
+    main div#block-job {
+        display: block;
+        margin-top: 160px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    h1 {
+        color: red;
     }
 }
