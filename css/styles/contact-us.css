@@ -232,11 +232,16 @@ footer#bottom-of-web>div#top-infor>div.information {
 footer#bottom-of-web>div#top-infor>div.information>div {
     margin: 0;
     display: block;
-    width: 29%;
+    width: 20%;
     padding: 10px 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
+@media only screen and (max-width: 540px) {
+	footer#bottom-of-web>div#top-infor>div.information>div{
+		width: 29%;
+	}
+  }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
@@ -253,12 +258,13 @@ footer#bottom-of-web>div#top-infor>div.information div.align-right {
 footer#bottom-of-web>div#top-infor>div.information>div>a {
     text-decoration: none;
     border-radius: 20px;
-    background-color:#0E4F6B;
+    background-color:red;
     color: white;
     font-weight: bold;
     margin-top: 5px;
     padding: 5px 10px;
-    margin-left: -10px;
+	margin-left: -10px;
+
 }
 
 footer#bottom-of-web>div#bottom-copy-right {
@@ -272,7 +278,8 @@ footer#bottom-of-web>div#bottom-copy-right {
 
 .information a,h4{
 	text-decoration: none;
-	color: #0E4F6B;
+	color:#2042B2;
+	
 }
 .information a:hover{
 	color: red;
