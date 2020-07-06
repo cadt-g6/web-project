@@ -24,10 +24,12 @@ main div#block-cs div#con-cs-top {
 
 main div#block-cs div#con-cs-top div#content-cs {
     height: 100%;
+    flex: 1.2;
     display: inline-block;
     width: 60%;
     margin-left: 8%;
-    color: black;
+    color: #2042B2;
+    margin-top: 4em;
 }
 
 main div#block-cs div#con-cs-top div#content-cs h1 {
@@ -70,11 +72,12 @@ main div#block-cs div#con-cs-top div#image-of-cs-logo {
     height: 100%;
     justify-content: center;
     align-items: center;
+    flex: 0.8;
 }
 
 main div#block-cs div#con-cs-top div#image-of-cs-logo img {
     /* position: relative; */
-    width: 250px;
+    width: 350px;
     height: auto;
 }
 
@@ -100,6 +103,8 @@ main div#block-job div#job-oppor div#left-side {
     margin: 0;
     /* float: left; */
     background-color: #2042B2;
+    -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+    box-shadow: 0px 0px 6px 0px #bdbdbd;
 }
 
 main div#block-job div#job-oppor div#left-side h2 {
@@ -128,9 +133,8 @@ main div#block-job div#job-oppor div#right-side {
     width: 50%;
     height: 100%;
     margin: 0;
-    border-top: solid black 1px;
-    border-right: solid black 1px;
-    border-bottom: solid black 1px;
+    -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+    box-shadow: 0px 0px 6px 0px #bdbdbd;
     /* float: right; */
     /* background-color: blue; */
 }
@@ -176,7 +180,7 @@ main div#learn-out ul li p {
 div#learn-out {
     display: block;
     margin: 10px 5px;
-    padding: 10px 5px;
+    padding: 10px 15px;
     background-image: url('../../../../image-files/SVG/Subtraction.svg');
     /* background-position: top; */
     background-repeat: no-repeat;
@@ -714,6 +718,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin: 0;
         /* float: left; */
         background-color: #2042B2;
+        <<<<<<< HEAD=======>>>>>>>195c6a320854d0c2da9eb7bf7796b1d4c827c3dc
     }
     main div#block-job div#job-oppor div#left-side h2 {
         color: white;
@@ -1051,6 +1056,15 @@ footer#bottom-of-web>div#bottom-copy-right {
         /* margin-right: 50px; */
         margin-left: -50px;
     }
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    margin-right: 8px;
 }
 
 @media screen and (max-width: 542px) {

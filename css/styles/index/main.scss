@@ -1,4 +1,21 @@
 /* BODY */
+$color-blue: #2042B2;
+$color-red: #dc2128;
+$color-d-blue: #1c3177;
+$color-mix-blue: #2D6481;
+
+@mixin shadow{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+}
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+}
+
 @keyframes slideIn {
     0% {
         transform: translateY(70%);
@@ -18,13 +35,6 @@
         transform: translateY(0%);
         opacity: 0.2;
     }
-}
-
-body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll;
-    position: absolute;
-    width: 100%;
 }
 /* BACKGROUND IMAGE */
 .hero-image {
@@ -57,13 +67,13 @@ body {
         /* TEXT */
         .quote {
             h1 {
-                color: #2042b2;
+                color: $color-blue;
                 font-size: calc(1.2em + 0.8vw);
                 text-align: center;
                 line-height: calc(30px + 0.6vw);
             }
             span {
-                color: #dc2128;
+                color: $color-red;
             }
         }
         /* BUTTON */
@@ -72,7 +82,7 @@ body {
             width: 100%;
             text-align: center;
             a {
-                background-color: #dc2128;
+                background-color: $color-red;
                 padding: 18px 25px;
                 border-radius: 35px;
                 text-decoration: none;
@@ -83,10 +93,10 @@ body {
             }
         }
         .button :hover {
-            background-color: #1c3177;
+            background-color: $color-blue;
         }
     }
-    /* RIGHT SIDE - MODEL GIRL IMAGE */
+    /* RIGHT SIDE - GIRL MODEL IMAGE */
     .cover {
         flex: 1;
         width: 50%;
@@ -101,11 +111,9 @@ body {
     }
 }
 
-/* ALL SECTIONS CONTAINER CLASS */
+/* THIS on-fixed class HOLD ALL SECTIONS BELOW HOMEPAGE */
 .on-fixed {
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-    box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+    @include shadow;
     border-bottom: none;
     background: #fbfbfb;
     height: auto;
@@ -114,19 +122,17 @@ body {
     padding: 30px 0;
     position: absolute;
     z-index: 1000000;
-    /* FOUR CARDS */
+    /* SECTION1 - FOUR CARDS */
     .four-card {
         overflow: hidden;
-        /* FIRST CARD - ACADEMIC */
+        /* FIRST CARD - Bachelor Program */
         .academic {
             margin: 0 auto;
             width: 85%;
             display: flex;
             background-color: white;
             padding: 10px;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            @include shadow;
             /* LEFT SIDE - MAJOR TEXT */
             .major {
                 padding: 10px;
@@ -137,8 +143,7 @@ body {
                 .text-container {
                     margin: 0 auto 20px;
                     width: 96%;
-                    p,
-                    h1 {
+                    p, h1 {
                         text-align: left;
                         width: 100%;
                         margin: 5px;
@@ -148,47 +153,97 @@ body {
                         word-break: break-word;
                     }
                 }
-                h1 {
-                    font-size: 30px;
-                }
-                a {
-                    text-decoration: none;
+                h1 {font-size: 30px;}
+                .container{
                     width: 90%;
-                    font-size: calc(15px + 0.5vw);
-                    font-weight: 500;
-                    color: white;
-                    background-color: #2d6481;
-                    display: block;
-                    padding: 10px;
-                    transition: ease-in-out 0.3;
-                    margin: -10px auto 0;
+                    margin: 0 auto;
+                    .a-main {
+                        text-decoration: none;
+                        font-size: calc(15px + 0.5vw);
+                        font-weight: 500;
+                        color: white;
+                        background-color: $color-mix-blue;
+                        display: block;
+                        padding: 10px;
+                        transition: ease-in-out 0.3;
+                        margin: -5px;
+                        border-radius: 2px;
+                        // margin: -10px auto 0;
+                    }
+                    .info{
+                        background-color: $color-d-blue;
+                        margin: -0.85em auto 1em;
+                        height: auto;
+                        width: 95%;
+                        display: none;
+                        border-bottom: 20px solid $color-d-blue;
+                        p{
+                            font-size: 15px;
+                            width: 90%;
+                            margin: 0 auto;
+                            color: white;
+                            padding: 10px 0px 25px;
+                        }
+                        .button{   
+                            a{
+                                text-decoration: none;
+                                padding: 10px 2vw;
+                                font-size: calc(0.8vw + 10px);
+                                @include shadow;
+                            }
+                            .btn1{
+                                background-color: black;
+                                color: white;
+                            }
+                            .btn2{
+                                color: $color-d-blue;
+                                background-color: #fff;
+                            }
+                        }
+                    }
                 }
-                a:hover {
-                    background-color: #ad3123;
+                @keyframes slide_down {
+                    0% {
+                        transform: translateY(-10%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                }
+                .container:hover {
+                    .info{
+                        display: block;
+                        animation: .4s ease-out 1 slide_down;
+                        .btn2:hover, .btn1:hover{
+                            background-color: #dc2128;
+                            color: white;
+                        }
+                    }
+                    .a-main{background-color: $color-red;}
                 }
             }
             .graduate {
                 flex: 1.2;
                 margin: 8px 0 0 15px;
                 overflow: hidden;
-                img {
-                    width: 100%;
-                }
+                img {width: 100%;}
             }
         }
+        /* OTHER THREE CARDS */
         .three-card {
             display: flex;
             width: calc(87.3% + 1vh);
             margin: 20px auto 20px;
-            .rnd,
-            .columnflex > * {
+
+            /* 4CARDS WITH SAME STYLE */
+            .rnd, .columnflex > * {
                 overflow: hidden;
                 margin: 0 5px;
                 border-right: solid 5px white;
                 background-color: white;
-                -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-                -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-                box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+                @include shadow;
                 text-align: center;
                 img {
                     height: 206px;
@@ -207,6 +262,8 @@ body {
                     line-height: 20px;
                 }
             }
+
+            /* R&D */
             .rnd {
                 width: 50%;
                 .btn {
@@ -223,34 +280,34 @@ body {
                     }
                 }
                 .btn:hover {
-                    background-color: #2d6481;
+                    background-color: $color-blue;
                 }
             }
+            /* TRAINING & ENTREPRENEURSHIP */
             .columnflex {
                 width: 50%;
                 display: flex;
-                .training,
-                .entrepre {
+                .training, .entrepre {
                     width: 50%;
                     flex: 1/2;
                 }
             }
         }
     }
+    /*SECTION2 - EMB YOUTUBE*/
     .youtube {
         background-color: #1c3177;
         height: calc(70vh + 20vw);
         width: 100%;
         padding: 3vh 0 0 0;
+        /* YOUTUBE CONTAINER */
         .ytcontainer {
+            @include shadow; 
             margin: 3em auto 0;
             background: #fbfbfb;
             width: 80%;
             height: 80%;
             border-radius: 0.3em;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
             display: flex;
             flex-direction: column;
             iframe {
@@ -295,7 +352,7 @@ body {
             }
         }
     }
-    /* WHY NIPICT - 4 POINTS*/
+    /* SECTION3 - WHY NIPICT - 4 POINTS*/
     .whyniptict {
         overflow: hidden;
         background-color: #fbfbfb;
@@ -303,30 +360,19 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
         margin: 0 auto 2rem;
+        
         /* FIRST POINT*/
-        .aver-year {
-            .cicle {
-                background: #1b3176;
-            }
-        }
+        .aver-year {.cicle {background: #1b3176;}}
+        
         /* SECOND POINT*/
-        .got-job {
-            .cicle {
-                background: #3d8791;
-            }
-        }
+        .got-job {.cicle {background: #3d8791;}}
+        
         /* THIRD POINT*/
-        .scholar {
-            .cicle {
-                background: #337373;
-            }
-        }
+        .scholar {.cicle {background: #337373;}}
+
         /*FOURTH POINT*/
-        .ecom-and-tn {
-            .cicle {
-                background: #f6c233;
-            }
-        }
+        .ecom-and-tn {.cicle {background: #f6c233;}}
+
         /* ALL POINT WITH SAME STYLE */
         .card {
             width: 100%;
@@ -335,7 +381,7 @@ body {
             margin-top: calc(1em + 4vw);
             height: 50vh;
             line-height: 28px;
-            /* BIG CICLE */
+            /* CICLE */
             .cicle {
                 margin: 0 auto 0.5rem;
                 border-radius: 50%;
@@ -361,7 +407,7 @@ body {
             p {
                 color: #707070;
                 font-weight: 300;
-                width: 70%;
+                width: 80%;
                 margin: 0 auto;
                 line-height: 19px;
                 font-size: 15px;
@@ -369,7 +415,7 @@ body {
             }
         }
     }
-    /* SMART SCHOLARSHIP */
+    /* SECTION 4: SMART SCHOLARSHIP */
     .smartscholar {
         background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
         background-size: cover;
@@ -377,7 +423,8 @@ body {
         height: calc(30vh + 20em);
         width: 100%;
         overflow: hidden;
-        /* LOGO ON RIGHT */
+
+        /* LOGO */
         .logo {
             width: 15em;
             height: 4em;
@@ -394,6 +441,8 @@ body {
                 top: -3.2em;
             }
         }
+
+        /* TEXT CONTAINER*/
         .container {
             margin-left: 5vw;
             width: 55vh;
@@ -418,7 +467,6 @@ body {
                     width: 100%;
                     p {
                         text-align: center;
-                        // margin-top: calc(1.3em + 0.5vw);
                         font-weight: 700;
                         font-size: calc(1em + 0.5vw);
                         margin-bottom: 1.5em;
@@ -438,13 +486,12 @@ body {
                         color: white;
                         border-radius: 2em;
                     }
-                    a:hover {
-                        background-color: #746727;
-                    }
+                    a:hover {background-color: #746727;}
                 }
             }
         }
     }
+    /*SECTION5 - PARTNER*/
     .partner {
         position: relative;
         width: 100%;
@@ -475,14 +522,13 @@ body {
                     transition: 0.3s ease-in-out;
                 }
             }
-            .span-2 {
-                grid-column-start: span 2;
-            }
+            .span-2 {grid-column-start: span 2;}
             .img:hover img {
                 filter: brightness(0.5) grayscale(100);
             }
         }
     }
+    /* SECTION6 - PRESIDENT MESSAGE */
     .president {
         width: 100%;
         height: 20em;
@@ -498,9 +544,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            @include shadow;
             .left-container {
                 flex: 1;
                 height: 100%;
@@ -554,6 +598,7 @@ body {
             }
         }
     }
+    /* FOOTER */
     footer {
         overflow: hidden;
         height: 40em;
@@ -617,7 +662,7 @@ body {
     }
 }
 
-/* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
+/* A LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
 .on-fixed::after {
     background-color: white;
     height: 20px;
@@ -630,6 +675,7 @@ body {
     z-index: -100;
 }
 
+/* MAX WIDTH 1024PX*/
 @media screen and (max-width: 1024px) {
     .presentation {
         .cover {
@@ -659,9 +705,10 @@ body {
         }
     }
 }
+
+/* MAX WIDTH 925PX*/
 @media screen and (max-width: 925px) {
     .presentation {
-        // .introduction{.quote {p {font-size: 25px;}}}
         .cover {
             img {
                 top: 15vh;
@@ -730,6 +777,7 @@ body {
         }
     }
 }
+/* MAX WIDTH 860PX*/
 @media screen and (max-width: 860px) {
     .presentation {
         flex-direction: column;
@@ -737,12 +785,10 @@ body {
             width: 100%;
             margin-top: 5vh;
         }
-        .cover {
-            img {
-                right: calc(8% + 5vh);
-                width: calc(50vh + 10%);
-                top: 35vh;
-            }
+        .cover img {
+            right: calc(8% + 5vh);
+            width: calc(50vh + 10%);
+            top: 35vh;
         }
     }
     .on-fixed {
@@ -775,7 +821,7 @@ body {
                     width: calc(100% + 2vh);
                     padding: 0;
                     margin: 10px auto;
-                    margin-left: 0px;
+                    margin-left: -1.2vw;
                 }
             }
         }
@@ -823,66 +869,51 @@ body {
                         font-size: 16px;
                         margin-bottom: 10px;
                     }
-                    .button-container {
-                        padding: 7px 20px;
-                    }
+                    .button-container {padding: 7px 20px;}
                 }
             }
         }
         footer {
             height: 70em;
-            .empty {
-                height: 40%;
-            }
-            .up-section,
-            .dwn-section {
-                width: 90%;
-            }
+            .empty {height: 40%;}
+            .up-section,.dwn-section {width: 90%;}
         }
     }
 }
+/* MAX WIDTH 560PX*/
 @media screen and (max-width: 560px) {
     .on-fixed {
         .smartscholar {
             height: calc(30vh + 20em);
-
             .container {
                 width: 100%;
                 margin: 0 auto;
-                .text {
-                    width: 75%;
-                }
+                .text {width: 75%;}
             }
         }
         footer {
             height: 70em;
-            .empty {
-                height: 20%;
-            }
-            .up-section,
-            .dwn-section {
+            .empty {height: 20%;}
+            .up-section,.dwn-section {
                 margin-right: 0vh;
                 flex-direction: column;
             }
         }
     }
 }
+/* MAX WIDTH 360PX*/
 @media screen and (max-width: 360px) {
     .on-fixed {
         .partner {
             .gallery {
                 grid-template-columns: auto auto auto auto auto;
-                .img {
-                    height: 3em;
-                }
+                .img {height: 3em;}
             }
         }
         .smartscholar {
             height: calc(30vh + 20em);
             .container {
-                .text {
-                    width: 85%;
-                }
+                .text {width: 85%;}
             }
         }
     }
