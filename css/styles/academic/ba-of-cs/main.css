@@ -498,108 +498,6 @@ div#first-gen a:hover {
     -o-transition: 1s;
 }
 
-
-/* footer */
-
-footer#bottom-of-web>div#top-infor {
-    margin-top: 60px;
-    margin-bottom: 0;
-    display: block;
-}
-
-footer#bottom-of-web>div#top-infor>div.information {
-    margin: 0;
-    padding: 0;
-    color: white;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    /* padding-left: 4%; */
-    background-color: #1c3177;
-}
-
-footer#bottom-of-web>div#top-infor>div.information>div {
-    margin: 0;
-    display: block;
-    width: 29%;
-    padding: 10px 0;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    /* font-size: 14px; */
-    /* color: red; */
-}
-
-footer#bottom-of-web>div#top-infor>div.information>div a {
-    text-decoration: none;
-    color: white;
-}
-
-footer#bottom-of-web>div#top-infor>div.information>div a:hover {
-    border-bottom: solid 3px red;
-    color: #1C3177;
-    transition: 1s;
-    background-color: white;
-    padding: 3px 2px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-}
-
-footer#bottom-of-web>div#top-infor>div.information div.align-left {
-    text-align: left;
-}
-
-footer#bottom-of-web>div#top-infor>div.information div.align-center {
-    text-align: center;
-}
-
-footer#bottom-of-web>div#top-infor>div.information div.align-right {
-    text-align: right;
-}
-
-footer#bottom-of-web>div#top-infor>div.information>div>a {
-    text-decoration: none;
-    border-radius: 20px;
-    background-color: white;
-    color: #1c3177;
-    font-weight: bold;
-    margin-top: 5px;
-    padding: 5px 10px;
-    margin-left: -10px;
-}
-
-footer#bottom-of-web>div#top-infor>div.information>div a:hover {
-    border-bottom: solid 3px red;
-    color: #1C3177;
-    transition: 1s;
-    background-color: white;
-    padding: 3px 2px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-}
-
-footer#bottom-of-web>div#bottom-copy-right {
-    background-color: #122050;
-    height: 40px;
-    display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}
-
 @media screen and (max-width: 1097px) {
     div#first-gen a {
         text-align: left;
@@ -657,7 +555,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        color: black;
     }
     main div#block-cs div#con-cs-top div#content-cs h1 {
         padding-bottom: 20px;
@@ -672,7 +569,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 24px;
         font-weight: bolder;
         background-color: red;
-        color: black;
         text-decoration: none;
         padding: 5px 25px;
         /* margin-bottom: 40px; */
@@ -718,7 +614,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin: 0;
         /* float: left; */
         background-color: #2042B2;
-        <<<<<<< HEAD=======>>>>>>>195c6a320854d0c2da9eb7bf7796b1d4c827c3dc
     }
     main div#block-job div#job-oppor div#left-side h2 {
         color: white;
@@ -790,7 +685,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        color: black;
     }
     main div#block-cs div#con-cs-top div#content-cs h1 {
         padding-bottom: 20px;
@@ -834,7 +728,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        color: black;
     }
     main div#block-cs div#con-cs-top div#content-cs h1 {
         padding-bottom: 20px;
@@ -876,7 +769,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: black;
     }
 }
 
@@ -888,7 +780,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         width: 84%;
         margin-left: 8%;
         margin-right: 8%;
-        color: black;
     }
     main div#block-cs div#con-cs-top div#content-cs h1 {
         padding-bottom: 20px;
@@ -1019,7 +910,6 @@ footer#bottom-of-web>div#bottom-copy-right {
     div#first-gen div.toptopic p {
         margin-left: 4%;
         padding-top: 10px;
-        color: black;
         opacity: 1;
         font-weight: bold;
         margin-top: 0;
@@ -1121,18 +1011,6 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin: 0 auto;
         margin-bottom: 50px;
         /* margin-top: 50px; */
-    }
-    footer#bottom-of-web>div#top-infor>div.information>div {
-        margin: 0;
-        display: block;
-        width: 29%;
-        padding: 10px 0;
-        padding-left: 1.5%;
-        font-size: 13px;
-    }
-    footer#bottom-of-web>div#top-infor>div.information>div h4 {
-        font-size: 125%;
-        /* 1em/2 */
     }
     div#first-gen a {
         text-align: left;
@@ -1272,19 +1150,6 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 360px) {
-    /* footer with smarller font-size */
-    footer#bottom-of-web>div#top-infor>div.information>div {
-        margin: 0;
-        display: block;
-        width: 29%;
-        padding: 10px 0;
-        padding-left: 1.5%;
-        font-size: 12px;
-    }
-    footer#bottom-of-web>div#top-infor>div.information>div h4 {
-        font-size: 125%;
-        /* 1em/2 */
-    }
     /* Job opportunities */
     main div#block-job {
         display: block;

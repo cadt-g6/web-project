@@ -1,0 +1,39 @@
+footer {
+  background-color: white;
+}
+
+footer .up-section ul li h1,
+footer .dwn-section ul li h1 {
+  color: #1c3177;
+}
+
+footer .up-section ul li a,
+footer .dwn-section ul li a {
+  color: #1c3177;
+}
+
+footer .up-section ul li .register,
+footer .dwn-section ul li .register {
+  background-color: #1c3177;
+  color: white;
+}
+
+footer .up-section ul li a:hover,
+footer .dwn-section ul li a:hover {
+  color: #a1b5ff;
+}
+
+footer .up-section ul li .register:hover,
+footer .dwn-section ul li .register:hover {
+  background-color: #dc2128;
+  color: white;
+}
+
+footer .copyright {
+  background-color: #122050;
+}
+
+footer .copyright p {
+  color: white;
+}
+/*# sourceMappingURL=foot-white.css.map */

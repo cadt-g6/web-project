@@ -1,0 +1,33 @@
+footer {
+    background-color: white;
+    .up-section,
+    .dwn-section {
+        ul {
+            li {
+                h1 {
+                    color: #1c3177;
+                }
+                a {
+                    color: #1c3177;
+                }
+                .register {
+                    background-color: #1c3177;
+                    color: white;
+                }
+                a:hover {
+                    color: #a1b5ff;
+                }
+                .register:hover {
+                    background-color: #dc2128;
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright {
+        background-color: #122050;
+        p {
+            color: white;
+        }
+    }
+}
