@@ -1,11 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-   height: auto;
-   opacity: 2;
+  
 }
+/*Tech Cente*/
 
 #tech{
   margin-left: 140px;
@@ -18,54 +16,47 @@ body{
 		margin-left: 20px;
 	}
   }
+ 
+  .border{
+    width: 70px;
+    height: 5px;
+    background: #19109c;
+     
+      
+  }
+  .border1{
+    width: 70px;
+    height: 5px;
+    background: #c2040a;
+    
+  }
 
+  .border2{
+    width: 70px;
+    height: 5px;
+    background: #19109c;
+    
+  }
+  
+  #line{
+   
+    display: flex;
+    margin-left: 145px;
+ 
+  }
+  @media only screen and (max-width: 540px) {
+    #line{
+      margin-left: 20px;
+    }
+    }
 
+  /*image tech center*/
 #center{
     margin-right: 20px;
-   display: block;
-  
+}
 
-   
-}
-#text{
-    font-family: DaunPenh;
-    font-size: 35px;
-    margin-top: 0px;
-    width: 600px;
-    color: #5c584f; 
-}
-img.img1{
-  max-width:100%;height:auto;"
-}
-@media only screen and (min-width: 1348px) {
-  img.img1{
-    width: 700px;
 
-   
-  }
-}
-.Tech_center_text{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 10px;
-   
-}
-@media only screen and (max-width: 540px) {
-    #center{
-      display: block;
-      width: auto;
-     
-    }
-  }
-
-  @media only screen and (max-width: 540px) {
-    img.img1{
-      height: 300px;
-     
-    }
-  }
-  @media only screen and (max-width: 988px) {
+@media only screen and (max-width: 988px) {
     #center{
       display: block;
       width: auto;
@@ -74,9 +65,33 @@ img.img1{
      
     }
   }
-
-
+@media only screen and (max-width: 540px) {
+    #center{
+      display: block;
+      width: auto;
+     
+    }
+  }
+img.img1{
+  max-width:100%;
+  height:auto;
+}
   @media only screen and (max-width: 540px) {
+    img.img1{
+      height: 300px;
+    }
+  }
+  
+  /*text*/
+  
+#text{
+    font-family: DaunPenh;
+    font-size: 27px;
+    margin-top: 0px;
+    width: 500px;
+    color: #5c584f; 
+}
+ @media only screen and (max-width: 540px) {
     #text{
       display: block;
       width: auto;
@@ -96,6 +111,16 @@ img.img1{
     }
   }
 
+  /* image tech center+ text  */
+
+.Tech_center_text{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 10px;
+   
+}
+
   @media only screen and (max-width: 988px) {
     .Tech_center_text{
       display: block;
@@ -108,75 +133,79 @@ img.img1{
   /* footer */
 
 footer#bottom-of-web>div#top-infor {
-  margin-top: 60px;
-  margin-bottom: 0;
-  display: block;
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: block;
 }
 
 footer#bottom-of-web>div#top-infor>div.information {
-  margin: 0;
-  padding: 0;
-  color: white;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  /* padding-left: 4%; */
-  background-color:#f3f2fa ;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding-left: 4%; */
+    background-color:rgb(252, 252, 253) ;
 }
 
 footer#bottom-of-web>div#top-infor>div.information>div {
-  margin: 0;
-  display: block;
-  width: 29%;
-  padding: 10px 0;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+    margin: 0;
+    display: block;
+    width: 20%;
+    padding: 10px 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
+@media only screen and (max-width: 540px) {
+	footer#bottom-of-web>div#top-infor>div.information>div{
+		width: 29%;
+	}
+  }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
-  text-align: left;
+    text-align: left;
 }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-center {
-  text-align: center;
+    text-align: center;
 }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-right {
-  text-align: right;
+    text-align: right;
 }
 
 footer#bottom-of-web>div#top-infor>div.information>div>a {
-  text-decoration: none;
-  border-radius: 20px;
-  background-color:#0E4F6B;
-  color: white;
-  font-weight: bold;
-  margin-top: 5px;
-  padding: 5px 10px;
-  margin-left: -10px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 10px;
+	margin-left: -10px;
+
 }
 
 footer#bottom-of-web>div#bottom-copy-right {
-  background-color:#122050;
-  height: 40px;
-  display: flex;
-  color:white;
-  justify-content: center;
-  align-items: center;
+    background-color:#122050;
+    height: 40px;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
 }
 
 .information a,h4{
-text-decoration: none;
-color: #0E4F6B;
+	text-decoration: none;
+	color:#2042B2;
+	
 }
 .information a:hover{
-color: red;
-}
+	color: red;
+	}
 
-
-
-
-
+	 
 
 
 

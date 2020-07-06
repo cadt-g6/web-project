@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation</title>
+    <title>NIPTICT</title>
     <!-- local style -->
     <link rel="stylesheet" href="css/main-style/main.css">
     <link rel="stylesheet" href="css/main-style/nav-bar.css">
@@ -22,18 +22,10 @@
         <img class="niptict-logo rellax" data-rellax-speed="10" src="image-files/NIPTICT-logo.png" alt="">
         <nav>
             <div class="dropdown">
-                <button class="dropbtn">About Us
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="pre-message.html">President's Message</a>
-                    <a href="vision.html">Vision | Misson</a>
-                    <a href="#">Why study at NIPTICT?</a>
-                </div>
+                <button class="dropbtn">About Us</button>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Academic
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn">Academic<i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="academic/ba-of-ecom">Bachelar of E-Commerce</a>
@@ -60,7 +52,7 @@
                     <a href="centers/tech-centr.html">Tech Center</a>
                 </div>
             </div>
-            <a href="partner.html">Partner</a>
+            <a href="index.html#partners">Partner</a>
             <a href="contact-us.html">Contact Us</a>
         </nav>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -76,18 +68,19 @@
         }
     </script>
 
-    <!-- homepage - first view -->
+    <!-- HOMEPAGE - FIRST VIEW  -->
     <main>
         <div class="rellax hero-image" data-rellax-speed="0"></div>
         <section class="rellax presentation" data-rellax-speed="3">
             <div class="introduction">
                 <div class="quote">
-                    <h1>Learn the <span>skills</span> you<br> require to stand out from<br> the crowd in Digital
+                    <h1>Learn the <span>skills</span> you<br> 
+                        require to stand out from<br> the crowd in Digital
                         Age<br><br>
                     </h1>
                 </div>
                 <div class="button">
-                    <a href="#">Enroll Now</a>
+                    <a href="./admission/tuition-fee.html">Enroll Now</a>
                 </div>
             </div>
             <div class="cover">
@@ -98,28 +91,50 @@
 
     <!-- THIS on-fixed class HOLD ALL SECTIONS BELOW HOMEPAGE -->
     <section class="rellax on-fixed" data-rellax-speed="40">
-        <!-- section 2: 4 cards -->
+        <!-- SECTION1 - FOUR CARDS -->
         <div class="four-card">
-            <!-- Bachelor Program -->
-            <div class="academic">
+            <div class="academic"> <!-- Bachelor Program -->
                 <div class="major">
                     <div class="text-container">
                         <h1>Bachelar Program</h1>
-                        <p>Acquire a comprehensive knowledge of the digital and entrepreneurship world
-                        </p>
+                        <p>Acquire a comprehensive knowledge of the digital 
+                            and entrepreneurship world</p>
                     </div>
-                    <!-- Computer Science -->
-                    <a href="#">Computer Science</a><br>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam
-                        deserunt commodi at praesentium est sit suscipit.</p>
+                    <div class="container"> <!-- Computer Science -->
+                        <a class="a-main" href="#" onclick="return false">Computer Science</a><br>
+                        <div class="info cs">
+                            <p>With the implementation of a blended learning model, effective open content, and strong faculty-industry relationships, students will be prepared to 
+                                demonstrate their knowledge to the greatest potential.</p>
+                            <div class="button">
+                                <a href="https://www.facebook.com/NIPTICT/videos/1303145063154483/" class="btn1">Our Student</a>
+                                <a href="./academic/ba-of-cs/index.html" class="btn2">Information</a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- E-Commerce -->
-                    <a href="#">E-Commerce</a><br>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam
-                        deserunt commodi at praesentium est sit suscipit.</p>
+                    <div class="container">
+                        <a class="a-main cs" href="#" onclick="return false">E-Commerce</a><br>
+                        <div class="info e-com">
+                            <p>Students will not only gain analytical, technical, and practical 
+                                skills, but also soft skills that are integrated into the curriculum in order to provide students with critical thinking, problem-solving, leadership skills and a global mindset so that they can apply their knowledge effectively in the future career</p>
+                            <div class="button">
+                                <a href="https://www.facebook.com/NIPTICT/videos/413237832718724/" class="btn1">Our Student</a>
+                                <a href="./academic/ba-of-ecom/index.html" class="btn2">Information</a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Network and Telecom -->
-                    <a href="#">Network and Telecom</a>
-                    <p style="display: none;">Lorem ipsum, ignissimos dolores nemo illum voluptatibus iure, totam
-                        deserunt commodi at praesentium est sit suscipit.</p>
+                    <div class="container">
+                        <a class="a-main" href="#" onclick="return false"> Telecom & Telecom</a><br>
+                        <div class="info nw">
+                            <p>Students will be trained to take exams in various international certifications such as Cisco Certified Network 
+                                Associate (CCNA), CCNDA, CCNA Security, and CCNA Service Provider</p>
+                            <div class="button">
+                                <a href="https://www.facebook.com/NIPTICT/videos/412475026138346/" class="btn1">Our Student</a>
+                                <a href="./academic/ba-of-tn/index.html" class="btn2">Information</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- G1 Graducate Image -->
                 <div class="graduate">
@@ -133,7 +148,7 @@
                     <h1>R&D</h1>
                     <p>Work with us on research, development, design, and engineering</p>
                     <div class="btn">
-                        <a href="#">Learn more</a>
+                        <a href="http://rnd.niptict.edu.kh/">Learn more</a>
                     </div>
                 </div>
                 <div class="columnflex">
@@ -152,24 +167,29 @@
                 </div>
             </div>
         </div>
-        <!-- section 3: emb youtube -->
+        <!-- SECTION2 - EMB YOUTUBE -->
         <div class="youtube">
             <div class="ytcontainer">
                 <iframe src="./youtube-videos/video1.html" name="change-yt"></iframe>
                 <div class="videos">
-                    <a class="card-yt active" href="./youtube-videos/video1.html" onclick="addActiveClass('video1')" id="video1" target="change-yt">
+                    <a class="card-yt active" href="./youtube-videos/video1.html" onclick="addActiveClass('video1')"
+                        id="video1" target="change-yt">
                         <img src="./youtube-videos/youtube1.png" alt="youtube-vd">
                     </a>
-                    <a class="card-yt" href="./youtube-videos/video2.html" onclick="addActiveClass('video2')" id="video2" target="change-yt">
+                    <a class="card-yt" href="./youtube-videos/video2.html" onclick="addActiveClass('video2')"
+                        id="video2" target="change-yt">
                         <img src="./youtube-videos/youtube2.png" alt="youtube-vd">
                     </a>
-                    <a class="card-yt" href="./youtube-videos/video3.html" onclick="addActiveClass('video3')" id="video3" target="change-yt">
+                    <a class="card-yt" href="./youtube-videos/video3.html" onclick="addActiveClass('video3')"
+                        id="video3" target="change-yt">
                         <img src="./youtube-videos/youtube3.png" alt="youtube-vd">
                     </a>
-                    <a class="card-yt" href="./youtube-videos/video4.html" onclick="addActiveClass('video4')" id="video4" target="change-yt">
+                    <a class="card-yt" href="./youtube-videos/video4.html" onclick="addActiveClass('video4')"
+                        id="video4" target="change-yt">
                         <img src="./youtube-videos/youtube4.png" alt="youtube-vd">
                     </a>
-                    <a class="card-yt" href="./youtube-videos/video5.html" onclick="addActiveClass('video5')" id="video5" target="change-yt">
+                    <a class="card-yt" href="./youtube-videos/video5.html" onclick="addActiveClass('video5')"
+                        id="video5" target="change-yt">
                         <img src="./youtube-videos/youtube5.png" alt="youtube-vd">
                     </a>
                 </div>
@@ -186,7 +206,7 @@
             }
         </script>
 
-        <!-- section 4: why niptict -->
+        <!-- SECTION3 - WHY NIPTICT? -->
         <div class="whyniptict">
             <div class="card aver-year">
                 <div class="cicle">3.5</div>
@@ -209,8 +229,8 @@
                 <p>First telecommunications and e-commerce school in Cambodia.</p>
             </div>
         </div>
-        <!-- section 5: smart scholar -->
-        <div class="smartscholar">
+        <!-- SECTION 4: SMART SCHOLARSHIP -->
+        <div class="smartscholar" id="smartscholar">
             <div class="logo">
                 <img src="./image-files/Smart_Axiata_logo.png" alt="smartlogo">
             </div>
@@ -226,92 +246,92 @@
                 </div>
             </div>
         </div>
-        <!-- section 6 - partner -->
+        <!-- SECTION5 - PARTNER -->
         <div class="partner">
             <h2>Our Partners</h2>
             <div class="gallery">
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/morakot.png" alt="partner-1">
+                    <img src="./image-files/partner-res/morakot.png" alt="partner-1">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/fpt.png" alt="partner-2">
+                    <img src="./image-files/partner-res/fpt.png" alt="partner-2">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/ciesf.png" alt="partner-3">
+                    <img src="./image-files/partner-res/ciesf.png" alt="partner-3">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/cisco.png" alt="partner-4">
+                    <img src="./image-files/partner-res/cisco.png" alt="partner-4">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/zte.png" alt="partner-5">
+                    <img src="./image-files/partner-res/zte.png" alt="partner-5">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/inp.png" alt="partner-6">
+                    <img src="./image-files/partner-res/inp.png" alt="partner-6">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/cfocn.png" alt="partner-7">
+                    <img src="./image-files/partner-res/cfocn.png" alt="partner-7">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/spu.png" alt="partner-8">
+                    <img src="./image-files/partner-res/spu.png" alt="partner-8">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/huawei.png" alt="partner-9">
+                    <img src="./image-files/partner-res/huawei.png" alt="partner-9">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/cnac.png" alt="partner-10">
+                    <img src="./image-files/partner-res/cnac.png" alt="partner-10">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/soongsil.png" alt="partner-11">
+                    <img src="./image-files/partner-res/soongsil.png" alt="partner-11">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/sabay.png" alt="partner-12">
+                    <img src="./image-files/partner-res/sabay.png" alt="partner-12">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/smart.png" alt="partner-13">
+                    <img src="./image-files/partner-res/smart.png" alt="partner-13">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/nict.png" alt="partner-14"> 
+                    <img src="./image-files/partner-res/nict.png" alt="partner-14">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/nia.png" alt="partner-15">
+                    <img src="./image-files/partner-res/nia.png" alt="partner-15">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/seatel.png" alt="partner-16">
+                    <img src="./image-files/partner-res/seatel.png" alt="partner-16">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/caict.png" alt="partner-17">
+                    <img src="./image-files/partner-res/caict.png" alt="partner-17">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/ky.png" alt="partner-18">
+                    <img src="./image-files/partner-res/ky.png" alt="partner-18">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/metfone.png" alt="partner-19">
+                    <img src="./image-files/partner-res/metfone.png" alt="partner-19">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/bizsolution.png" alt="partner-20">
+                    <img src="./image-files/partner-res/bizsolution.png" alt="partner-20">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/mimos.png" alt="partner-21">
+                    <img src="./image-files/partner-res/mimos.png" alt="partner-21">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/escap.png" alt="partner-22">
+                    <img src="./image-files/partner-res/escap.png" alt="partner-22">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/ministry.png" alt="partner-23">
+                    <img src="./image-files/partner-res/ministry.png" alt="partner-23">
                 </div>
                 <div class="img">
                     <img src="/image-files/partner-res/mica.png" alt="partner-24">
                 </div>
                 <div class="img">
-                    <img src="/image-files/partner-res/institue.png" alt="partner-25">
+                    <img src="./image-files/partner-res/institue.png" alt="partner-25">
                 </div>
                 <div class="img span-2">
-                    <img src="/image-files/partner-res/bookmebus.png" alt="partner-26">
+                    <img src="./image-files/partner-res/bookmebus.png" alt="partner-26">
                 </div>
             </div>
         </div>
 
-        <!-- PRESIDENT MESSAGE -->
+        <!-- SECTION6 - PRESIDENT MESSAGE -->
         <div class="president">
             <div class="container">
                 <!-- PRESIDENT IMAGE -->
@@ -329,11 +349,10 @@
                         <h1>Dr. Sopheap SENG</h1>
                         <h2>NIPTICT's President</h2>
                     </div>
-                    <button class="button-container">
+                    <button class="button-container" onclick="window.location.href='https://www.facebook.com/NIPTICT/'"><a href=""></a>
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </button>
                 </div>
-
             </div>
         </div>
         <!-- footer -->
@@ -343,47 +362,54 @@
                 <!--1-->
                 <ul>
                     <li><h1>Degree Program</h1></li>
-                    <li><a href="#">Computer Science</a></li>
-                    <li><a href="#">E-Commerce</a></li>
-                    <li><a href="#">Telecom and Network</a></li>
+                    <li><a href="./academic/ba-of-cs/index.html">Computer Science</a></li>
+                    <li><a href="./academic/ba-of-ecom/index.html">E-Commerce</a></li>
+                    <li><a href="./academic/ba-of-tn/index.html">Telecom and Network</a></li>
                     <li><a href="#"></a></li>
                 </ul>
                 <!--2-->
                 <ul>
-                    <li><h1>Student Archiements</h1></li>
+                    <li>
+                        <h1>Student Archiements</h1>
+                    </li>
                     <li><a href="#">NIPTICT Quality</a></li>
                     <li><a href="#">Student Experience</a></li>
                 </ul>
                 <!--3-->
                 <ul>
-                    <li><h1>Become A Student</h1></li>
+                    <li>
+                        <h1>Become A Student</h1>
+                    </li>
                     <li><a href="#">Application Requirement</a></li>
                     <li><a href="#">Exam Paper Examples</a></li>
-                    <li><a href="#">Telecom and Network</a></li>
-                    <br>
+                    <li><br></li>
                     <li><a class="register" href="#">Online Register</a></li>
                 </ul>
             </div>
             <div class="dwn-section">
                 <!--4-->
                 <ul>
-                    <li><h1>Tuition and Fees</h1></li>
-                    <li><a href="#">Tuition and Fees</a></li>
+                    <li>
+                        <h1>Tuition and Fees</h1>
+                    </li>
+                    <li><a href="./admission/tuition-fee.html">Tuition and Fees</a></li>
                     <li><a href="#">Our Scholarship</a></li>
                     <li><a href="#">Smart Edu Scholarship</a></li>
                 </ul>
                 <!--5-->
                 <ul>
-                    <li><h1>About Us</h1></li>
+                    <li>
+                        <h1>About Us</h1>
+                    </li>
                     <li><a href="#">About our Leaders</a></li>
                     <li><a href="#">Teacher Experience</a></li>
                     <li><a href="#">Partners</a></li>
                 </ul>
                 <!--6-->
                 <ul>
-                    <li><h1></h1></li>
+                    <li><br></li>
                     <li><a href="#">Prepare for New Class</a></li>
-                    <li><a href="#">Our Location</a></li>
+                    <li><a href="https://her.is/2O1vqFK">Our Location</a></li>
                 </ul>
             </div>
             <!--Copyright-->

@@ -1,4 +1,13 @@
 /* BODY */
+body {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  overflow-y: scroll;
+  position: absolute;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
 @-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translateY(70%);
@@ -11,6 +20,7 @@
     opacity: 1;
   }
 }
+
 @keyframes slideIn {
   0% {
     -webkit-transform: translateY(70%);
@@ -50,14 +60,6 @@
   }
 }
 
-body {
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-  overflow-y: scroll;
-  position: absolute;
-  width: 100%;
-}
-
 /* BACKGROUND IMAGE */
 .hero-image {
   width: 100%;
@@ -86,7 +88,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* LEFT SIDE - TEXT AND BTN */
-  /* RIGHT SIDE - MODEL GIRL IMAGE */
+  /* RIGHT SIDE - GIRL MODEL IMAGE */
 }
 
 .presentation .introduction {
@@ -103,7 +105,7 @@ body {
 }
 
 .presentation .introduction .quote h1 {
-  color: #2042b2;
+  color: #2042B2;
   font-size: calc(1.2em + 0.8vw);
   text-align: center;
   line-height: calc(30px + 0.6vw);
@@ -132,7 +134,7 @@ body {
 }
 
 .presentation .introduction .button :hover {
-  background-color: #1c3177;
+  background-color: #2042B2;
 }
 
 .presentation .cover {
@@ -152,10 +154,10 @@ body {
   height: 98%;
 }
 
-/* ALL SECTIONS CONTAINER CLASS */
+/* THIS on-fixed class HOLD ALL SECTIONS BELOW HOMEPAGE */
 .on-fixed {
-  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
-  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   border-bottom: none;
   background: #fbfbfb;
   height: auto;
@@ -164,14 +166,19 @@ body {
   padding: 30px 0;
   position: absolute;
   z-index: 1000000;
-  /* FOUR CARDS */
-  /* WHY NIPICT - 4 POINTS*/
-  /* SMART SCHOLARSHIP */
+  /* SECTION1 - FOUR CARDS */
+  /*SECTION2 - EMB YOUTUBE*/
+  /* SECTION3 - WHY NIPICT - 4 POINTS*/
+  /* SECTION 4: SMART SCHOLARSHIP */
+  /*SECTION5 - PARTNER*/
+  /* SECTION6 - PRESIDENT MESSAGE */
+  /* FOOTER */
 }
 
 .on-fixed .four-card {
   overflow: hidden;
-  /* FIRST CARD - ACADEMIC */
+  /* FIRST CARD - Bachelor Program */
+  /* OTHER THREE CARDS */
 }
 
 .on-fixed .four-card .academic {
@@ -182,8 +189,8 @@ body {
   display: flex;
   background-color: white;
   padding: 10px;
-  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
-  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   /* LEFT SIDE - MAJOR TEXT */
 }
 
@@ -202,8 +209,7 @@ body {
   width: 96%;
 }
 
-.on-fixed .four-card .academic .major .text-container p,
-.on-fixed .four-card .academic .major .text-container h1 {
+.on-fixed .four-card .academic .major .text-container p, .on-fixed .four-card .academic .major .text-container h1 {
   text-align: left;
   width: 100%;
   margin: 5px;
@@ -217,22 +223,99 @@ body {
   font-size: 30px;
 }
 
-.on-fixed .four-card .academic .major a {
-  text-decoration: none;
+.on-fixed .four-card .academic .major .container {
   width: 90%;
+  margin: 0 auto;
+}
+
+.on-fixed .four-card .academic .major .container .a-main {
+  text-decoration: none;
   font-size: calc(15px + 0.5vw);
   font-weight: 500;
   color: white;
-  background-color: #2d6481;
+  background-color: #2D6481;
   display: block;
   padding: 10px;
   -webkit-transition: ease-in-out 0.3;
   transition: ease-in-out 0.3;
-  margin: -10px auto 0;
+  margin: -5px;
+  border-radius: 2px;
 }
 
-.on-fixed .four-card .academic .major a:hover {
-  background-color: #ad3123;
+.on-fixed .four-card .academic .major .container .info {
+  background-color: #1c3177;
+  margin: -0.85em auto 1em;
+  height: auto;
+  width: 95%;
+  display: none;
+  border-bottom: 20px solid #1c3177;
+}
+
+.on-fixed .four-card .academic .major .container .info p {
+  font-size: 15px;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  padding: 10px 0px 25px;
+}
+
+.on-fixed .four-card .academic .major .container .info .button a {
+  text-decoration: none;
+  padding: 10px 2vw;
+  font-size: calc(0.8vw + 10px);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+}
+
+.on-fixed .four-card .academic .major .container .info .button .btn1 {
+  background-color: black;
+  color: white;
+}
+
+.on-fixed .four-card .academic .major .container .info .button .btn2 {
+  color: #1c3177;
+  background-color: #fff;
+}
+
+@-webkit-keyframes slide_down {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_down {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.on-fixed .four-card .academic .major .container:hover .info {
+  display: block;
+  -webkit-animation: .4s ease-out 1 slide_down;
+          animation: .4s ease-out 1 slide_down;
+}
+
+.on-fixed .four-card .academic .major .container:hover .info .btn2:hover, .on-fixed .four-card .academic .major .container:hover .info .btn1:hover {
+  background-color: #dc2128;
+  color: white;
+}
+
+.on-fixed .four-card .academic .major .container:hover .a-main {
+  background-color: #dc2128;
 }
 
 .on-fixed .four-card .academic .graduate {
@@ -253,34 +336,33 @@ body {
   display: flex;
   width: calc(87.3% + 1vh);
   margin: 20px auto 20px;
+  /* 4CARDS WITH SAME STYLE */
+  /* R&D */
+  /* TRAINING & ENTREPRENEURSHIP */
 }
 
-.on-fixed .four-card .three-card .rnd,
-.on-fixed .four-card .three-card .columnflex > * {
+.on-fixed .four-card .three-card .rnd, .on-fixed .four-card .three-card .columnflex > * {
   overflow: hidden;
   margin: 0 5px;
   border-right: solid 5px white;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
-  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   text-align: center;
 }
 
-.on-fixed .four-card .three-card .rnd img,
-.on-fixed .four-card .three-card .columnflex > * img {
+.on-fixed .four-card .three-card .rnd img, .on-fixed .four-card .three-card .columnflex > * img {
   height: 206px;
   width: auto;
 }
 
-.on-fixed .four-card .three-card .rnd h1,
-.on-fixed .four-card .three-card .columnflex > * h1 {
+.on-fixed .four-card .three-card .rnd h1, .on-fixed .four-card .three-card .columnflex > * h1 {
   font-size: calc(15px + 0.5vw);
   font-weight: 400;
   margin: 0;
 }
 
-.on-fixed .four-card .three-card .rnd p,
-.on-fixed .four-card .three-card .columnflex > * p {
+.on-fixed .four-card .three-card .rnd p, .on-fixed .four-card .three-card .columnflex > * p {
   font-size: 15px;
   margin: 10px auto 20px;
   width: 80%;
@@ -309,7 +391,7 @@ body {
 }
 
 .on-fixed .four-card .three-card .rnd .btn:hover {
-  background-color: #2d6481;
+  background-color: #2042B2;
 }
 
 .on-fixed .four-card .three-card .columnflex {
@@ -319,8 +401,7 @@ body {
   display: flex;
 }
 
-.on-fixed .four-card .three-card .columnflex .training,
-.on-fixed .four-card .three-card .columnflex .entrepre {
+.on-fixed .four-card .three-card .columnflex .training, .on-fixed .four-card .three-card .columnflex .entrepre {
   width: 50%;
   -webkit-box-flex: 1/2;
       -ms-flex: 1/2;
@@ -332,16 +413,17 @@ body {
   height: calc(70vh + 20vw);
   width: 100%;
   padding: 3vh 0 0 0;
+  /* YOUTUBE CONTAINER */
 }
 
 .on-fixed .youtube .ytcontainer {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   margin: 3em auto 0;
   background: #fbfbfb;
   width: 80%;
   height: 80%;
   border-radius: 0.3em;
-  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
-  box-shadow: 0px 0px 6px 0px #bdbdbd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +519,7 @@ body {
   margin-top: calc(1em + 4vw);
   height: 50vh;
   line-height: 28px;
-  /* BIG CICLE */
+  /* CICLE */
 }
 
 .on-fixed .whyniptict .card .cicle {
@@ -474,7 +556,7 @@ body {
 .on-fixed .whyniptict .card p {
   color: #707070;
   font-weight: 300;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   line-height: 19px;
   font-size: 15px;
@@ -482,13 +564,14 @@ body {
 }
 
 .on-fixed .smartscholar {
-  background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+  background: url(/image-files/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
   background-size: cover;
   position: relative;
   height: calc(30vh + 20em);
   width: 100%;
   overflow: hidden;
-  /* LOGO ON RIGHT */
+  /* LOGO */
+  /* TEXT CONTAINER*/
 }
 
 .on-fixed .smartscholar .logo {
@@ -635,8 +718,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
-  box-shadow: 0px 0px 6px 0px #bdbdbd;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
 }
 
 .on-fixed .president .container .left-container {
@@ -784,7 +867,7 @@ body {
   font-weight: 300;
 }
 
-/* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
+/* A LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
 .on-fixed::after {
   background-color: white;
   height: 20px;
@@ -797,6 +880,7 @@ body {
   z-index: -100;
 }
 
+/* MAX WIDTH 1024PX*/
 @media screen and (max-width: 1024px) {
   .presentation .cover img {
     right: 0;
@@ -816,6 +900,7 @@ body {
   }
 }
 
+/* MAX WIDTH 925PX*/
 @media screen and (max-width: 925px) {
   .presentation .cover img {
     top: 15vh;
@@ -884,6 +969,7 @@ body {
   }
 }
 
+/* MAX WIDTH 860PX*/
 @media screen and (max-width: 860px) {
   .presentation {
     -webkit-box-orient: vertical;
@@ -937,7 +1023,7 @@ body {
     width: calc(100% + 2vh);
     padding: 0;
     margin: 10px auto;
-    margin-left: 0px;
+    margin-left: -1.2vw;
   }
   .on-fixed .smartscholar {
     height: calc(30vh + 20em);
@@ -993,12 +1079,12 @@ body {
   .on-fixed footer .empty {
     height: 40%;
   }
-  .on-fixed footer .up-section,
-  .on-fixed footer .dwn-section {
+  .on-fixed footer .up-section, .on-fixed footer .dwn-section {
     width: 90%;
   }
 }
 
+/* MAX WIDTH 560PX*/
 @media screen and (max-width: 560px) {
   .on-fixed .smartscholar {
     height: calc(30vh + 20em);
@@ -1016,8 +1102,7 @@ body {
   .on-fixed footer .empty {
     height: 20%;
   }
-  .on-fixed footer .up-section,
-  .on-fixed footer .dwn-section {
+  .on-fixed footer .up-section, .on-fixed footer .dwn-section {
     margin-right: 0vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1026,6 +1111,7 @@ body {
   }
 }
 
+/* MAX WIDTH 360PX*/
 @media screen and (max-width: 360px) {
   .on-fixed .partner .gallery {
     -ms-grid-columns: auto auto auto auto auto;

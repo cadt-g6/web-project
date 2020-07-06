@@ -1,0 +1,111 @@
+footer {
+  margin-top: 5em;
+  padding-top: 2em;
+  overflow: hidden;
+  background-color: #1c3177;
+  width: 100%;
+  z-index: -10;
+  height: 25em;
+  position: absolute;
+}
+
+footer .up-section,
+footer .dwn-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer .up-section ul,
+footer .dwn-section ul {
+  list-style: none;
+}
+
+footer .up-section ul li h1, footer .up-section ul li h2,
+footer .dwn-section ul li h1,
+footer .dwn-section ul li h2 {
+  margin: 0;
+  padding: 0;
+}
+
+footer .up-section ul li h1,
+footer .dwn-section ul li h1 {
+  font-size: calc(13px + 0.5vw);
+  color: white;
+  margin-bottom: 0.2em;
+}
+
+footer .up-section ul li a,
+footer .dwn-section ul li a {
+  text-decoration: none;
+  color: white;
+  line-height: 25px;
+}
+
+footer .up-section ul li .register,
+footer .dwn-section ul li .register {
+  padding: 6px 10px;
+  background-color: white;
+  color: #1c3177;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+footer .up-section ul li a:hover,
+footer .dwn-section ul li a:hover {
+  color: #a1b5ff;
+}
+
+footer .up-section ul li .register:hover,
+footer .dwn-section ul li .register:hover {
+  background-color: #dc2128;
+  color: white;
+}
+
+footer .copyright {
+  width: 100%;
+  height: 8vh;
+  bottom: 0;
+  position: absolute;
+  background-color: #122050;
+  z-index: 10;
+}
+
+footer .copyright p {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1020px) {
+  footer .up-section,
+  footer .dwn-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    height: 30em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  footer {
+    height: 55em;
+  }
+  footer .up-section,
+  footer .dwn-section {
+    margin-right: 0vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

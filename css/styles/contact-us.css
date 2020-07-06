@@ -1,9 +1,7 @@
 body{
-	background-repeat: no-repeat;
-	background-size: 100%;
-
 	margin: 0px;
-	padding: 0px;	 
+	padding: 0px;
+	 
 }
 
 				
@@ -30,12 +28,11 @@ div.text a button.button{
 		border: none;
 	}
 	div.text a button.button:hover{
-		background-color:#2547B4;
+		color:#a1aaca;
+		transition: 1s;
+		cursor: pointer;
 	}
 
-	div.Location-information a{
-		color: white;
-	}
 
 /* text */
 
@@ -74,7 +71,6 @@ div.text a button.button{
 	}
   }
  
-
  /* div text+map  */
 
 div.map_text{
@@ -92,30 +88,32 @@ div.map_text{
 	}
   }
 
-/* .Location-information */
+/* contact_us*/
 
   .Location-information{
-	border: solid 0px;
+	border: none;
 	background-color: #2042B2;
 	width: 407px;
 	height: 450px;
-	position: relative;
 	color: white;
 	padding: 25px;
 	box-sizing: border-box;
 	overflow: hidden;
-	box-shadow: 0px 0px 6px 0px #bdbdbd;
-	border: none;
-	
+	box-shadow: 0px 0px 6px 0px #bdbdbd;	
 	
 }
-div.icon a{
-	margin-left: 50px;
-	color:#b8b4b4;
-}
-div.icon a:hover{
+@media only screen and (max-width: 540px) {
+	.Location-information{
+		margin-left: 0px;
+		display:block;
+		width: auto;height: auto;
+		padding-left: 25px 80px;
+	}
+  }
+  div.Location-information a{
 	color: white;
 }
+/*icon*/
 .i{
 	color: #b8b4b4;
 }
@@ -123,33 +121,14 @@ div.icon a:hover{
 	color: white;
 }
 
-@media only screen and (max-width: 540px) {
-	.Location-information{
-		margin-left: 0px;
-		display:block;
-		width: 100%;height: auto;
-		padding-left: 25px 80px;
-	}
-  }
-
-/* .send + Location-information */
-
-
-.send_Location-information{
-	margin-top: 70px;
-	display:flex;
-	justify-content: center;
-	
-	
+div.icon a{
+	margin-left: 50px;
+	color:#b8b4b4;
 }
-@media only screen and (max-width: 540px) {
-	.send_Location-information{
-		margin-left: 0px;
-		display:block;
-	}
-  }
-
-  /* contact-us */
+div.icon a:hover{
+	color: white;
+}
+/* send us a message */
 
 	.send{
 		border: none;
@@ -157,13 +136,11 @@ div.icon a:hover{
 		width: 407px;
 		height: 450px;
 		box-shadow: 0px 0px 6px 0px #bdbdbd;
-		
-		
 	
 	}
 	@media only screen and (max-width: 540px) {
 		.send{
-			width: 100%;height: auto;
+			width:auto ;height: auto;
 		}
 	  }
 
@@ -209,6 +186,24 @@ div.icon a:hover{
 	.contact-form-btn:hover{
 		color: #2042B2;
 	}
+/* .send + Location-information */
+
+
+.send_Location-information{
+	margin-top: 70px;
+	display:flex;
+	justify-content: center;
+	
+	
+}
+@media only screen and (max-width: 540px) {
+	.send_Location-information{
+		margin-left: 0px;
+		display:block;
+	}
+  }
+
+  
 
 	/* footer */
 
@@ -226,17 +221,22 @@ footer#bottom-of-web>div#top-infor>div.information {
     width: 100%;
     justify-content: center;
     /* padding-left: 4%; */
-    background-color:#f3f2fa ;
+    background-color:rgb(252, 252, 253) ;
 }
 
 footer#bottom-of-web>div#top-infor>div.information>div {
     margin: 0;
     display: block;
-    width: 29%;
+    width: 20%;
     padding: 10px 0;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
+@media only screen and (max-width: 540px) {
+	footer#bottom-of-web>div#top-infor>div.information>div{
+		width: 29%;
+	}
+  }
 
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
@@ -253,12 +253,13 @@ footer#bottom-of-web>div#top-infor>div.information div.align-right {
 footer#bottom-of-web>div#top-infor>div.information>div>a {
     text-decoration: none;
     border-radius: 20px;
-    background-color:#0E4F6B;
+    background-color:red;
     color: white;
     font-weight: bold;
     margin-top: 5px;
     padding: 5px 10px;
-    margin-left: -10px;
+	margin-left: -10px;
+
 }
 
 footer#bottom-of-web>div#bottom-copy-right {
@@ -272,7 +273,8 @@ footer#bottom-of-web>div#bottom-copy-right {
 
 .information a,h4{
 	text-decoration: none;
-	color: #0E4F6B;
+	color:#2042B2;
+	
 }
 .information a:hover{
 	color: red;

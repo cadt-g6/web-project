@@ -1,1 +1,1336 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* header set */
+
+h1,
+h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    margin-left: 8%;
+    font-size: 2em;
+    /* padding-top: 20px; */
+}
+
+main div#block-cs {
+    display: block;
+    /* background-color: blue; */
+    /* padding-bottom: 200px; */
+    /* position: absolute; */
+}
+
+main div#block-cs div#con-cs-top {
+    width: 100%;
+    height: 480px;
+    display: flex;
+}
+
+main div#block-cs div#con-cs-top div#content-cs {
+    height: 100%;
+    display: inline-block;
+    width: 60%;
+    margin-left: 8%;
+    margin-top: 4em;
+    /* color: black; */
+}
+
+main div#block-cs div#con-cs-top div#content-cs h1 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.7em;
+    margin: 0;
+    color: #2042B2;
+}
+
+main div#block-cs div#con-cs-top div#content-cs p {
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #2042B2;
+}
+
+main div#block-cs div#con-cs-top div#content-cs form label a {
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    /* box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+main div#block-cs div#con-cs-top div#content-cs form label a:hover {
+    color: red;
+    background-color: white;
+    border-top: solid 3px blue;
+}
+
+main div#block-cs div#con-cs-top div#image-of-cs-logo {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+    /* position: relative; */
+    width: 250px;
+    height: auto;
+}
+
+
+/* job opportunity */
+
+main div#block-job {
+    display: block;
+}
+
+main div#block-job div#job-oppor {
+    display: flex;
+    width: 85%;
+    height: 500px;
+    /* background-color: gray; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+main div#block-job div#job-oppor div#left-side {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    /* float: left; */
+    background-color: #2042B2;
+    background-color: #2042B2;
+    -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+    box-shadow: 0px 0px 6px 0px #bdbdbd;
+}
+
+main div#block-job div#job-oppor div#left-side h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+main div#block-job div#job-oppor div#left-side div.job-content>ul>li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-left: -20px;
+    text-align: left
+    /* list-style-position: inside; */
+}
+
+main div#block-job div#job-oppor div#left-side div.job-content>ul>li>a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 22px; */
+}
+
+main div#block-job div#job-oppor div#right-side {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+    box-shadow: 0px 0px 6px 0px #bdbdbd;
+    /* float: right; */
+    /* background-color: blue; */
+}
+
+main div#block-job div#job-oppor div#right-side>iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Learn out come */
+
+
+/* main div#learn-out {
+    background-color: #04354A;
+    color: black;
+    padding: 40px 0;
+    height: 360px;
+}
+
+main div#learn-out h2 {
+    margin-bottom: 20px;
+    margin-left: 7%;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main div#learn-out p {
+    font-size: 1.25em;
+    margin-left: 7%;
+}
+
+main div#learn-out ul li {
+    margin-left: 9%;
+    list-style-type: square;
+}
+
+main div#learn-out ul li p {
+    margin-left: 1.5%;
+    font-size: 1em;
+} */
+
+div#learn-out {
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    background-image: url('../../../../image-files/SVG/Subtraction.svg');
+    /* background-position: top; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 240px auto;
+    background-color: #2042B2;
+    color: white;
+}
+
+
+/* program structure */
+
+
+/* main div#pro-struct {
+    margin-top: 30px;
+}
+
+main div#pro-struct h2 {
+    font-weight: bold;
+    color: #04354A;
+    margin-left: 7%;
+    font-size: 2em;
+}
+
+main div#pro-struct div.year p {
+    font-size: 2em;
+    margin-left: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 {
+    width: 30%;
+    display: inline-block;
+    margin-left: 2.5%;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 p.by-term {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct p {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 2px;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+} */
+
+main div#pro-struct {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct h2 {
+    font-weight: bold;
+    color: black;
+}
+
+main div#pro-struct div.year {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct>div.year>p {
+    font-size: 1.2em;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+}
+
+main div#pro-struct div.year div.term {
+    width: 100%;
+    display: flex;
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 {
+    width: 31%;
+    display: inline-block;
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 p.by-term {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct div {
+    height: 50px;
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct div p {
+    height: 100%;
+    text-align: left;
+    /* padding: 15px 0; */
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-top: solid 0.5px #0d47a1;
+}
+
+
+/* for term 6 and 10 */
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.no-border {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.no-border div {
+    height: 50px;
+}
+
+main div#pro-struct div.year div.term div.term-1-2-3 div.no-border p {
+    text-align: left;
+    padding: 15px 0;
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* year 4 */
+
+main div#pro-struct div.year4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#pro-struct div.year4 div.term {
+    width: 100%;
+    display: flex;
+}
+
+main div#pro-struct div.year4 div.term div.term-1-2-3 p.by-term {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main div#pro-struct>div.year4>p {
+    font-size: 1.2em;
+    width: 31%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+}
+
+main div#pro-struct div.year4 div.term div.term-1-2-3 {
+    width: 31%;
+    display: inline-block;
+    margin-left: 1.5%;
+    margin-right: 0;
+}
+
+main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
+    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    /* height: 240px; */
+}
+
+main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border div {
+    height: 50px;
+}
+
+main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border p {
+    text-align: left;
+    padding: 15px 0;
+    padding-left: 5%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* end of term 6 and 10 */
+
+
+/* first gen */
+
+div#first-gen {
+    height: 375px;
+    width: 65%;
+    /* display: inline-block; */
+    margin-left: 5%;
+    /* opacity: 0.75; */
+    /* background-attachment: fixed; */
+    background-image: url('../../../../image-files/academic/graduate.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    margin-top: -35px;
+    /* opacity: 0.5; */
+    /* opacity: 0.25; */
+    /* border: solid black 0.5px; */
+}
+
+div#first-gen {
+    position: absolute;
+    width: 65%;
+    display: block;
+    margin-left: 35%;
+}
+
+div#first-gen div.toptopic h2 {
+    color: white;
+    margin: 0;
+    margin-left: 4%;
+    padding-bottom: 10px;
+    /* opacity: 1; */
+}
+
+div#first-gen div.toptopic p {
+    margin-left: 4%;
+    padding-top: 10px;
+    color: white;
+    /* opacity: 1; */
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+/* facebook icon */
+
+div#first-gen div.icon {
+    height: 15%;
+    width: 100%;
+    display: block;
+    /* justify-content: right; */
+    /* align-items: center; */
+    float: right;
+    direction: rtl;
+    padding-right: 5%;
+    /* background-color: blue; */
+    /* opacity: 0.5; */
+}
+
+div#first-gen a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.30em;
+    padding: 3px 10px;
+    background-color: white;
+    border-radius: 50px;
+    width: 130px;
+    font-family: Abegnale Typeface;
+    float: right;
+    direction: rtl;
+    display: block;
+    margin-top: 210px;
+    margin-left: -50px;
+}
+
+div#first-gen a:hover {
+    border-bottom: solid 3px red;
+    color: white;
+    transition: 1s;
+    background-color: #1C3177;
+    padding: 3px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+/* footer */
+
+footer#bottom-of-web>div#top-infor {
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: block;
+}
+
+footer#bottom-of-web>div#top-infor>div.information {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding-left: 4%; */
+    background-color: #1c3177;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div {
+    margin: 0;
+    display: block;
+    width: 29%;
+    padding: 10px 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    /* font-size: 14px; */
+    /* color: red; */
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div a {
+    text-decoration: none;
+    color: white;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div a:hover {
+    border-bottom: solid 3px red;
+    color: #1C3177;
+    transition: 1s;
+    background-color: white;
+    padding: 3px 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-left {
+    text-align: left;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-center {
+    text-align: center;
+}
+
+footer#bottom-of-web>div#top-infor>div.information div.align-right {
+    text-align: right;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div>a {
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #1c3177;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 10px;
+    margin-left: -10px;
+}
+
+footer#bottom-of-web>div#bottom-copy-right {
+    background-color: #122050;
+    height: 40px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1125px) {
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 520px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1097px) {
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 200px;
+        margin-right: 10px;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main div#block-cs div#con-cs-top {
+        height: 560px;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    main div#block-cs div#con-cs-top {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 620px;
+        display: flex;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 85%;
+        height: 520px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 881px) {
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 620px;
+        display: flex;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 85%;
+        height: 520px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.30em;
+        padding: 3px 10px;
+        background-color: white;
+        border-radius: 50px;
+        width: 130px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 220px;
+        margin-left: -50px;
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 640px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        margin-bottom: 20px;
+    }
+    main div#block-job {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 881px) {
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 85%;
+        height: 470px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 817px) {
+    /* Computer science top information */
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 700px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 50%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #2042B2;
+        margin: 0;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 20px;
+    }
+    main div#block-cs div#con-cs-top div#content-cs form label a {
+        font-size: 24px;
+        font-weight: bolder;
+        background-color: red;
+        color: black;
+        text-decoration: none;
+        padding: 5px 25px;
+        /* margin-bottom: 40px; */
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 1em;
+        color: white;
+        padding: 10px 20px;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 30px; */
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 40px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 410px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        /* float: left; */
+        background-color: #2042B2;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding: 5% auto;
+    }
+    main div#block-job div#job-oppor div#left-side div.job-content>ul>li>a {
+        text-decoration: none;
+        color: white;
+        /* font-size: 22px; */
+    }
+    main div#block-job div#job-oppor div#right-side {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        -webkit-box-shadow: 0px 0px 6px 0px #bdbdbd;
+        box-shadow: 0px 0px 6px 0px #bdbdbd;
+        /* float: right; */
+        /* background-color: blue; */
+    }
+    main div#block-job div#job-oppor div#right-side>iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 480px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 780px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 55%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #2042B2;
+        margin: 0;
+    }
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 10px;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 500px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 691px) {
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 95%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    main div#block-cs {
+        display: block;
+        /* background-color: blue; */
+        /* padding-bottom: 200px; */
+        /* position: absolute; */
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 780px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 57%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        margin: 0;
+        color: #2042B2;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        margin-top: 20px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 98%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    /* year 4 of program structure*/
+    main div#pro-struct div.year4 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main div#pro-struct div.year4 div#term {
+        width: 100%;
+        display: flex;
+    }
+    main div#pro-struct>div.year4>p {
+        font-size: 1.2em;
+        width: 31%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding: 10px 0;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* background-color: red; */
+        font-weight: bold;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    /* form to rnroll register and image */
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 57%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #2042B2;
+        margin: 0;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        width: 70%;
+        height: auto;
+        /* margin-bottom: 60px; */
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        font-size: 1.5em;
+    }
+    div#learn-out h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        border: solid 1px blue;
+        border-radius: 50px;
+        width: 120px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 220px;
+        margin-right: 10px;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 99%;
+        height: 550px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 880px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 70%;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo img {
+        /* position: relative; */
+        width: 80%;
+        height: auto;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 99%;
+        height: 580px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-job div#job-oppor div#left-side h2 {
+        color: white;
+        font-size: 2em;
+        margin: 5% 2%;
+        text-align: center;
+        padding-top: 0;
+    }
+    /* first generation  */
+    div#first-gen {
+        height: 255px;
+        width: 65%;
+        /* display: inline-block; */
+        margin-left: 15%;
+        /* opacity: 0.75; */
+        /* background-attachment: fixed; */
+        background-image: url('../../../../image-files/academic/graduate.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+        /* background-color: blue; */
+        /* margin-top: -20px; */
+        margin-top: 84px;
+    }
+    div#first-gen {
+        position: absolute;
+        /* height: 100%; */
+        width: 65%;
+        display: block;
+        margin-left: 35%;
+    }
+    div#first-gen div.toptopic h2 {
+        color: white;
+        margin: 0;
+        margin-left: 4%;
+        padding-bottom: 10px;
+        opacity: 1;
+    }
+    div#first-gen div.toptopic p {
+        margin-left: 4%;
+        padding-top: 10px;
+        color: black;
+        opacity: 1;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    div#first-gen div.icon {
+        height: 15%;
+        width: 100%;
+        display: block;
+        /* justify-content: right; */
+        /* align-items: center; */
+        float: right;
+        direction: rtl;
+        padding-right: 5%;
+        /* background-color: blue; */
+        /* opacity: 0.5; */
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 120px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 100px;
+        /* margin-top: 100px; */
+        /* margin-right: 70%; */
+        /* margin-right: 50px; */
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        /* margin-top: 100px; */
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 580px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        color: #2042B2;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    main div#block-cs div#con-cs-top div#content-cs h1 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+        margin: 0;
+        color: #2042B2;
+    }
+    /* job opportunity */
+    main div#block-job {
+        display: block;
+        /* margin-top: 100px; */
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 590px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 880px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main div#block-job {
+        display: block;
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 590px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+        /* margin-top: 50px; */
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div {
+        margin: 0;
+        display: block;
+        width: 29%;
+        padding: 10px 0;
+        padding-left: 1.5%;
+        font-size: 13px;
+    }
+    footer#bottom-of-web>div#top-infor>div.information>div h4 {
+        font-size: 125%;
+        /* 1em/2 */
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 120px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 100px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    main div#block-cs div#con-cs-top div#content-cs p {
+        margin-bottom: 0;
+    }
+    main div#block-job {
+        display: block;
+        /* margin-top: 140px; */
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    main div#block-job {
+        display: block;
+        /* margin-top: 160px; */
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    /* year 4 for border and background */
+    main div#pro-struct>div.year4>p {
+        font-size: 1.2em;
+        width: 31%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding: 10px 0;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* background-color: red; */
+        font-weight: bold;
+        color: black;
+        display: inline-block;
+    }
+    div#first-gen a {
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.20em;
+        padding: 3px 10px;
+        /* letter-spacing: 3px; */
+        background-color: white;
+        /* border: solid 1px blue; */
+        border-radius: 50px;
+        width: 120px;
+        font-family: Abegnale Typeface;
+        float: right;
+        direction: rtl;
+        display: block;
+        margin-top: 90px;
+        /* margin-right: 70%; */
+        /* margin-right: 50px; */
+        margin-left: -50px;
+    }
+    main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct div {
+        height: 70px;
+    }
+    main div#pro-struct div.year div.term div.term-1-2-3 div.no-border div {
+        height: 70px;
+    }
+    main div#pro-struct div.year div.term div.term-1-2-3 {
+        width: 31.5%;
+        display: inline-block;
+        margin-left: 0.5%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 680px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-cs div#con-cs-top {
+        width: 100%;
+        height: 930px;
+        display: block;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 75%;
+        display: block;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    main div#block-job {
+        display: block;
+        /* margin-top: 160px; */
+    }
+    main div#block-job div#job-oppor {
+        display: flex;
+        width: 100%;
+        height: 720px;
+        /* background-color: gray; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    main div#block-cs div#con-cs-top div#content-cs {
+        height: 85%;
+    }
+    main div#block-cs div#con-cs-top div#image-of-cs-logo {
+        display: block;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 15%;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 80px; */
+    }
+}
