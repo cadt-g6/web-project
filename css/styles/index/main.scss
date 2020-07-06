@@ -26,6 +26,7 @@ body {
     position: absolute;
     width: 100%;
 }
+
 /* BACKGROUND IMAGE */
 .hero-image {
     width: 100%;
@@ -86,7 +87,7 @@ body {
             background-color: #1c3177;
         }
     }
-    /* RIGHT SIDE - MODEL GIRL IMAGE */
+    /* RIGHT SIDE - GIRL MODEL IMAGE */
     .cover {
         flex: 1;
         width: 50%;
@@ -101,7 +102,7 @@ body {
     }
 }
 
-/* ALL SECTIONS CONTAINER CLASS */
+/* THIS on-fixed class HOLD ALL SECTIONS BELOW HOMEPAGE */
 .on-fixed {
     -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
@@ -114,10 +115,10 @@ body {
     padding: 30px 0;
     position: absolute;
     z-index: 1000000;
-    /* FOUR CARDS */
+    /* SECTION1 - FOUR CARDS */
     .four-card {
         overflow: hidden;
-        /* FIRST CARD - ACADEMIC */
+        /* FIRST CARD - Bachelor Program */
         .academic {
             margin: 0 auto;
             width: 85%;
@@ -137,8 +138,7 @@ body {
                 .text-container {
                     margin: 0 auto 20px;
                     width: 96%;
-                    p,
-                    h1 {
+                    p, h1 {
                         text-align: left;
                         width: 100%;
                         margin: 5px;
@@ -148,40 +148,91 @@ body {
                         word-break: break-word;
                     }
                 }
-                h1 {
-                    font-size: 30px;
-                }
-                a {
-                    text-decoration: none;
+                h1 {font-size: 30px;}
+                .container{
                     width: 90%;
-                    font-size: calc(15px + 0.5vw);
-                    font-weight: 500;
-                    color: white;
-                    background-color: #2d6481;
-                    display: block;
-                    padding: 10px;
-                    transition: ease-in-out 0.3;
-                    margin: -10px auto 0;
+                    margin: 0 auto;
+                    .a-main {
+                        text-decoration: none;
+                        font-size: calc(15px + 0.5vw);
+                        font-weight: 500;
+                        color: white;
+                        background-color: #1C3177;
+                        display: block;
+                        padding: 10px;
+                        transition: ease-in-out 0.3;
+                        margin: -5px;
+                        border-radius: 2px;
+                        // margin: -10px auto 0;
+                    }
+                    .info{
+                        background-color: #1c3177;
+                        color: white;
+                        margin: -1.85em auto 1em;
+                        height: 7em;
+                        width: 95%;
+                        display: none;
+                        p{
+                            font-size: 15px;
+                            padding: 5px;
+                        }
+                        .button{   
+                            a{
+                                text-decoration: none;
+                                padding: 10px 30px;
+                            }
+                            .btn1{
+                                background-color: black;
+                                color: white;
+                            }
+                            .btn2{
+                                color: black;
+                                background-color: #fff;
+                            }
+                        }
+                    }
                 }
-                a:hover {
-                    background-color: #ad3123;
+                @keyframes slide_down {
+                    0% {
+                        transform: translateY(-10%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                } 
+                .container:hover {
+                    .info{
+                        display: block;
+                        animation: .4s ease-out 1 slide_down;
+                        .btn1:hover{
+                            background-color: #2042b2;
+                            color: white;
+                        }
+                        .btn2:hover{
+                            background-color: #dc2128;
+                            color: white;
+                        }
+                    }
+                    a{
+                        background-color: #dc2128;
+                    }
                 }
             }
             .graduate {
                 flex: 1.2;
                 margin: 8px 0 0 15px;
                 overflow: hidden;
-                img {
-                    width: 100%;
-                }
+                img {width: 100%;}
             }
         }
+        /* OTHER THREE CARDS */
         .three-card {
             display: flex;
             width: calc(87.3% + 1vh);
             margin: 20px auto 20px;
-            .rnd,
-            .columnflex > * {
+            .rnd, .columnflex > * {
                 overflow: hidden;
                 margin: 0 5px;
                 border-right: solid 5px white;

@@ -180,7 +180,7 @@ main div#learn-out ul li p {
 div#learn-out {
     display: block;
     margin: 10px 5px;
-    padding: 10px 5px;
+    padding: 10px 15px;
     background-image: url('../../../../image-files/SVG/Subtraction.svg');
     /* background-position: top; */
     background-repeat: no-repeat;
