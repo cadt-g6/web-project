@@ -99,7 +99,7 @@ main div#block-job div#job-oppor div#left-side {
     height: 100%;
     margin: 0;
     /* float: left; */
-    background-color: blue;
+    background-color: #2042B2;
 }
 
 main div#block-job div#job-oppor div#left-side h2 {
@@ -771,7 +771,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         height: 100%;
         margin: 0;
         /* float: left; */
-        background-color: blue;
+        background-color: #2042B2;
     }
     main div#block-job div#job-oppor div#left-side h2 {
         color: white;
