@@ -227,7 +227,7 @@ body {
   font-size: calc(15px + 0.5vw);
   font-weight: 500;
   color: white;
-  background-color: #1C3177;
+  background-color: #2042B2;
   display: block;
   padding: 10px;
   -webkit-transition: ease-in-out 0.3;
@@ -237,17 +237,20 @@ body {
 }
 
 .on-fixed .four-card .academic .major .container .info {
-  background-color: #1c3177;
+  background-color: #152e81;
   color: white;
-  margin: -1.85em auto 1em;
-  height: 7em;
+  margin: -0.85em auto 1em;
+  height: auto;
   width: 95%;
   display: none;
+  border-bottom: 20px solid #152e81;
 }
 
 .on-fixed .four-card .academic .major .container .info p {
   font-size: 15px;
-  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0px 25px;
 }
 
 .on-fixed .four-card .academic .major .container .info .button a {
@@ -1009,7 +1012,7 @@ body {
     width: calc(100% + 2vh);
     padding: 0;
     margin: 10px auto;
-    margin-left: 0px;
+    margin-left: -1.2vw;
   }
   .on-fixed .smartscholar {
     height: calc(30vh + 20em);

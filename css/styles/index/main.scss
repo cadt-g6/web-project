@@ -157,7 +157,7 @@ body {
                         font-size: calc(15px + 0.5vw);
                         font-weight: 500;
                         color: white;
-                        background-color: #1C3177;
+                        background-color: #2042B2;
                         display: block;
                         padding: 10px;
                         transition: ease-in-out 0.3;
@@ -166,15 +166,18 @@ body {
                         // margin: -10px auto 0;
                     }
                     .info{
-                        background-color: #1c3177;
+                        background-color: #152e81;
                         color: white;
-                        margin: -1.85em auto 1em;
-                        height: 7em;
+                        margin: -0.85em auto 1em;
+                        height: auto;
                         width: 95%;
                         display: none;
+                        border-bottom: 20px solid #152e81;
                         p{
                             font-size: 15px;
-                            padding: 5px;
+                            width: 90%;
+                            margin: 0 auto;
+                            padding: 10px 0px 25px;
                         }
                         .button{   
                             a{
@@ -826,7 +829,7 @@ body {
                     width: calc(100% + 2vh);
                     padding: 0;
                     margin: 10px auto;
-                    margin-left: 0px;
+                    margin-left: -1.2vw;
                 }
             }
         }
@@ -896,7 +899,6 @@ body {
     .on-fixed {
         .smartscholar {
             height: calc(30vh + 20em);
-
             .container {
                 width: 100%;
                 margin: 0 auto;
