@@ -182,7 +182,8 @@ body {
                         .button{   
                             a{
                                 text-decoration: none;
-                                padding: 10px 30px;
+                                padding: 10px 2vw;
+                                font-size: calc(1vw + 10px);
                             }
                             .btn1{
                                 background-color: black;
