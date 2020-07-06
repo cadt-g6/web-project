@@ -166,8 +166,12 @@ body {
   position: absolute;
   z-index: 1000000;
   /* SECTION1 - FOUR CARDS */
-  /* WHY NIPICT - 4 POINTS*/
-  /* SMART SCHOLARSHIP */
+  /*SECTION2 - EMB YOUTUBE*/
+  /* SECTION3 - WHY NIPICT - 4 POINTS*/
+  /* SECTION 4: SMART SCHOLARSHIP */
+  /*SECTION5 - PARTNER*/
+  /* SECTION6 - PRESIDENT MESSAGE */
+  /* FOOTER */
 }
 
 .on-fixed .four-card {
@@ -310,7 +314,6 @@ body {
 }
 
 .on-fixed .four-card .academic .major .container:hover .a-main {
-  z-index: 100;
   background-color: #dc2128;
 }
 
@@ -332,6 +335,9 @@ body {
   display: flex;
   width: calc(87.3% + 1vh);
   margin: 20px auto 20px;
+  /* 4CARDS WITH SAME STYLE */
+  /* R&D */
+  /* TRAINING & ENTREPRENEURSHIP */
 }
 
 .on-fixed .four-card .three-card .rnd, .on-fixed .four-card .three-card .columnflex > * {
@@ -394,8 +400,7 @@ body {
   display: flex;
 }
 
-.on-fixed .four-card .three-card .columnflex .training,
-.on-fixed .four-card .three-card .columnflex .entrepre {
+.on-fixed .four-card .three-card .columnflex .training, .on-fixed .four-card .three-card .columnflex .entrepre {
   width: 50%;
   -webkit-box-flex: 1/2;
       -ms-flex: 1/2;
@@ -407,16 +412,17 @@ body {
   height: calc(70vh + 20vw);
   width: 100%;
   padding: 3vh 0 0 0;
+  /* YOUTUBE CONTAINER */
 }
 
 .on-fixed .youtube .ytcontainer {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   margin: 3em auto 0;
   background: #fbfbfb;
   width: 80%;
   height: 80%;
   border-radius: 0.3em;
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +518,7 @@ body {
   margin-top: calc(1em + 4vw);
   height: 50vh;
   line-height: 28px;
-  /* BIG CICLE */
+  /* CICLE */
 }
 
 .on-fixed .whyniptict .card .cicle {
@@ -563,7 +569,8 @@ body {
   height: calc(30vh + 20em);
   width: 100%;
   overflow: hidden;
-  /* LOGO ON RIGHT */
+  /* LOGO */
+  /* TEXT CONTAINER*/
 }
 
 .on-fixed .smartscholar .logo {
@@ -859,7 +866,7 @@ body {
   font-weight: 300;
 }
 
-/* LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
+/* A LINE AFTER on-fixed CLASS TO HIDE BOTTOM SHADOW */
 .on-fixed::after {
   background-color: white;
   height: 20px;
@@ -872,6 +879,7 @@ body {
   z-index: -100;
 }
 
+/* MAX WIDTH 1024PX*/
 @media screen and (max-width: 1024px) {
   .presentation .cover img {
     right: 0;
@@ -891,6 +899,7 @@ body {
   }
 }
 
+/* MAX WIDTH 925PX*/
 @media screen and (max-width: 925px) {
   .presentation .cover img {
     top: 15vh;
@@ -959,6 +968,7 @@ body {
   }
 }
 
+/* MAX WIDTH 860PX*/
 @media screen and (max-width: 860px) {
   .presentation {
     -webkit-box-orient: vertical;
@@ -1068,12 +1078,12 @@ body {
   .on-fixed footer .empty {
     height: 40%;
   }
-  .on-fixed footer .up-section,
-  .on-fixed footer .dwn-section {
+  .on-fixed footer .up-section, .on-fixed footer .dwn-section {
     width: 90%;
   }
 }
 
+/* MAX WIDTH 560PX*/
 @media screen and (max-width: 560px) {
   .on-fixed .smartscholar {
     height: calc(30vh + 20em);
@@ -1091,8 +1101,7 @@ body {
   .on-fixed footer .empty {
     height: 20%;
   }
-  .on-fixed footer .up-section,
-  .on-fixed footer .dwn-section {
+  .on-fixed footer .up-section, .on-fixed footer .dwn-section {
     margin-right: 0vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1101,6 +1110,7 @@ body {
   }
 }
 
+/* MAX WIDTH 360PX*/
 @media screen and (max-width: 360px) {
   .on-fixed .partner .gallery {
     -ms-grid-columns: auto auto auto auto auto;
