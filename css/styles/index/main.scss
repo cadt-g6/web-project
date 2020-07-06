@@ -1,4 +1,21 @@
 /* BODY */
+$color-blue: #2042B2;
+$color-red: #dc2128;
+$color-d-blue: #1c3177;
+$color-mix-blue: #2D6481;
+
+@mixin shadow{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+}
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+}
+
 @keyframes slideIn {
     0% {
         transform: translateY(70%);
@@ -19,14 +36,6 @@
         opacity: 0.2;
     }
 }
-
-body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll;
-    position: absolute;
-    width: 100%;
-}
-
 /* BACKGROUND IMAGE */
 .hero-image {
     width: 100%;
@@ -58,13 +67,13 @@ body {
         /* TEXT */
         .quote {
             h1 {
-                color: #2042b2;
+                color: $color-blue;
                 font-size: calc(1.2em + 0.8vw);
                 text-align: center;
                 line-height: calc(30px + 0.6vw);
             }
             span {
-                color: #dc2128;
+                color: $color-red;
             }
         }
         /* BUTTON */
@@ -73,7 +82,7 @@ body {
             width: 100%;
             text-align: center;
             a {
-                background-color: #dc2128;
+                background-color: $color-red;
                 padding: 18px 25px;
                 border-radius: 35px;
                 text-decoration: none;
@@ -84,7 +93,7 @@ body {
             }
         }
         .button :hover {
-            background-color: #1c3177;
+            background-color: $color-blue;
         }
     }
     /* RIGHT SIDE - GIRL MODEL IMAGE */
@@ -104,9 +113,7 @@ body {
 
 /* THIS on-fixed class HOLD ALL SECTIONS BELOW HOMEPAGE */
 .on-fixed {
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-    box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+    @include shadow;
     border-bottom: none;
     background: #fbfbfb;
     height: auto;
@@ -125,9 +132,7 @@ body {
             display: flex;
             background-color: white;
             padding: 10px;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            @include shadow;
             /* LEFT SIDE - MAJOR TEXT */
             .major {
                 padding: 10px;
@@ -157,7 +162,7 @@ body {
                         font-size: calc(15px + 0.5vw);
                         font-weight: 500;
                         color: white;
-                        background-color: #2042B2;
+                        background-color: $color-mix-blue;
                         display: block;
                         padding: 10px;
                         transition: ease-in-out 0.3;
@@ -166,31 +171,32 @@ body {
                         // margin: -10px auto 0;
                     }
                     .info{
-                        background-color: #152e81;
-                        color: white;
+                        background-color: $color-d-blue;
                         margin: -0.85em auto 1em;
                         height: auto;
                         width: 95%;
                         display: none;
-                        border-bottom: 20px solid #152e81;
+                        border-bottom: 20px solid $color-d-blue;
                         p{
                             font-size: 15px;
                             width: 90%;
                             margin: 0 auto;
+                            color: white;
                             padding: 10px 0px 25px;
                         }
                         .button{   
                             a{
                                 text-decoration: none;
                                 padding: 10px 2vw;
-                                font-size: calc(1vw + 10px);
+                                font-size: calc(0.8vw + 10px);
+                                @include shadow;
                             }
                             .btn1{
                                 background-color: black;
                                 color: white;
                             }
                             .btn2{
-                                color: black;
+                                color: $color-d-blue;
                                 background-color: #fff;
                             }
                         }
@@ -210,17 +216,14 @@ body {
                     .info{
                         display: block;
                         animation: .4s ease-out 1 slide_down;
-                        .btn1:hover{
-                            background-color: #2042b2;
-                            color: white;
-                        }
-                        .btn2:hover{
+                        .btn2:hover, .btn1:hover{
                             background-color: #dc2128;
                             color: white;
                         }
                     }
-                    a{
-                        background-color: #dc2128;
+                    .a-main{
+                        z-index: 100;
+                        background-color: $color-red;
                     }
                 }
             }
@@ -241,9 +244,7 @@ body {
                 margin: 0 5px;
                 border-right: solid 5px white;
                 background-color: white;
-                -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-                -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-                box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+                @include shadow;
                 text-align: center;
                 img {
                     height: 206px;
@@ -278,7 +279,7 @@ body {
                     }
                 }
                 .btn:hover {
-                    background-color: #2d6481;
+                    background-color: $color-blue;
                 }
             }
             .columnflex {
@@ -303,9 +304,7 @@ body {
             width: 80%;
             height: 80%;
             border-radius: 0.3em;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            @include shadow; 
             display: flex;
             flex-direction: column;
             iframe {
@@ -416,7 +415,7 @@ body {
             p {
                 color: #707070;
                 font-weight: 300;
-                width: 70%;
+                width: 80%;
                 margin: 0 auto;
                 line-height: 19px;
                 font-size: 15px;
@@ -553,9 +552,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
-            -webkit-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            -moz-box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
-            box-shadow: 0px 0px 6px 0px rgba(189, 189, 189, 1);
+            @include shadow;
             .left-container {
                 flex: 1;
                 height: 100%;
