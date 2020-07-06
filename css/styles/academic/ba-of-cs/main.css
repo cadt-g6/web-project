@@ -525,6 +525,28 @@ footer#bottom-of-web>div#top-infor>div.information>div {
     /* color: red; */
 }
 
+footer#bottom-of-web>div#top-infor>div.information>div a {
+    text-decoration: none;
+    color: white;
+}
+
+footer#bottom-of-web>div#top-infor>div.information>div a:hover {
+    border-bottom: solid 3px red;
+    color: #1C3177;
+    transition: 1s;
+    background-color: white;
+    padding: 3px 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
 footer#bottom-of-web>div#top-infor>div.information div.align-left {
     text-align: left;
 }
@@ -1141,6 +1163,7 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 433px) {
+    /* Job opportumities */
     main div#block-job {
         display: block;
         /* margin-top: 160px; */
@@ -1172,6 +1195,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-weight: bold;
         color: white;
     }
+    /* icon facebook in first generation graduate */
     div#first-gen a {
         text-align: left;
         text-decoration: none;
@@ -1194,6 +1218,7 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 403px) {
+    /* program overview */
     main div#block-cs div#con-cs-top {
         width: 100%;
         height: 900px;
@@ -1203,6 +1228,7 @@ footer#bottom-of-web>div#bottom-copy-right {
     main div#block-cs div#con-cs-top div#content-cs {
         height: 75%;
     }
+    /* image for program overview */
     main div#block-cs div#con-cs-top div#image-of-cs-logo {
         display: block;
         width: 70%;
@@ -1216,6 +1242,7 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 359px) {
+    /* Job opportunity */
     main div#block-job {
         display: block;
         margin-top: 160px;
@@ -1231,6 +1258,7 @@ footer#bottom-of-web>div#bottom-copy-right {
 }
 
 @media screen and (max-width: 360px) {
+    /* footer with smarller font-size */
     footer#bottom-of-web>div#top-infor>div.information>div {
         margin: 0;
         display: block;
@@ -1243,6 +1271,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         font-size: 125%;
         /* 1em/2 */
     }
+    /* Job opportunities */
     main div#block-job {
         display: block;
         margin-top: 160px;
@@ -1255,6 +1284,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin: 0 auto;
         margin-bottom: 50px;
     }
+    /* program overview  */
     main div#block-cs div#con-cs-top div#content-cs {
         height: 85%;
     }
