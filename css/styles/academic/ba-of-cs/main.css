@@ -269,7 +269,7 @@ main div#pro-struct>div.year>p {
     margin-bottom: 20px;
     /* background-color: red; */
     font-weight: bold;
-    color: black;
+    color: #04354A;
 }
 
 main div#pro-struct div.year div.term {
@@ -293,8 +293,7 @@ main div#pro-struct div.year div.term div.term-1-2-3 p.by-term {
 }
 
 main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    background-color: #1C3177;
     /* height: 240px; */
 }
 
@@ -319,8 +318,7 @@ main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct div 
 /* for term 6 and 10 */
 
 main div#pro-struct div.year div.term div.term-1-2-3 div.no-border {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    background-color: #1C3177;
     /* height: 240px; */
 }
 
@@ -345,6 +343,7 @@ main div#pro-struct div.year4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    color: #1C3177;
 }
 
 main div#pro-struct div.year4 div.term {
@@ -371,7 +370,7 @@ main div#pro-struct>div.year4>p {
     margin-bottom: 20px;
     /* background-color: red; */
     font-weight: bold;
-    color: black;
+    color: #1C3177;
 }
 
 main div#pro-struct div.year4 div.term div.term-1-2-3 {
@@ -772,6 +771,7 @@ div#first-gen a:hover {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
+        color: #1C3177;
     }
 }
 
@@ -1088,7 +1088,7 @@ div#first-gen a:hover {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: white;
+        color: #1C3177;
     }
     /* icon facebook in first generation graduate */
     div#first-gen a {

@@ -191,54 +191,6 @@ div#learn-out {
     color: white;
 }
 
-
-/* program structure */
-
-
-/* main div#pro-struct {
-    margin-top: 30px;
-}
-
-main div#pro-struct h2 {
-    font-weight: bold;
-    color: #04354A;
-    margin-left: 7%;
-    font-size: 2em;
-}
-
-main div#pro-struct div.year p {
-    font-size: 2em;
-    margin-left: 7%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-main div#pro-struct div.year div#term div.term-1-2-3 {
-    width: 30%;
-    display: inline-block;
-    margin-left: 2.5%;
-}
-
-main div#pro-struct div.year div#term div.term-1-2-3 p.by-term {
-    font-size: 1.75em;
-    text-align: center;
-    margin: 0px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-main div#pro-struct div.year div#term div.term-1-2-3 div.content-pro-struct p {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
-    text-align: center;
-    font-size: 1em;
-    padding: 10px 2px;
-    font-weight: bold;
-    color: black;
-    margin: 0 auto;
-} */
-
 main div#pro-struct {
     margin-top: 30px;
     display: block;
@@ -255,6 +207,7 @@ main div#pro-struct div.year {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    color: #1C3177;
 }
 
 main div#pro-struct>div.year>p {
@@ -267,7 +220,7 @@ main div#pro-struct>div.year>p {
     margin-bottom: 20px;
     /* background-color: red; */
     font-weight: bold;
-    color: black;
+    color: #04354A;
     display: inline-block;
 }
 
@@ -292,8 +245,7 @@ main div#pro-struct div.year div.term div.term-1-2-3 p.by-term {
 }
 
 main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    background-color: #1C3177;
     /* height: 240px; */
 }
 
@@ -318,8 +270,7 @@ main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct div 
 /* for term 6 and 10 */
 
 main div#pro-struct div.year div.term div.term-1-2-3 div.no-border {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    background-color: #1C3177;
     /* height: 240px; */
 }
 
@@ -370,7 +321,7 @@ main div#pro-struct>div.year4>p {
     margin-bottom: 20px;
     /* background-color: red; */
     font-weight: bold;
-    color: black;
+    color: #1C3177;
     display: inline-block;
 }
 
@@ -382,8 +333,7 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 {
 }
 
 main div#pro-struct div.year4 div.term div.term-1-2-3 div.no-border {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1a237e), to(#0d47a1));
-    background: linear-gradient(to bottom, #1a237e 50%, #0d47a1 100%);
+    background: #1C3177;
     /* height: 240px; */
 }
 
@@ -934,7 +884,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: black;
+        color: #1C3177;
     }
 }
 
@@ -1249,7 +1199,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: black;
+        color: #1C3177;
         display: inline-block;
     }
     div#first-gen a {
