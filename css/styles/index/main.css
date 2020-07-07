@@ -4,6 +4,7 @@ body {
   /* Hide horizontal scrollbar */
   overflow-y: scroll;
   position: absolute;
+  scroll-behavior: smooth;
   width: 100%;
 }
 
@@ -563,7 +564,7 @@ body {
 }
 
 .on-fixed .smartscholar {
-  background: url(/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
+  background: url(/image-files/smart-believe-in-yourself-background.png) no-repeat 50% 50%;
   background-size: cover;
   position: relative;
   height: calc(30vh + 20em);

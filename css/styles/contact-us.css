@@ -1,6 +1,7 @@
 body{
 	margin: 0px;
-	padding: 0px;	 
+	padding: 0px;
+	 
 }
 
 				
@@ -27,11 +28,11 @@ div.text a button.button{
 		border: none;
 	}
 	div.text a button.button:hover{
-		background-color:#2547B4;
+		color:#a1aaca;
+		transition: 1s;
+		cursor: pointer;
 	}
-	div.Location-information a{
-		color: white;
-	}
+
 
 /* text */
 
@@ -109,6 +110,9 @@ div.map_text{
 		padding-left: 25px 80px;
 	}
   }
+  div.Location-information a{
+	color: white;
+}
 /*icon*/
 .i{
 	color: #b8b4b4;
