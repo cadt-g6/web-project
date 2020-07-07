@@ -242,6 +242,7 @@ main div#pro-struct div.year div.term div.term-1-2-3 p.by-term {
     margin: 0px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #04354A;
 }
 
 main div#pro-struct div.year div.term div.term-1-2-3 div.content-pro-struct {
@@ -307,6 +308,7 @@ main div#pro-struct div.year4 div.term div.term-1-2-3 p.by-term {
     text-align: center;
     margin: 0px;
     font-weight: bold;
+    color: #1C3177;
     margin-bottom: 10px;
 }
 
@@ -884,7 +886,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: black;
+        color: #1C3177;
     }
 }
 
@@ -1199,7 +1201,7 @@ footer#bottom-of-web>div#bottom-copy-right {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: black;
+        color: #1C3177;
         display: inline-block;
     }
     div#first-gen a {
