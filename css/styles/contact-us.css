@@ -17,7 +17,7 @@ div.dropdown div.dropdown-content a{
 
 /* button 1*/
 
-div.text a button.but{
+div.text a button#but{
 		background-color:#DC2128;
 		width: 150px;
 		height: 50px;
@@ -27,7 +27,7 @@ div.text a button.but{
 		color: white;
 		border: none;
 	}
-	div.text a button.but:hover{
+	div.text a button#but:hover{
 		color:#a1aaca;
 		transition: 1s;
 		cursor: pointer;
