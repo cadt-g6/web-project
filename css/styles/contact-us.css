@@ -105,7 +105,6 @@ div.map_text{
 @media only screen and (max-width: 540px) {
 	.Location-information{
 		margin-left: 0px;
-		display:block;
 		width: auto;height: auto;
 		padding-left: 25px 80px;
 	}
