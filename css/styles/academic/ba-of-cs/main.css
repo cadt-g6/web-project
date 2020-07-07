@@ -257,7 +257,6 @@ main div#pro-struct div.year {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #1C3177;
 }
 
 main div#pro-struct>div.year>p {
@@ -772,6 +771,7 @@ div#first-gen a:hover {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
+        color: #1C3177;
     }
 }
 
@@ -1088,7 +1088,7 @@ div#first-gen a:hover {
         margin-bottom: 20px;
         /* background-color: red; */
         font-weight: bold;
-        color: white;
+        color: #1C3177;
     }
     /* icon facebook in first generation graduate */
     div#first-gen a {
