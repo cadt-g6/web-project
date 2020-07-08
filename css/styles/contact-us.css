@@ -141,6 +141,7 @@ div.icon a:hover{
 	@media only screen and (max-width: 540px) {
 		.send{
 			width:auto ;height: auto;
+			margin-left: 2px;
 		}
 	  }
 
