@@ -6,7 +6,7 @@ body{
 /*Tech Cente*/
 
 #tech{
-  margin-left: 140px;
+  margin-left: 170px;
   margin-top: 100px;
   font-size: 45px;
   color:red ;
@@ -41,7 +41,7 @@ body{
   #line{
    
     display: flex;
-    margin-left: 145px;
+    margin-left: 175px;
  
   }
   @media only screen and (max-width: 540px) {
@@ -81,7 +81,13 @@ img.img1{
       height: 300px;
     }
   }
-  
+  @media only screen and (max-width: 988px) {
+    img.img1{
+      height: auto;
+      width: 100%;
+     
+    }
+  }
   /*text*/
   
 #text{
