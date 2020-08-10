@@ -2,10 +2,10 @@ This is a project that is assigned by lecture Khem Puthea at National Institute 
 
 Our team are:
 
-    Thea Choem - Write index.html
-    Lyhean - Academic
-    Chea Varin - Admission
-    Chhit Chanra - Center
+    Thea Choem - Write index page
+    Lyhean - Write academic page
+    Chea Varin - Write admission page
+    Chhit Chanra - Write center page
 
 Design using Adobe XD and Photoshop
 
@@ -17,4 +17,4 @@ Things we use to write:
     Javascript
     Parallex Effect
 
-Demo here: https://theacheng.github.io/teamproject/
+Demo here: https://niptict.netlify.app
